@@ -41,9 +41,9 @@ def get_best_gbif_match(scientific_name: str) -> dict | None:
     match_url = f"{GBIF_API_URL}/match"
     params = {"name": scientific_name, "strict": "false", "verbose": "true"}
     try:
-        # A short delay to be respectful to the API
-        time.sleep(0.05)
-        response = requests.get(match_url, params=params, timeout=30)
+        # A minimal delay to be respectful to the API; adjust as needed for your use case
+        time.sleep(0.01)
+        response = requests.get(match_url, params=params, timeout=10)
         response.raise_for_status()  # Raises an HTTPError for bad responses
         data = response.json()
 
@@ -91,10 +91,17 @@ def check_taxonomy(geopackage_path: str, table_name: str):
 
             # --- 3. Compare Data and Record Discrepancies ---
             # Comparisons are case-insensitive and stripped of whitespace for robustness.
-            sci_name_mismatch = (original_sci_name.strip().lower() != gbif_sci_name.strip().lower()
-                                 if original_sci_name and gbif_sci_name else False)
-            family_mismatch = (original_family.strip().lower() != gbif_family.strip().lower()
-                               if original_family and gbif_family else False)
+            if original_sci_name is not None and gbif_sci_name is not None:
+                sci_name_mismatch = original_sci_name.strip().lower() != gbif_sci_name.strip().lower()
+            if original_family is not None and gbif_family is not None:
+                family_mismatch = original_family.strip().lower() != gbif_family.strip().lower()
+            else:
+                family_mismatch = False
+
+            if original_family is not None and gbif_family is not None:
+                family_mismatch = original_family.strip().lower() != gbif_family.strip().lower()
+            else:
+                family_mismatch = False
 
             # Common names are NOT used for comparison, only for output.
             if sci_name_mismatch or family_mismatch:
