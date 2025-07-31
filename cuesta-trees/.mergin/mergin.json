@@ -1,0 +1,76 @@
+{
+  "access": {
+    "editors": [
+      1
+    ],
+    "editorsnames": [
+      "kyle"
+    ],
+    "owners": [
+      1
+    ],
+    "ownersnames": [
+      "kyle"
+    ],
+    "public": false,
+    "readers": [
+      1
+    ],
+    "readersnames": [
+      "kyle"
+    ],
+    "writers": [
+      1
+    ],
+    "writersnames": [
+      "kyle"
+    ]
+  },
+  "created": "2025-07-31T03:56:45Z",
+  "creator": 1,
+  "disk_usage": 6396245,
+  "files": [
+    {
+      "checksum": "93e9e0c68df8dc84f37fee3b9cb114c57d5fcdc2",
+      "mtime": "2025-07-31T04:00:32Z",
+      "path": "20250730_210016.jpg",
+      "size": 6277513
+    },
+    {
+      "checksum": "d9c2f94b8e65f5e4bca91824489234d49a76a85d",
+      "diff": {
+        "checksum": "d849f8be21bbe5bdb2101565454f4b79319ec416",
+        "path": "Survey_points.gpkg-diff-73c5b607-ac92-49da-8826-479d59f41a49",
+        "size": 130
+      },
+      "mtime": "2025-07-31T04:00:32Z",
+      "path": "Survey_points.gpkg",
+      "size": 98304
+    },
+    {
+      "checksum": "e1e97eb5e7350de0e1bee26971cad13ff19ed46d",
+      "mtime": "2025-07-31T04:01:39Z",
+      "path": "cuesta-trees.qgz",
+      "size": 20428
+    }
+  ],
+  "id": "55652f5d-ce68-4bbf-b24e-bc9d37099eb2",
+  "name": "cuesta-trees",
+  "namespace": "mergin",
+  "permissions": {
+    "delete": true,
+    "update": true,
+    "upload": true
+  },
+  "public": false,
+  "removed_at": null,
+  "role": "owner",
+  "tags": [
+    "valid_qgis",
+    "input_use"
+  ],
+  "updated": "2025-07-31T04:01:39Z",
+  "uploads": [],
+  "version": "v3",
+  "workspace_id": 1
+}
