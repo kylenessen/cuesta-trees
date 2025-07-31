@@ -1,0 +1,106 @@
+﻿tree_id,common_name,scientific_name,family,origin,notes
+1,Blue Elderberry,Sambucus nigra,Adoxaceae,"W USA, W Canada",N of building 1200
+2,Giant Yucca,Yucca elephantipes,Agavaceae,"Mexico, C America",SE of building 7100
+3,Chinese Pistache,Pistacia chinensis,Anacardiaceae,China,E of building 2300
+4,Lemonade Berry,Rhus integrifolia,Anacardiaceae,California,W of building 4700 Removed
+5,African Sumac,Rhus lancea,Anacardiaceae,Africa,S of building 8000 Removed
+6,Sugar Bush,Rhus ovata,Anacardiaceae,"S CA, AZ, Baja CA",W of building 4700 Removed
+7,California Pepper Tree,Schinus molle,Anacardiaceae,South America,W of building 3300- sign reattached 5/28/2025
+8,Brazilian Pepper Tree,Schinus terebinthifolia,Anacardiaceae,South America,W of building 5300
+9,Norfolk Island Pine,Araucaria heterophylla,Araucariaceae,Norfolk Island,S of building 3300- sign adjusted 5/28/2025
+10,Canary Island Palm,Phoenix canariensis,Arecaceae,Canary Islands,E of building 4300
+11,Senegal Date Palm,Phoenix reclinata,Arecaceae,Africa,NW of building 3200 (library)
+12,Queen Palm,Syagrus romanzoffiana,Arecaceae,South America,Softball field- needs new sign
+13,Chinese Windmill Palm,Trachycarpus fortunei,Arecaceae,Central China,SE of building 5100 (cafeteria) REMOVED
+14,Mexican Fan Palm,Washingtonia robusta,Arecaceae,"California, Mexico",NW of building 3200  (library)
+15,California Alder (White Alder),Alnus rhombifolia,Betulaceae,California,between buildings 2200 and 2500
+16,Chitalpa,Chitalpa tashkentensis,Bignoniaceae,hyb. from Uzbekistan,NW of building 4700- trimmed and sign adjusted 5/28/2025
+17,Jacaranda,Jacaranda mimosifolia,Bignoniaceae,"Argentina, Bolivia",N of building 3300
+18,Horsetail Tree,Casuarina cunninghamiana,Casuarinaceae,Australia,NE of building 6200-sign adjusted 5/28/2025
+19,Incense Cedar,Calocedrus decurrens,Cupressaceae ,California,NW of building 1200
+20,Italian Cypress,Cupressus sempervirens,Cupressaceae ,Mediterranean,Tennis Courts- needs new sign
+21,Monterey Cypress,Hesperocyparis macrocarpa,Cupressaceae ,California,E of building 2200
+22,Chinese Juniper,Juniperus chinensis,Cupressaceae ,"China, Japan, Korea",W of 1600 (pool)- REMOVED
+23,Oriental Arborvitae,Platycladus orientalis,Cupressaceae ,E and N Asia,S of building 4500- trimmed and sign adjusted
+24,Japanese Persimmon,Diospyros kaki,Ebenaceae,China,W of Hollister Adobe
+25,Pacific Madrone,Arbutus menziesii,Ericaceae,California,Will not grow on campus according to Matt and Jenn
+26,Strawberry Tree,Arbutus unedo,Ericaceae,S Europe,N of building 4000 ???
+27,Acacia Tree,Acacia baileyana,Fabaceae,Australia,N of building 3300 or E of Cougar Statue
+28,Sydney Golden Wattle,Acacia longifolia,Fabaceae,Australia,W of building 1200 ???
+29,Mimosa (Silk Tree),Albizia julibrissin,Fabaceae,"Iran to China, Korea",S of building 6200- sign reattached 5/28/2025
+30,Western Redbud,Cercis occidentalis,Fabaceae,California,E of building 5200
+31,Coast Live Oak,Quercus agrifolia,Fagaceae,California,near NE corner of building 2300
+32,Valley Oak,Quercus lobata,Fagaceae,California,E of building 2300
+33,Cork Oak,Quercus suber,Fagaceae,Mediterranean,SW of 1807 (baseball field)
+34,Shiny Xylosma (removed),Xylosma congestum,Flacourtiaceae,China,SE of building 5100 REMOVED
+35,Coast Silktassel,Garrya elliptica,Garryaceae,"CA, OR coast",NW of Hollister Adobe
+36,Ginkgo,Ginkgo biloba,Ginkgoaceae,SE China,NE of building 2300
+37,Crimson Spire,Escallonia rubra,Grossulariaceae,S America,W of building 6200 sign needs to be reattached
+38,American Sweetgum,Liquidambar styraciflua,Hamamelidaceae,Eastern USA,NW of building 2100
+39,California Black Walnut,Juglans californica,Juglandaceae,California,NW corner of campus- across road
+40,Crape Myrtle,Lagerstroemia spp.,Lythraceae,"China, Japan","courtyard E of Art Gallery, N of bld. 7100 ???"
+41,Pomegranate,Punica granatum,Lythraceae,"Iran, N India",SW of building 4700 REMOVED
+42,Southern Magnolia,Magnolia grandiflora,Magnoliaceae,S USA,NE corner of library building 3100
+43,Saucer Magnolia,Magnolia x soulangeana,Magnoliaceae,bred in France,"N of building 3100, NE of cougar statue ???"
+44,Australian Flame Tree,Brachychiton acerifolius,Malvaceae,Australia,E side of building 4400
+45,Kurrajong,Brachychiton populneus,Malvaceae,E Australia,NW of building 4600
+46,Queensland Bottle Tree,Brachychiton rupestris,Malvaceae,Australia,NW corner of campus 
+47,Common Fig,Ficus carica,Moraceae,"Middle East, W Asia",W of Hollister Adobe
+48,Willow Peppermint,Agonis flexuosa,Myrtaceae,Australia,N of building 3300 ???
+49,Weeping Bottlebrush,Callistemon viminalis,Myrtaceae,NE Australia,NW of Hollister Adobe
+50,Red-Flowering Gum,Corymbia ficifolia,Myrtaceae,Australia,between building 2200 and building 2500
+51,Tasmanian Blue Gum,Eucalyptus globulus,Myrtaceae,Australia,E of snack bar
+52,Flooded Gum,Eucalyptus grandis,Myrtaceae,Australia,E of building 3100
+53,White Ironbark,Eucalyptus leucoxylon,Myrtaceae,Australia,E of building 3100
+54,Red Spotted Gum,Eucalyptus mannifera,Myrtaceae,Australia,E of building 5100
+55,Yellow Box,Eucalyptus melliodora,Myrtaceae,Australia,S of building 2401
+56,Narrow-leafed Peppermint,Eucalyptus nicholii,Myrtaceae,Australia,S of lot 5
+57,Silver Dollar Gum,Eucalyptus polyanthemos,Myrtaceae,Australia,"4 corners of building 2400, N of building 2200"
+58,Swamp Mahogany,Eucalyptus robusta,Myrtaceae,Australia,NW of building 5300
+59,Desert Gum,Eucalyptus rudis,Myrtaceae,Australia,S of building 6300 ???
+60,Sydney Blue Gum,Eucalyptus saligna,Myrtaceae,Australia,NE of building 2401
+61,Red Ironbark,Eucalyptus sideroxylon,Myrtaceae,Australia,S of lot 5
+62,Swamp Mallee,Eucalyptus spathulata,Myrtaceae,Australia,NW of building 5300
+63,Coral Gum (removed),Eucalyptus torquata,Myrtaceae,Australia,between building 2300 and 2200 REMOVED
+64,Manna Gum,Eucalyptus viminalis,Myrtaceae,Australia,NE of building 4100
+65,Green Mallee,Eucalyptus viridis,Myrtaceae,Australia,"NE of building 5100, in lot 2 Needs Sign"
+66,Pineapple Guava,Feijoa sellowiana,Myrtaceae,South America,NW of building 4600- trimmed 5/28/2025
+67,Australian Tea Tree,Leptospermum laevigatum,Myrtaceae,Australia,S of building 1300 ???
+68,Manuka,Leptospermum scoparium,Myrtaceae,"Australia, New Zeal.",S of building 3200 (library)
+69,Pink Melaleuca,Melaleuca nesophila,Myrtaceae,Australia,S of building 3200 (library)
+70,Prickly Paperbark,Melaleuca quinquenervia,Myrtaceae,Australia,S of building 3200 (library)
+71,Tomlinson Ash,Fraxinus uhdei,Oleaceae,Mexico,NW of building 3300
+72,Mission Olive,Olea europaea,Oleaceae,"Mediterranean, Asia",E of building 2100
+73,Atlas Cedar,Cedrus atlantica,Pinaceae,"Morocco, Algeria",W of building 8000 REMOVED
+74,Canary Island Pine,Pinus canariensis,Pinaceae,Canary Islands,E of building 4300
+75,Bishop Pine,Pinus muricata,Pinaceae ,California ,E of building 4400
+76,Italian Stone Pine,Pinus pinea,Pinaceae,Mediterranean,W of building 4300 near road
+77,Monterey Pine,Pinus radiata,Pinaceae ,California ,NE of lot 5
+78,Japanese Black Pine,Pinus thunbergii,Pinaceae,"Japan, S Korea",S of building 3300 ???
+79,Torrey Pine,Pinus torreyana,Pinaceae,S California,N of building 3300
+80,Mock Orange,Pittosporum undulatum,Pittosporaceae,E Australia,SE of Hollister Adobe
+81,Western Sycamore,Platanus racemosa,Platanaceae,California,W of building 2300
+82,Yew Tree,Podocarpus macrophyllus,Podocarpaceae,"China, Japan",between 1400 building and lot 6 on Chorro Road
+83,Silk Oak,Grevillea robusta,Proteaceae,E Australia,S of building 6300
+84,California Coffee Berry,Frangula californica,Rhamnaceae,California,N of library 3100
+85,Loquat,Eriobotrya japonica,Rosaceae,China,N of building 4000 (Children's Center)
+86,Toyon,Heteromeles arbutifolia,Rosaceae,"W USA, Baja CA, BC",W of building 2400 ???
+87,Catalina Ironwood,Lyonothamnus floribundus,Rosaceae,Catalina Island,N of building 4600
+88,Apple,Malus pumila,Rosaceae,Central Asia,SW of 1600 (pool) REMOVED
+89,Red Flowering Plum,Prunus cerasifera,Rosaceae,Mediterranean,NE of building 2200 ???
+90,Ornamental Pear ,Pyrus calleryana,Rosaceae,"China, Taiwan",N of building 3300
+91,Australian Willow,Geijera parviflora,Rutaceae,E Australia,E of lot 2A on Romauldo Road
+92,Arroyo Willow,Salix lasiolepis,Salicaceae,W North America,W of building 4700 REMOVED
+93,Japanese Maple,Acer palmatum,Sapindaceae,Japan,N of building 3100
+94,Buckeye,Aesculus californica,Sapindaceae,California,N of building 2200
+95,Carrotwood Tree,Cupaniopsis anacardiodes,Sapindaceae,NE Australia,"E of building 7300, in lot 2A        "
+96,Chinese Flame Tree,Koelreuteria bipinnata,Sapindaceae,SW China,N of building 2500
+97,Dawn Redwood,Metasequoia glyptostroboides,Taxodiaceae,China,SE of building 5200 (Founder's Grove)
+98,Coast Redwood,Sequoia sempervirens,Taxodiaceae,California,NE of building 1100 (Founder's Grove)
+99,Giant Sequoia,Sequoiadendron giganteum,Taxodiaceae,California,S of building 5200 (Founder's Grove)
+100,English Elm,Ulmus procera,Ulmaceae,"Europe, W Asia",NW of building 3100
+101,Pacific Wax Myrtle,Morella californica,Myricaceae,W USA Coast,NW of building 4700 REMOVED
+102,Pindo palm ,Butia odorata ,Arecaceae,Brazil,S of Hollister Adobe Needs sign
+103,Aleppo pine,Pinus halepensis,Pinaceae,Mediterranean,North side of campus near road. Needs sign
+104,Myoporum ,Myoporum laetum,Scrophulariaceae,New Zealand,Found SE of cafeteria. Needs sign
+105,Common Pear,Pyrus communis,Rosaceae,Europe. SW Asia,SW corner of campus near Hollister Adobe. Needs Sign
