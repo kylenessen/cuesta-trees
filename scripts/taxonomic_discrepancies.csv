@@ -1,0 +1,106 @@
+original_scientific_name,gbif_scientific_name,original_family,gbif_family,original_common_name,gbif_common_name,gbif_match_confidence,gbif_match_type
+Sambucus nigra,Sambucus nigra L.,Adoxaceae,Viburnaceae,Blue Elderberry,,97,EXACT
+Yucca elephantipes,Yucca elephantipes Regel ex Trel.,Agavaceae,Asparagaceae,Giant Yucca,,97,EXACT
+Pistacia chinensis,Pistacia chinensis Bunge,Anacardiaceae,Anacardiaceae,Chinese Pistache,,99,EXACT
+Rhus integrifolia,Rhus integrifolia (Nutt.) Benth. & Hook.fil. ex Brewer & S.Watson,Anacardiaceae,Anacardiaceae,Lemonade Berry,,97,EXACT
+Rhus lancea,Searsia F.A.Barkley,Anacardiaceae,Anacardiaceae,African Sumac,,97,HIGHERRANK
+Rhus ovata,Rhus ovata S.Watson,Anacardiaceae,Anacardiaceae,Sugar Bush,,99,EXACT
+Schinus molle,Schinus molle L.,Anacardiaceae,Anacardiaceae,California Pepper Tree,,97,EXACT
+Schinus terebinthifolia,Schinus terebinthifolia Raddi,Anacardiaceae,Anacardiaceae,Brazilian Pepper Tree,,99,EXACT
+Araucaria heterophylla,Araucaria heterophylla (Salisb.) Franco,Araucariaceae,Araucariaceae,Norfolk Island Pine,,99,EXACT
+Phoenix canariensis,Phoenix canariensis H.Wildpret,Arecaceae,Arecaceae,Canary Island Palm,,97,EXACT
+Phoenix reclinata,Phoenix reclinata Jacq.,Arecaceae,Arecaceae,Senegal Date Palm,,99,EXACT
+Syagrus romanzoffiana,Syagrus romanzoffiana (Cham.) Glassman,Arecaceae,Arecaceae,Queen Palm,,99,EXACT
+Trachycarpus fortunei,Trachycarpus fortunei (Hook.) H.Wendl.,Arecaceae,Arecaceae,Chinese Windmill Palm,,99,EXACT
+Washingtonia robusta,Washingtonia robusta H.Wendl.,Arecaceae,Arecaceae,Mexican Fan Palm,,99,EXACT
+Alnus rhombifolia,Alnus rhombifolia Nutt.,Betulaceae,Betulaceae,California Alder (White Alder),,99,EXACT
+Chitalpa tashkentensis,× Chitalpa tashkentensis T.S.Elias & Wisura,Bignoniaceae,Bignoniaceae,Chitalpa,,99,EXACT
+Jacaranda mimosifolia,Jacaranda mimosifolia D.Don,Bignoniaceae,Bignoniaceae,Jacaranda,,99,EXACT
+Casuarina cunninghamiana,Casuarina cunninghamiana Miq.,Casuarinaceae,Casuarinaceae,Horsetail Tree,,99,EXACT
+Calocedrus decurrens,Calocedrus decurrens (Torr.) Florin,Cupressaceae ,Cupressaceae,Incense Cedar,,99,EXACT
+Cupressus sempervirens,Cupressus sempervirens L.,Cupressaceae ,Cupressaceae,Italian Cypress,,99,EXACT
+Hesperocyparis macrocarpa,Hesperocyparis macrocarpa (Hartw. ex Gordon) Bartel,Cupressaceae ,Cupressaceae,Monterey Cypress,,98,EXACT
+Juniperus chinensis,Juniperus chinensis L.,Cupressaceae ,Cupressaceae,Chinese Juniper,,97,EXACT
+Platycladus orientalis,Platycladus orientalis (L.) Franco,Cupressaceae ,Cupressaceae,Oriental Arborvitae,,99,EXACT
+Diospyros kaki,Diospyros kaki L.f.,Ebenaceae,Ebenaceae,Japanese Persimmon,,98,EXACT
+Arbutus menziesii,Arbutus menziesii Pursh,Ericaceae,Ericaceae,Pacific Madrone,,99,EXACT
+Arbutus unedo,Arbutus unedo L.,Ericaceae,Ericaceae,Strawberry Tree,,99,EXACT
+Acacia baileyana,Acacia baileyana F.Muell.,Fabaceae,Fabaceae,Acacia Tree,,99,EXACT
+Acacia longifolia,Acacia longifolia (Andrews) Willd.,Fabaceae,Fabaceae,Sydney Golden Wattle,,97,EXACT
+Albizia julibrissin,Albizia julibrissin Durazz.,Fabaceae,Fabaceae,Mimosa (Silk Tree),,97,EXACT
+Cercis occidentalis,Cercis occidentalis Torr. ex A.Gray,Fabaceae,Fabaceae,Western Redbud,,97,EXACT
+Quercus agrifolia,Quercus agrifolia Née,Fagaceae,Fagaceae,Coast Live Oak,,97,EXACT
+Quercus lobata,Quercus lobata Née,Fagaceae,Fagaceae,Valley Oak,,99,EXACT
+Quercus suber,Quercus suber L.,Fagaceae,Fagaceae,Cork Oak,,98,EXACT
+Xylosma congestum,Xylosma congesta (Lour.) Merr.,Flacourtiaceae,Salicaceae,Shiny Xylosma (removed),,96,FUZZY
+Garrya elliptica,Garrya elliptica Douglas ex Lindl.,Garryaceae,Garryaceae,Coast Silktassel,,97,EXACT
+Ginkgo biloba,Ginkgo biloba L.,Ginkgoaceae,Ginkgoaceae,Ginkgo,,99,EXACT
+Escallonia rubra,Escallonia rubra (Ruiz & Pav.) Pers.,Grossulariaceae,Escalloniaceae,Crimson Spire,,97,EXACT
+Liquidambar styraciflua,Liquidambar styraciflua L.,Hamamelidaceae,Altingiaceae,American Sweetgum,,99,EXACT
+Juglans californica,Juglans californica S.Watson,Juglandaceae,Juglandaceae,California Black Walnut,,99,EXACT
+Lagerstroemia spp.,Lagerstroemia L.,Lythraceae,Lythraceae,Crape Myrtle,,94,HIGHERRANK
+Punica granatum,Punica granatum L.,Lythraceae,Lythraceae,Pomegranate,,99,EXACT
+Magnolia grandiflora,Magnolia grandiflora L.,Magnoliaceae,Magnoliaceae,Southern Magnolia,,99,EXACT
+Magnolia x soulangeana,Magnolia × soulangeana Soul.-Bod.,Magnoliaceae,Magnoliaceae,Saucer Magnolia,,97,EXACT
+Brachychiton acerifolius,Brachychiton acerifolius (A.Cunn. ex G.Don) F.Muell.,Malvaceae,Malvaceae,Australian Flame Tree,,98,EXACT
+Brachychiton populneus,Brachychiton populneus (Schott & Endl.) R.Br.,Malvaceae,Malvaceae,Kurrajong,,99,EXACT
+Brachychiton rupestris,Brachychiton rupestris (Lindl.) Schum.,Malvaceae,Malvaceae,Queensland Bottle Tree,,97,EXACT
+Ficus carica,Ficus carica L.,Moraceae,Moraceae,Common Fig,,99,EXACT
+Agonis flexuosa,Agonis flexuosa (Muhl. ex Willd.) Sweet,Myrtaceae,Myrtaceae,Willow Peppermint,,98,EXACT
+Callistemon viminalis,Callistemon viminalis (Sol. ex Gaertn.) G.Don,Myrtaceae,Myrtaceae,Weeping Bottlebrush,,98,EXACT
+Corymbia ficifolia,Corymbia ficifolia (F.Muell.) K.D.Hill & L.A.S.Johnson,Myrtaceae,Myrtaceae,Red-Flowering Gum,,99,EXACT
+Eucalyptus globulus,Eucalyptus globulus Labill.,Myrtaceae,Myrtaceae,Tasmanian Blue Gum,,99,EXACT
+Eucalyptus grandis,Eucalyptus grandis W.Hill ex Maiden,Myrtaceae,Myrtaceae,Flooded Gum,,98,EXACT
+Eucalyptus leucoxylon,Eucalyptus leucoxylon F.Muell.,Myrtaceae,Myrtaceae,White Ironbark,,99,EXACT
+Eucalyptus mannifera,Eucalyptus mannifera Mudie,Myrtaceae,Myrtaceae,Red Spotted Gum,,97,EXACT
+Eucalyptus melliodora,Eucalyptus melliodora A.Cunn. ex Schauer,Myrtaceae,Myrtaceae,Yellow Box,,97,EXACT
+Eucalyptus nicholii,Eucalyptus nicholii Maiden & Blakely,Myrtaceae,Myrtaceae,Narrow-leafed Peppermint,,99,EXACT
+Eucalyptus polyanthemos,Eucalyptus polyanthemos Schauer,Myrtaceae,Myrtaceae,Silver Dollar Gum,,99,EXACT
+Eucalyptus robusta,Eucalyptus robusta Sm.,Myrtaceae,Myrtaceae,Swamp Mahogany,,98,EXACT
+Eucalyptus rudis,Eucalyptus rudis Endl.,Myrtaceae,Myrtaceae,Desert Gum,,99,EXACT
+Eucalyptus saligna,Eucalyptus saligna Sm.,Myrtaceae,Myrtaceae,Sydney Blue Gum,,97,EXACT
+Eucalyptus sideroxylon,Eucalyptus sideroxylon A.Cunn. ex Woolls,Myrtaceae,Myrtaceae,Red Ironbark,,97,EXACT
+Eucalyptus spathulata,Eucalyptus spathulata Hook.,Myrtaceae,Myrtaceae,Swamp Mallee,,99,EXACT
+Eucalyptus torquata,Eucalyptus torquata Luehm.,Myrtaceae,Myrtaceae,Coral Gum (removed),,99,EXACT
+Eucalyptus viminalis,Eucalyptus viminalis Labill.,Myrtaceae,Myrtaceae,Manna Gum,,97,EXACT
+Eucalyptus viridis,Eucalyptus viridis R.T.Baker,Myrtaceae,Myrtaceae,Green Mallee,,99,EXACT
+Feijoa sellowiana,Feijoa sellowiana (O.Berg) O.Berg,Myrtaceae,Myrtaceae,Pineapple Guava,,99,EXACT
+Leptospermum laevigatum,Leptospermum laevigatum (Gaertn.) F.Muell.,Myrtaceae,Myrtaceae,Australian Tea Tree,,99,EXACT
+Leptospermum scoparium,Leptospermum scoparium Forst.,Myrtaceae,Myrtaceae,Manuka,,99,EXACT
+Melaleuca nesophila,Melaleuca nesophila F.Muell.,Myrtaceae,Myrtaceae,Pink Melaleuca,,99,EXACT
+Melaleuca quinquenervia,Melaleuca quinquenervia (Cav.) S.T.Blake,Myrtaceae,Myrtaceae,Prickly Paperbark,,99,EXACT
+Fraxinus uhdei,Fraxinus uhdei (Wenz.) Lingelsh.,Oleaceae,Oleaceae,Tomlinson Ash,,99,EXACT
+Olea europaea,Olea europaea L.,Oleaceae,Oleaceae,Mission Olive,,97,EXACT
+Cedrus atlantica,Cedrus atlantica (Endl.) Manetti ex Carriere,Pinaceae,Pinaceae,Atlas Cedar,,98,EXACT
+Pinus canariensis,Pinus canariensis C.Sm.,Pinaceae,Pinaceae,Canary Island Pine,,98,EXACT
+Pinus muricata,Pinus muricata D.Don,Pinaceae ,Pinaceae,Bishop Pine,,97,EXACT
+Pinus pinea,Pinus pinea L.,Pinaceae,Pinaceae,Italian Stone Pine,,98,EXACT
+Pinus radiata,Pinus radiata D.Don,Pinaceae ,Pinaceae,Monterey Pine,,99,EXACT
+Pinus thunbergii,Pinus thunbergii Parl.,Pinaceae,Pinaceae,Japanese Black Pine,,97,EXACT
+Pinus torreyana,Pinus torreyana Parry ex Carrière,Pinaceae,Pinaceae,Torrey Pine,,97,EXACT
+Pittosporum undulatum,Pittosporum undulatum Vent.,Pittosporaceae,Pittosporaceae,Mock Orange,,97,EXACT
+Platanus racemosa,Platanus racemosa Nutt. ex Audubon,Platanaceae,Platanaceae,Western Sycamore,,97,EXACT
+Podocarpus macrophyllus,Podocarpus macrophyllus (Thunb.) Sweet,Podocarpaceae,Podocarpaceae,Yew Tree,,98,EXACT
+Grevillea robusta,Grevillea robusta A.Cunn. ex R.Br.,Proteaceae,Proteaceae,Silk Oak,,98,EXACT
+Frangula californica,Frangula californica (Eschsch.) A.Gray,Rhamnaceae,Rhamnaceae,California Coffee Berry,,99,EXACT
+Eriobotrya japonica,Eriobotrya japonica (Thunb.) Lindl.,Rosaceae,Rosaceae,Loquat,,98,EXACT
+Heteromeles arbutifolia,Heteromeles arbutifolia (Lindl.) M.Roem.,Rosaceae,Rosaceae,Toyon,,98,EXACT
+Lyonothamnus floribundus,Lyonothamnus floribundus A.Gray,Rosaceae,Rosaceae,Catalina Ironwood,,99,EXACT
+Malus pumila,Malus Mill.,Rosaceae,Rosaceae,Apple,,97,HIGHERRANK
+Prunus cerasifera,Prunus cerasifera Ehrh.,Rosaceae,Rosaceae,Red Flowering Plum,,98,EXACT
+Pyrus calleryana,Pyrus calleryana Decne.,Rosaceae,Rosaceae,Ornamental Pear ,,98,EXACT
+Geijera parviflora,Geijera parviflora Lindl.,Rutaceae,Rutaceae,Australian Willow,,99,EXACT
+Salix lasiolepis,Salix lasiolepis Benth.,Salicaceae,Salicaceae,Arroyo Willow,,99,EXACT
+Acer palmatum,Acer palmatum Thunb.,Sapindaceae,Sapindaceae,Japanese Maple,,97,EXACT
+Aesculus californica,Aesculus californica (Spach) Nutt.,Sapindaceae,Sapindaceae,Buckeye,,99,EXACT
+Cupaniopsis anacardiodes,Cupaniopsis anacardioides (A.Rich.) Radlk.,Sapindaceae,Sapindaceae,Carrotwood Tree,,95,FUZZY
+Koelreuteria bipinnata,Koelreuteria bipinnata Franch.,Sapindaceae,Sapindaceae,Chinese Flame Tree,,99,EXACT
+Metasequoia glyptostroboides,Metasequoia glyptostroboides H.H.Hu & W.C.Cheng,Taxodiaceae,Cupressaceae,Dawn Redwood,,99,EXACT
+Sequoia sempervirens,Sequoia sempervirens (D.Don) Endl.,Taxodiaceae,Cupressaceae,Coast Redwood,,99,EXACT
+Sequoiadendron giganteum,Sequoiadendron giganteum (Lindl.) J.T.Buchholz,Taxodiaceae,Cupressaceae,Giant Sequoia,,99,EXACT
+Ulmus procera,"Ulmus procera K.D.Koenig & Sims, 1796",Ulmaceae,Ulmaceae,English Elm,,97,EXACT
+Morella californica,Morella californica (Cham. & Schltdl.) Wilbur,Myricaceae,Myricaceae,Pacific Wax Myrtle,,99,EXACT
+Butia odorata ,Butia odorata (Barb.Rodr.) Noblick,Arecaceae,Arecaceae,Pindo palm ,,99,EXACT
+Pinus halepensis,Pinus halepensis Mill.,Pinaceae,Pinaceae,Aleppo pine,,98,EXACT
+Myoporum laetum,Myoporum laetum G.Forst.,Scrophulariaceae,Scrophulariaceae,Myoporum ,,99,EXACT
+Pyrus communis,Pyrus communis L.,Rosaceae,Rosaceae,Common Pear,,97,EXACT
