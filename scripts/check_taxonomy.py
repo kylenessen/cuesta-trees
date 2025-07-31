@@ -2,12 +2,13 @@
 #
 # This script reads a species list from a specified table within a geopackage file,
 # checks each species against the GBIF backbone taxonomy via their API, and
-# reports any discrepancies in scientific name and family.
+# reports any discrepancies in scientific name and family. It resolves synonyms
+# to their accepted name.
 # The original common name is persisted in the output for context.
 #
 # Author: Gemini
 # Date: 2024-07-31
-# Version: 4.0
+# Version: 5.0
 
 import geopandas as gpd
 import pandas as pd
@@ -25,14 +26,16 @@ OUTPUT_CSV_NAME = "taxonomic_discrepancies.csv"
 
 def get_best_gbif_match(scientific_name: str) -> dict | None:
     """
-    Queries the GBIF API for a given scientific name and returns the best match.
+    Queries the GBIF API for a given scientific name and returns the best
+    ACCEPTED taxonomic match. If the name is a synonym, it resolves to the
+    accepted name.
 
     Args:
         scientific_name: The scientific name of the species to look up.
 
     Returns:
-        A dictionary containing the best match data from GBIF, or None if no
-        match is found or an error occurs.
+        A dictionary containing the best accepted match data from GBIF, or
+        None if no accepted match is found or an error occurs.
     """
     if not scientific_name or pd.isna(scientific_name):
         return None
@@ -41,16 +44,44 @@ def get_best_gbif_match(scientific_name: str) -> dict | None:
     match_url = f"{GBIF_API_URL}/match"
     params = {"name": scientific_name, "strict": "false", "verbose": "true"}
     try:
-        # A minimal delay to be respectful to the API; adjust as needed for your use case
-        time.sleep(0.01)
-        response = requests.get(match_url, params=params, timeout=10)
+        # A short delay to be respectful to the API
+        time.sleep(0.05)
+        response = requests.get(match_url, params=params, timeout=30)
         response.raise_for_status()  # Raises an HTTPError for bad responses
-        data = response.json()
+        match_data = response.json()
 
-        # Check for a conclusive match from the API
-        if data.get("matchType") != "NONE":
-            return data
-        return None
+        # If GBIF returns no match, we stop here.
+        if match_data.get("matchType") == "NONE":
+            return None
+
+        # Check the taxonomic status. We only want 'ACCEPTED' names.
+        status = match_data.get("status")
+
+        if status == "ACCEPTED":
+            # The name is accepted, we can return the data directly.
+            return match_data
+
+        elif status == "SYNONYM":
+            # The name is a synonym. We must fetch the accepted taxon's details.
+            accepted_key = match_data.get("speciesKey") # Key for the accepted name
+            if not accepted_key:
+                return None # Should not happen, but good to be safe
+
+            accepted_taxon_url = f"{GBIF_API_URL}/{accepted_key}"
+            time.sleep(0.05) # Another small delay for the second API call
+            accepted_response = requests.get(accepted_taxon_url, timeout=30)
+            accepted_response.raise_for_status()
+            accepted_data = accepted_response.json()
+            
+            # Persist the original confidence and match type for context in the report
+            accepted_data['confidence'] = match_data.get('confidence')
+            accepted_data['matchType'] = match_data.get('matchType')
+            return accepted_data
+
+        else:
+            # The status is DOUBTFUL, PROPARTE, etc. We treat these as no valid match.
+            return None
+
     except requests.exceptions.RequestException as e:
         print(f"\nAPI request failed for '{scientific_name}': {e}")
         return None
@@ -91,17 +122,10 @@ def check_taxonomy(geopackage_path: str, table_name: str):
 
             # --- 3. Compare Data and Record Discrepancies ---
             # Comparisons are case-insensitive and stripped of whitespace for robustness.
-            if original_sci_name is not None and gbif_sci_name is not None:
-                sci_name_mismatch = original_sci_name.strip().lower() != gbif_sci_name.strip().lower()
-            if original_family is not None and gbif_family is not None:
-                family_mismatch = original_family.strip().lower() != gbif_family.strip().lower()
-            else:
-                family_mismatch = False
-
-            if original_family is not None and gbif_family is not None:
-                family_mismatch = original_family.strip().lower() != gbif_family.strip().lower()
-            else:
-                family_mismatch = False
+            sci_name_mismatch = (original_sci_name.strip().lower() != gbif_sci_name.strip().lower()
+                                 if original_sci_name and gbif_sci_name else False)
+            family_mismatch = (original_family.strip().lower() != gbif_family.strip().lower()
+                               if original_family and gbif_family else False)
 
             # Common names are NOT used for comparison, only for output.
             if sci_name_mismatch or family_mismatch:

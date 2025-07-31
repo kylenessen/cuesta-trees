@@ -28,11 +28,14 @@
   },
   "created": "2025-07-31T03:56:45Z",
   "creator": 1,
-  "disk_usage": 6471820,
+  "disk_usage": 6567858,
   "files": [
     {
       "checksum": "93e9e0c68df8dc84f37fee3b9cb114c57d5fcdc2",
-      "mtime": "2025-07-31T04:00:32Z",
+      "diff": null,
+      "history": {},
+      "location": "v2/20250730_210016.jpg",
+      "mtime": "2025-07-31T04:00:32.454414Z",
       "path": "20250730_210016.jpg",
       "size": 6277513
     },
@@ -40,24 +43,56 @@
       "checksum": "d9c2f94b8e65f5e4bca91824489234d49a76a85d",
       "diff": {
         "checksum": "d849f8be21bbe5bdb2101565454f4b79319ec416",
+        "location": "v2/Survey_points.gpkg-diff-73c5b607-ac92-49da-8826-479d59f41a49",
         "path": "Survey_points.gpkg-diff-73c5b607-ac92-49da-8826-479d59f41a49",
         "size": 130
       },
-      "mtime": "2025-07-31T04:00:32Z",
+      "history": {},
+      "location": "v2/Survey_points.gpkg",
+      "mtime": "2025-07-31T04:00:32.454414Z",
       "path": "Survey_points.gpkg",
-      "size": 98304
+      "size": 98304,
+      "origin_checksum": "d9c2f94b8e65f5e4bca91824489234d49a76a85d"
     },
     {
-      "checksum": "8699a5157e142bfe5250699ae4751d7990bc4c6e",
-      "mtime": "2025-07-31T16:26:13Z",
-      "path": "cuesta-trees.gpkg",
-      "size": 73728
-    },
-    {
-      "checksum": "3d87e1fa9deec0e83bffe8e9b8e5018d71a0d912",
-      "mtime": "2025-07-31T16:26:13Z",
+      "checksum": "eb283c9bcace548a6c74e17c295e3cb7fa553e8b",
+      "diff": null,
+      "history": {},
+      "location": "v6/cuesta-trees.qgz",
+      "mtime": "2025-07-31T21:18:44.155316Z",
       "path": "cuesta-trees.qgz",
-      "size": 22275
+      "size": 28201
+    },
+    {
+      "checksum": "b180ce4ad01310412e1c14486240d60df6f33273",
+      "diff": {
+        "checksum": "809302de874f9c804926caeb5f0fa381440814dc",
+        "location": "v7/cuesta-trees.gpkg-diff-3732e4be-7bea-4ac1-9900-b9922277a714",
+        "path": "cuesta-trees.gpkg-diff-3732e4be-7bea-4ac1-9900-b9922277a714",
+        "size": 55
+      },
+      "history": {
+        "v7": {
+          "change": "updated",
+          "checksum": "b180ce4ad01310412e1c14486240d60df6f33273",
+          "diff": {
+            "checksum": "809302de874f9c804926caeb5f0fa381440814dc",
+            "path": "cuesta-trees.gpkg-diff-3732e4be-7bea-4ac1-9900-b9922277a714",
+            "size": 55
+          },
+          "expiration": "2025-08-02T21:19:20Z",
+          "path": "cuesta-trees.gpkg",
+          "size": 163840
+        }
+      },
+      "location": "v7/cuesta-trees.gpkg",
+      "mtime": "2025-07-31T21:19:20.902349Z",
+      "path": "cuesta-trees.gpkg",
+      "size": 163840,
+      "origin_checksum": "45f87874d02d5b26a060d17297fdb144a7f3c328",
+      "diffs": [
+        "cuesta-trees.gpkg-diff-3732e4be-7bea-4ac1-9900-b9922277a714"
+      ]
     }
   ],
   "id": "55652f5d-ce68-4bbf-b24e-bc9d37099eb2",
@@ -75,8 +110,8 @@
     "valid_qgis",
     "input_use"
   ],
-  "updated": "2025-07-31T16:26:13Z",
+  "updated": "2025-07-31T21:19:20Z",
   "uploads": [],
-  "version": "v4",
+  "version": "v7",
   "workspace_id": 1
 }
