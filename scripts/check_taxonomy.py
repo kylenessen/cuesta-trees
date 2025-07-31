@@ -6,6 +6,7 @@
 #
 # Author: Gemini
 # Date: 2024-07-31
+# Version: 2.0
 
 import geopandas as gpd
 import pandas as pd
@@ -13,10 +14,11 @@ import requests
 import argparse
 import os
 from tqdm import tqdm
+import time
 
 # --- Configuration ---
-# The base URL for the GBIF species API's name matching service.
-GBIF_API_URL = "https://api.gbif.org/v1/species/match"
+# The base URL for the GBIF species API.
+GBIF_API_URL = "https://api.gbif.org/v1/species"
 # The name of the output file for discrepancies.
 OUTPUT_CSV_NAME = "taxonomic_discrepancies.csv"
 
@@ -34,10 +36,12 @@ def get_best_gbif_match(scientific_name: str) -> dict | None:
     if not scientific_name or pd.isna(scientific_name):
         return None
 
+    # The /match endpoint is used to find the best taxonomic match
+    match_url = f"{GBIF_API_URL}/match"
     params = {"name": scientific_name, "strict": "false", "verbose": "true"}
     try:
-        response = requests.get(GBIF_API_URL, params=params, timeout=30)
-        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx or 5xx)
+        response = requests.get(match_url, params=params, timeout=30)
+        response.raise_for_status()  # Raises an HTTPError for bad responses
         data = response.json()
 
         # Check for a conclusive match from the API
@@ -48,23 +52,38 @@ def get_best_gbif_match(scientific_name: str) -> dict | None:
         print(f"\nAPI request failed for '{scientific_name}': {e}")
         return None
 
-def find_english_common_name(vernacular_names: list) -> str | None:
+def get_english_common_name_by_key(usage_key: int) -> str | None:
     """
-    Searches a list of vernacular names for the first English name.
+    Fetches vernacular names for a given GBIF usageKey and returns the first
+    English common name found.
 
     Args:
-        vernacular_names: A list of vernacular name objects from the GBIF API.
+        usage_key: The GBIF usageKey for the species.
 
     Returns:
-        The first English common name found, or None if none exist.
+        The first English common name found, or None if none exist or an error occurs.
     """
-    if not vernacular_names:
+    if not usage_key:
         return None
-    for name_info in vernacular_names:
-        # Prioritize English names, but fall back to any if language isn't specified
-        if name_info.get("language") == "eng" or not name_info.get("language"):
-            return name_info.get("vernacularName")
-    return None
+
+    # This endpoint specifically retrieves all vernacular names for a given taxon key.
+    vernacular_url = f"{GBIF_API_URL}/{usage_key}/vernacularNames"
+    try:
+        # A short delay to be respectful to the API
+        time.sleep(0.1)
+        response = requests.get(vernacular_url, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+
+        for name_info in data.get("results", []):
+            # Prioritize English names
+            if name_info.get("language") == "eng":
+                return name_info.get("vernacularName")
+        return None # Return None if no English name is found
+    except requests.exceptions.RequestException as e:
+        print(f"\nCould not fetch common name for usageKey {usage_key}: {e}")
+        return None
+
 
 def check_taxonomy(geopackage_path: str, table_name: str):
     """
@@ -87,24 +106,26 @@ def check_taxonomy(geopackage_path: str, table_name: str):
 
     # --- 2. Process Species and Find Discrepancies ---
     discrepancies = []
-    # Use tqdm for a progress bar during the API calls
     for index, row in tqdm(gdf.iterrows(), total=gdf.shape[0], desc="Checking Species"):
         original_sci_name = row.get("scientific_name")
         original_family = row.get("family")
         original_common_name = row.get("common_name")
 
-        # Get the best match from GBIF
         gbif_match = get_best_gbif_match(original_sci_name)
 
         if gbif_match:
-            gbif_sci_name = gbif_match.get("scientificName")
+            # Use 'canonicalName' for the clean name without author attribution.
+            gbif_sci_name = gbif_match.get("canonicalName")
             gbif_family = gbif_match.get("family")
-            gbif_common_name = find_english_common_name(gbif_match.get("vernacularNames", []))
+            
+            # Fetch common name using the more reliable dedicated endpoint.
+            usage_key = gbif_match.get("usageKey")
+            gbif_common_name = get_english_common_name_by_key(usage_key)
 
             # --- 3. Compare Data and Record Discrepancies ---
-            sci_name_mismatch = original_sci_name != gbif_sci_name
-            family_mismatch = original_family != gbif_family
-            # Common name check is case-insensitive
+            # Comparisons are case-insensitive for robustness.
+            sci_name_mismatch = original_sci_name.lower() != gbif_sci_name.lower() if original_sci_name and gbif_sci_name else False
+            family_mismatch = original_family.lower() != gbif_family.lower() if original_family and gbif_family else False
             common_name_mismatch = (
                 original_common_name and
                 gbif_common_name and
@@ -135,7 +156,6 @@ def check_taxonomy(geopackage_path: str, table_name: str):
 
 if __name__ == "__main__":
     # --- Command-Line Argument Parsing ---
-    # This allows you to run the script from the terminal and pass the file path.
     parser = argparse.ArgumentParser(
         description="Check species taxonomy against the GBIF backbone.",
         epilog=(
@@ -163,9 +183,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Check if the file exists before running the main function
     if not os.path.exists(args.geopackage_path):
         print(f"Error: The file '{args.geopackage_path}' was not found.")
     else:
         check_taxonomy(args.geopackage_path, args.table)
-
