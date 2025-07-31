@@ -3,10 +3,11 @@
 # This script reads a species list from a specified table within a geopackage file,
 # checks each species against the GBIF backbone taxonomy via their API, and
 # reports any discrepancies in scientific name and family.
+# The original common name is persisted in the output for context.
 #
 # Author: Gemini
 # Date: 2024-07-31
-# Version: 3.0
+# Version: 4.0
 
 import geopandas as gpd
 import pandas as pd
@@ -78,6 +79,8 @@ def check_taxonomy(geopackage_path: str, table_name: str):
     for index, row in tqdm(gdf.iterrows(), total=gdf.shape[0], desc="Checking Species"):
         original_sci_name = row.get("scientific_name")
         original_family = row.get("family")
+        # Get the original common name to persist it in the output.
+        original_common_name = row.get("common_name")
 
         gbif_match = get_best_gbif_match(original_sci_name)
 
@@ -93,8 +96,10 @@ def check_taxonomy(geopackage_path: str, table_name: str):
             family_mismatch = (original_family.strip().lower() != gbif_family.strip().lower()
                                if original_family and gbif_family else False)
 
+            # Common names are NOT used for comparison, only for output.
             if sci_name_mismatch or family_mismatch:
                 discrepancies.append({
+                    "original_common_name": original_common_name,
                     "original_scientific_name": original_sci_name,
                     "gbif_scientific_name": gbif_sci_name,
                     "original_family": original_family,
@@ -107,6 +112,12 @@ def check_taxonomy(geopackage_path: str, table_name: str):
     if discrepancies:
         print(f"\nFound {len(discrepancies)} discrepancies. Saving to '{OUTPUT_CSV_NAME}'...")
         discrepancies_df = pd.DataFrame(discrepancies)
+        # Reorder columns for clarity in the final CSV
+        column_order = [
+            "original_common_name", "original_scientific_name", "gbif_scientific_name",
+            "original_family", "gbif_family", "gbif_match_confidence", "gbif_match_type"
+        ]
+        discrepancies_df = discrepancies_df[column_order]
         discrepancies_df.to_csv(OUTPUT_CSV_NAME, index=False)
         print("Discrepancy report generated successfully.")
     else:

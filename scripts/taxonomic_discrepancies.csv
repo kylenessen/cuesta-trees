@@ -1,14 +1,14 @@
-original_scientific_name,gbif_scientific_name,original_family,gbif_family,gbif_match_confidence,gbif_match_type
-Sambucus nigra,Sambucus nigra,Adoxaceae,Viburnaceae,97,EXACT
-Yucca elephantipes,Yucca elephantipes,Agavaceae,Asparagaceae,97,EXACT
-Rhus lancea,Searsia,Anacardiaceae,Anacardiaceae,97,HIGHERRANK
-Xylosma congestum,Xylosma congesta,Flacourtiaceae,Salicaceae,96,FUZZY
-Escallonia rubra,Escallonia rubra,Grossulariaceae,Escalloniaceae,97,EXACT
-Liquidambar styraciflua,Liquidambar styraciflua,Hamamelidaceae,Altingiaceae,99,EXACT
-Lagerstroemia spp.,Lagerstroemia,Lythraceae,Lythraceae,94,HIGHERRANK
-Magnolia x soulangeana,Magnolia soulangeana,Magnoliaceae,Magnoliaceae,97,EXACT
-Malus pumila,Malus,Rosaceae,Rosaceae,97,HIGHERRANK
-Cupaniopsis anacardiodes,Cupaniopsis anacardioides,Sapindaceae,Sapindaceae,95,FUZZY
-Metasequoia glyptostroboides,Metasequoia glyptostroboides,Taxodiaceae,Cupressaceae,99,EXACT
-Sequoia sempervirens,Sequoia sempervirens,Taxodiaceae,Cupressaceae,99,EXACT
-Sequoiadendron giganteum,Sequoiadendron giganteum,Taxodiaceae,Cupressaceae,99,EXACT
+original_common_name,original_scientific_name,gbif_scientific_name,original_family,gbif_family,gbif_match_confidence,gbif_match_type
+Blue Elderberry,Sambucus nigra,Sambucus nigra,Adoxaceae,Viburnaceae,97,EXACT
+Giant Yucca,Yucca elephantipes,Yucca elephantipes,Agavaceae,Asparagaceae,97,EXACT
+African Sumac,Rhus lancea,Searsia,Anacardiaceae,Anacardiaceae,97,HIGHERRANK
+Shiny Xylosma (removed),Xylosma congestum,Xylosma congesta,Flacourtiaceae,Salicaceae,96,FUZZY
+Crimson Spire,Escallonia rubra,Escallonia rubra,Grossulariaceae,Escalloniaceae,97,EXACT
+American Sweetgum,Liquidambar styraciflua,Liquidambar styraciflua,Hamamelidaceae,Altingiaceae,99,EXACT
+Crape Myrtle,Lagerstroemia spp.,Lagerstroemia,Lythraceae,Lythraceae,94,HIGHERRANK
+Saucer Magnolia,Magnolia x soulangeana,Magnolia soulangeana,Magnoliaceae,Magnoliaceae,97,EXACT
+Apple,Malus pumila,Malus,Rosaceae,Rosaceae,97,HIGHERRANK
+Carrotwood Tree,Cupaniopsis anacardiodes,Cupaniopsis anacardioides,Sapindaceae,Sapindaceae,95,FUZZY
+Dawn Redwood,Metasequoia glyptostroboides,Metasequoia glyptostroboides,Taxodiaceae,Cupressaceae,99,EXACT
+Coast Redwood,Sequoia sempervirens,Sequoia sempervirens,Taxodiaceae,Cupressaceae,99,EXACT
+Giant Sequoia,Sequoiadendron giganteum,Sequoiadendron giganteum,Taxodiaceae,Cupressaceae,99,EXACT
