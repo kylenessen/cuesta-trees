@@ -1,0 +1,15 @@
+sign_scientific_name,sign_common_name,master_common_name,sign_family,master_family,reasons
+Sambucus nigra,Blue Elderberry,,Adoxaceae,,Scientific name not found in master list.
+Yucca elephantipes,Giant Yucca,,Agavaceae,,Scientific name not found in master list.
+Rhus lancea,African Sumac,,Anacardiaceae,,Scientific name not found in master list.
+Xylosma congestum,Shiny Xylosma (removed),,Flacourtiaceae,,Scientific name not found in master list.
+Escallonia rubra,Crimson Spire,Crimson Spire,Grossulariaceae,Escalloniaceae,Family mismatch.
+Liquidambar styraciflua,American Sweetgum,American Sweetgum,Hamamelidaceae,Altingiaceae,Family mismatch.
+Magnolia x soulangeana,Saucer Magnolia,,Magnoliaceae,,Scientific name not found in master list.
+Eriobotrya japonica,Loquat,,Rosaceae,,Scientific name not found in master list.
+Malus pumila,Apple,,Rosaceae,,Scientific name not found in master list.
+Cupaniopsis anacardiodes,Carrotwood Tree,,Sapindaceae,,Scientific name not found in master list.
+Metasequoia glyptostroboides,Dawn Redwood,Dawn Redwood,Taxodiaceae,Cupressaceae,Family mismatch.
+Sequoia sempervirens,Coast Redwood,Coast Redwood,Taxodiaceae,Cupressaceae,Family mismatch.
+Sequoiadendron giganteum,Giant Sequoia,Giant Sequoia,Taxodiaceae,Cupressaceae,Family mismatch.
+Magnolia x 'Stellar Ruby',Stellar Ruby Magnolia,,Magnoliaceae,,Scientific name not found in master list.
