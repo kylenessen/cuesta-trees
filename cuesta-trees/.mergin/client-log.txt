@@ -924,3 +924,609 @@ Modified: observations, sign_inventory_current, species_master_2025_05_28, speci
 2025-07-31 20:09:11,793 Finishing transaction c14a3aae-9a0c-4c20-ac5a-c3a3cea6803d
 2025-07-31 20:09:12,091 updating basefile (diff) for: cuesta-trees.gpkg
 2025-07-31 20:09:12,096 --- push finished - new project version v19
+2025-07-31 20:44:35,847 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:44:35,850 checkpoint - return value: (0, 39, 39)
+2025-07-31 20:44:35,853 checkpoint - new size 196608 checksum e4cfebdedd6a2a18aa8f35b26d2fb20a358397cf
+2025-07-31 20:44:35,854 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:44:35,854 checkpoint - return value: (0, 0, 0)
+2025-07-31 20:44:35,856 checkpoint - new size 98304 checksum 6d4702772bade94762a8b1d4e092154cf3f74975
+2025-07-31 20:44:35,866 GEODIFF: GeoPackage Table schemas are not the same for table: sign_inventory_current
+2025-07-31 20:44:35,867 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 20:44:36,227 Mergin Maps plugin: Unable to detect changes for cuesta-trees.gpkg
+2025-07-31 20:44:38,637 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:44:38,638 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:44:38,641 checkpoint - new size 196608 checksum f88ad1d937a9fc65a119702ca04e79a1791891b8
+2025-07-31 20:44:38,641 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:44:38,642 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:44:38,644 checkpoint - new size 98304 checksum aec92bfdedae8529fa8f2d7f35adede0cb5058e8
+2025-07-31 20:44:38,648 GEODIFF: GeoPackage Table schemas are not the same for table: sign_inventory_current
+2025-07-31 20:44:38,648 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 20:44:38,910 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:44:38,910 --- start pull mergin/cuesta-trees
+2025-07-31 20:44:39,050 got project info: local version v19 / server version v19
+2025-07-31 20:44:39,050 --- pull - nothing to do (already at server version)
+2025-07-31 20:44:39,551 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:44:39,551 --- start push mergin/cuesta-trees
+2025-07-31 20:44:39,681 got project info: local version v19 / server version v19
+2025-07-31 20:44:39,853 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:44:39,855 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:44:39,858 checkpoint - new size 196608 checksum 751055fe9c053596be5c99c551003d582351b813
+2025-07-31 20:44:39,858 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:44:39,859 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:44:39,860 checkpoint - new size 98304 checksum 7ce30464e737fdb4365031a4a283ea5c543f4244
+2025-07-31 20:44:39,864 GEODIFF: GeoPackage Table schemas are not the same for table: sign_inventory_current
+2025-07-31 20:44:39,864 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 20:44:40,092 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '8d1c22d544ef96b1471325dcd9198600ddfb8425',
+              'chunks': ['aa9e0a1d-d451-41b6-a81a-60bf6de26921'],
+              'mtime': datetime.datetime(2025, 7, 31, 20, 44, 17, 92710, tzinfo=tzlocal()),
+              'origin_checksum': 'cfab681de61792b0d5fe0c6dcaadd70a4e3dc939',
+              'path': 'cuesta-trees.qgz',
+              'size': 33716},
+             {'checksum': '751055fe9c053596be5c99c551003d582351b813',
+              'chunks': ['31a4e233-b5ad-4459-91a5-99c11fdb2481'],
+              'mtime': datetime.datetime(2025, 7, 31, 20, 44, 38, 638565, tzinfo=tzlocal()),
+              'origin_checksum': '6eee023d8c637431a68ca2ee0d59fcfba56313d9',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 20:44:40,093 Making a temporary copy (full upload): cuesta-trees.gpkg
+2025-07-31 20:44:40,236 got transaction ID 6bef8dc2-017d-4d89-b937-20b832e89774
+2025-07-31 20:44:40,237 will upload 2 items with total size 230324
+2025-07-31 20:44:40,241 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 20:44:40,242 Uploading /var/folders/ww/j283g5cd3bd9k7z7_f2mxslc0000gn/T/python-api-client-gr7_zgtl/cuesta-trees.gpkg part=0
+2025-07-31 20:44:40,520 Upload finished: /var/folders/ww/j283g5cd3bd9k7z7_f2mxslc0000gn/T/python-api-client-gr7_zgtl/cuesta-trees.gpkg
+2025-07-31 20:44:43,048 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 20:44:43,109 Finishing transaction 6bef8dc2-017d-4d89-b937-20b832e89774
+2025-07-31 20:44:43,306 updating basefile (copy) for: cuesta-trees.gpkg
+2025-07-31 20:44:43,308 GEODIFF: MakeCopySqlite: Removed existing destination database: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg
+2025-07-31 20:44:43,311 --- push finished - new project version v20
+2025-07-31 20:46:07,074 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:46:07,076 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:46:07,079 checkpoint - new size 196608 checksum 98a9658be10a0898d1a54c1e22535fdfc0d89654
+2025-07-31 20:46:07,079 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:46:07,079 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:46:07,081 checkpoint - new size 98304 checksum ca133b962d290237399b2ee59526f0d0463b6765
+2025-07-31 20:46:08,915 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:46:08,917 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:46:08,920 checkpoint - new size 196608 checksum 58dba171d7eb0ce045aba23d210605caa9c3a868
+2025-07-31 20:46:08,920 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:46:08,921 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:46:08,922 checkpoint - new size 98304 checksum b726c8b833e219ac8c28faf7ed48c34475e40357
+2025-07-31 20:46:09,187 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:46:09,187 --- start pull mergin/cuesta-trees
+2025-07-31 20:46:09,323 got project info: local version v20 / server version v20
+2025-07-31 20:46:09,323 --- pull - nothing to do (already at server version)
+2025-07-31 20:46:09,738 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:46:09,738 --- start push mergin/cuesta-trees
+2025-07-31 20:46:09,871 got project info: local version v20 / server version v20
+2025-07-31 20:46:10,020 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:46:10,022 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:46:10,025 checkpoint - new size 196608 checksum 0dc7df12bbfde9af35138d7ba8bcc935a7cfcaf8
+2025-07-31 20:46:10,025 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:46:10,026 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:46:10,027 checkpoint - new size 98304 checksum 505315fd7fbea9f053226155c211165c30fb57f3
+2025-07-31 20:46:10,034 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': 'aa1201b45f3989c2f30f39b3d3a2a4b82b0cfafa',
+              'chunks': ['8ac1d874-c1fd-4803-8174-8bfd9ad6ba08'],
+              'mtime': datetime.datetime(2025, 7, 31, 20, 46, 5, 673541, tzinfo=tzlocal()),
+              'origin_checksum': '8d1c22d544ef96b1471325dcd9198600ddfb8425',
+              'path': 'cuesta-trees.qgz',
+              'size': 35265}]}
+2025-07-31 20:46:10,195 got transaction ID 5fd7a24d-ea1f-4d95-b75e-d1bcb77f9abf
+2025-07-31 20:46:10,195 will upload 1 items with total size 35265
+2025-07-31 20:46:10,197 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 20:46:10,353 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 20:46:10,407 Finishing transaction 5fd7a24d-ea1f-4d95-b75e-d1bcb77f9abf
+2025-07-31 20:46:10,561 --- push finished - new project version v21
+2025-07-31 20:47:32,391 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:47:32,393 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:47:32,396 checkpoint - new size 196608 checksum a082114aed2cc2f07207d445aec1f95960e14568
+2025-07-31 20:47:32,396 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:47:32,396 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:47:32,398 checkpoint - new size 98304 checksum 284a5309491bdb45e6449a4a5ec21b2da432af5c
+2025-07-31 20:47:35,762 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:47:35,764 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:47:35,766 checkpoint - new size 196608 checksum 90f306ae1de3f3040cc6aff4e1610e385f262439
+2025-07-31 20:47:35,767 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:47:35,767 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:47:35,769 checkpoint - new size 98304 checksum 5f43ae6eda4dbfeda8b516ee54201f580665c21d
+2025-07-31 20:47:36,036 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:47:36,036 --- start pull mergin/cuesta-trees
+2025-07-31 20:47:38,636 got project info: local version v21 / server version v22
+2025-07-31 20:47:38,639 pull changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '245ccfe843451c67d93cd528db0ce0bb5af898b8',
+              'diff': {'checksum': '90f1727786fccde6d3b97037191528ef4e12d4a5',
+                       'location': 'v22/cuesta-trees.gpkg-diff-f85003b4-10bc-48bf-8913-c68c5bb872fa',
+                       'path': 'cuesta-trees.gpkg-diff-f85003b4-10bc-48bf-8913-c68c5bb872fa',
+                       'size': 188},
+              'diffs': ['cuesta-trees.gpkg-diff-f85003b4-10bc-48bf-8913-c68c5bb872fa'],
+              'history': {'v22': {'change': 'updated',
+                                  'checksum': '245ccfe843451c67d93cd528db0ce0bb5af898b8',
+                                  'diff': {'checksum': '90f1727786fccde6d3b97037191528ef4e12d4a5',
+                                           'path': 'cuesta-trees.gpkg-diff-f85003b4-10bc-48bf-8913-c68c5bb872fa',
+                                           'size': 188},
+                                  'expiration': '2025-08-03T03:47:27Z',
+                                  'path': 'cuesta-trees.gpkg',
+                                  'size': 196608}},
+              'location': 'v22/cuesta-trees.gpkg',
+              'mtime': '2025-08-01T03:47:27.684622Z',
+              'origin_checksum': '79eda50a39221e4dc703efd33037d769edf8eda9',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 20:47:38,640 will download 1 chunks, total size 188
+2025-07-31 20:47:38,640 Downloading cuesta-trees.gpkg version=v22 diff=True part=0
+2025-07-31 20:47:39,192 Download finished: cuesta-trees.gpkg
+2025-07-31 20:47:39,212 finalizing pull
+2025-07-31 20:47:39,236 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:47:39,237 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:47:39,240 checkpoint - new size 196608 checksum a382733e073c42a4e4da4784524f28ae2757fef1
+2025-07-31 20:47:39,240 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:47:39,241 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:47:39,242 checkpoint - new size 98304 checksum c2691b313fb1daaf9c53dbf57358e4af6bbbe968
+2025-07-31 20:47:39,263 updating file without rebase: cuesta-trees.gpkg
+2025-07-31 20:47:39,273 update successful
+2025-07-31 20:47:39,274 --- pull finished -- at version v22
+2025-07-31 20:47:39,548 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:47:39,548 --- start push mergin/cuesta-trees
+2025-07-31 20:47:39,691 got project info: local version v22 / server version v22
+2025-07-31 20:47:39,852 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:47:39,854 checkpoint - return value: (0, 51, 51)
+2025-07-31 20:47:39,857 checkpoint - new size 196608 checksum 47662cf03cbe624817d3e6081966eb9fdfa1f623
+2025-07-31 20:47:39,857 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:47:39,858 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:47:39,859 checkpoint - new size 98304 checksum 736a6231793d34011d30a6f49a32f54ed14cdf8b
+2025-07-31 20:47:39,866 push changes:
+{'added': [], 'removed': [], 'renamed': [], 'updated': []}
+2025-07-31 20:47:39,867 --- push mergin/cuesta-trees - nothing to do
+2025-07-31 20:50:30,930 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:50:30,932 checkpoint - return value: (0, 60, 60)
+2025-07-31 20:50:30,935 checkpoint - new size 196608 checksum 1005f4078100adcaf06cd8dc276a012448268f14
+2025-07-31 20:50:30,935 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:50:30,936 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:50:30,937 checkpoint - new size 98304 checksum 42fc39a9f795e699742773d50fe2877eb56e373a
+2025-07-31 20:50:34,370 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:50:34,371 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:50:34,374 checkpoint - new size 196608 checksum 88ba64638d91fdb8fe9e428394ec1893a3b8a38a
+2025-07-31 20:50:34,374 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:50:34,375 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:50:34,376 checkpoint - new size 98304 checksum 5708814ceb3169970d4b87840f659a1e49f5a8fa
+2025-07-31 20:50:34,639 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:50:34,640 --- start pull mergin/cuesta-trees
+2025-07-31 20:50:35,217 got project info: local version v22 / server version v22
+2025-07-31 20:50:35,217 --- pull - nothing to do (already at server version)
+2025-07-31 20:50:36,080 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:50:36,080 --- start push mergin/cuesta-trees
+2025-07-31 20:50:36,222 got project info: local version v22 / server version v22
+2025-07-31 20:50:36,468 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:50:36,470 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:50:36,472 checkpoint - new size 196608 checksum 89b15a451361bb1f861f48dc1116fd56295e5ff0
+2025-07-31 20:50:36,473 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:50:36,473 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:50:36,475 checkpoint - new size 98304 checksum e183f1b2ec185fa1d86d6df3e88e8c4e989990cf
+2025-07-31 20:50:36,483 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '4b3103ac917950ae09373555ca454c35e28b675d',
+              'chunks': ['45813234-4fdc-42f5-ab3d-165d02386011'],
+              'mtime': datetime.datetime(2025, 7, 31, 20, 50, 29, 375546, tzinfo=tzlocal()),
+              'origin_checksum': 'aa1201b45f3989c2f30f39b3d3a2a4b82b0cfafa',
+              'path': 'cuesta-trees.qgz',
+              'size': 35278},
+             {'checksum': '245ccfe843451c67d93cd528db0ce0bb5af898b8',
+              'chunks': ['8a9c01a4-b132-4b62-bdab-acdbbc521364'],
+              'diff': {'checksum': 'aa0125b0fc7f48d3fcc82451668d37bfabc69e6f',
+                       'mtime': datetime.datetime(2025, 7, 31, 20, 50, 36, 479968, tzinfo=tzlocal()),
+                       'path': 'cuesta-trees.gpkg-diff-422a9f19-b1f7-4760-891e-42f90004cdb7',
+                       'size': 188},
+              'mtime': datetime.datetime(2025, 7, 31, 20, 50, 36, 469969, tzinfo=tzlocal()),
+              'origin_checksum': '245ccfe843451c67d93cd528db0ce0bb5af898b8',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 20:50:36,660 got transaction ID cca313b8-b21f-4df4-aa4d-8de0c64d4c84
+2025-07-31 20:50:36,661 will upload 2 items with total size 35466
+2025-07-31 20:50:36,663 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-422a9f19-b1f7-4760-891e-42f90004cdb7 part=0
+2025-07-31 20:50:36,664 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 20:50:36,803 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-422a9f19-b1f7-4760-891e-42f90004cdb7
+2025-07-31 20:50:36,818 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 20:50:36,877 Finishing transaction cca313b8-b21f-4df4-aa4d-8de0c64d4c84
+2025-07-31 20:50:37,058 updating basefile (diff) for: cuesta-trees.gpkg
+2025-07-31 20:50:37,062 --- push finished - new project version v23
+2025-07-31 20:51:36,807 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:51:36,808 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:51:36,811 checkpoint - new size 196608 checksum 25b6620b4fe8f06673bd2851a025241169772650
+2025-07-31 20:51:36,811 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:51:36,812 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:51:36,814 checkpoint - new size 98304 checksum caffe0f8dc00a2254d5fc85da4c43981b7acfd83
+2025-07-31 20:51:39,821 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:51:39,823 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:51:39,827 checkpoint - new size 196608 checksum 8bb2ed8a60313f155b369dfba42347bf2f06e43f
+2025-07-31 20:51:39,827 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:51:39,828 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:51:39,829 checkpoint - new size 98304 checksum f6b6aaa098ecc1c3b099f447fce320e51ecb2ef5
+2025-07-31 20:51:40,094 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:51:40,094 --- start pull mergin/cuesta-trees
+2025-07-31 20:51:40,232 got project info: local version v23 / server version v24
+2025-07-31 20:51:40,236 pull changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '850cb16668890431855474c261fb5529f29c9243',
+              'diff': {'checksum': '76bd7d1a1f435839cc3a60396f1d037fa8479d99',
+                       'location': 'v24/cuesta-trees.gpkg-diff-463a11b7-5f5b-4ec8-894f-59f93b781323',
+                       'path': 'cuesta-trees.gpkg-diff-463a11b7-5f5b-4ec8-894f-59f93b781323',
+                       'size': 132},
+              'diffs': ['cuesta-trees.gpkg-diff-463a11b7-5f5b-4ec8-894f-59f93b781323'],
+              'history': {'v23': {'change': 'updated',
+                                  'checksum': 'cf713aba8ee7f9b59578a797b3c93252bc338283',
+                                  'diff': {'checksum': 'aa0125b0fc7f48d3fcc82451668d37bfabc69e6f',
+                                           'path': 'cuesta-trees.gpkg-diff-422a9f19-b1f7-4760-891e-42f90004cdb7',
+                                           'size': 188},
+                                  'expiration': '2025-08-03T03:50:37Z',
+                                  'path': 'cuesta-trees.gpkg',
+                                  'size': 196608},
+                          'v24': {'change': 'updated',
+                                  'checksum': '850cb16668890431855474c261fb5529f29c9243',
+                                  'diff': {'checksum': '76bd7d1a1f435839cc3a60396f1d037fa8479d99',
+                                           'path': 'cuesta-trees.gpkg-diff-463a11b7-5f5b-4ec8-894f-59f93b781323',
+                                           'size': 132},
+                                  'expiration': '2025-08-03T03:51:34Z',
+                                  'path': 'cuesta-trees.gpkg',
+                                  'size': 196608}},
+              'location': 'v24/cuesta-trees.gpkg',
+              'mtime': '2025-08-01T03:51:34.143160Z',
+              'origin_checksum': 'cf713aba8ee7f9b59578a797b3c93252bc338283',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 20:51:40,236 will download 1 chunks, total size 132
+2025-07-31 20:51:40,236 Downloading cuesta-trees.gpkg version=v24 diff=True part=0
+2025-07-31 20:51:40,362 Download finished: cuesta-trees.gpkg
+2025-07-31 20:51:40,429 finalizing pull
+2025-07-31 20:51:40,449 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:51:40,451 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:51:40,453 checkpoint - new size 196608 checksum 9c093d2ac99d71c197a9722ba25722dc4aa7c884
+2025-07-31 20:51:40,454 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:51:40,454 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:51:40,456 checkpoint - new size 98304 checksum 195b245b1840cdf54b75fed1c055a3958ca0a861
+2025-07-31 20:51:40,476 updating file without rebase: cuesta-trees.gpkg
+2025-07-31 20:51:40,485 update successful
+2025-07-31 20:51:40,486 --- pull finished -- at version v24
+2025-07-31 20:51:40,755 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:51:40,755 --- start push mergin/cuesta-trees
+2025-07-31 20:51:40,890 got project info: local version v24 / server version v24
+2025-07-31 20:51:41,036 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:51:41,037 checkpoint - return value: (0, 51, 51)
+2025-07-31 20:51:41,040 checkpoint - new size 196608 checksum 60072d1f24e4a1278d5ed7d064f87033e2d963ca
+2025-07-31 20:51:41,040 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:51:41,040 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:51:41,042 checkpoint - new size 98304 checksum 52e3f18b504c46bb42e80f4c332073db9a550240
+2025-07-31 20:51:41,049 push changes:
+{'added': [], 'removed': [], 'renamed': [], 'updated': []}
+2025-07-31 20:51:41,049 --- push mergin/cuesta-trees - nothing to do
+2025-07-31 20:56:09,877 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:56:09,879 checkpoint - return value: (0, 60, 60)
+2025-07-31 20:56:09,882 checkpoint - new size 196608 checksum c684b991e8bfffb0bd44146cd70b52cf5c3a3d7d
+2025-07-31 20:56:09,882 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:56:09,883 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:56:09,884 checkpoint - new size 98304 checksum 3490f6039376fce36e022ff0c48425de193fcb56
+2025-07-31 20:56:12,829 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:56:12,830 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:56:12,833 checkpoint - new size 196608 checksum 2eae5b29543607b6650c353ff73c4eee1a6f88fa
+2025-07-31 20:56:12,833 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:56:12,834 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:56:12,835 checkpoint - new size 98304 checksum 7e09e1b6ad522ef7e5e5910c6531f79edf43edc6
+2025-07-31 20:56:13,103 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:56:13,103 --- start pull mergin/cuesta-trees
+2025-07-31 20:56:13,247 got project info: local version v24 / server version v24
+2025-07-31 20:56:13,248 --- pull - nothing to do (already at server version)
+2025-07-31 20:56:13,677 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 20:56:13,678 --- start push mergin/cuesta-trees
+2025-07-31 20:56:13,825 got project info: local version v24 / server version v24
+2025-07-31 20:56:14,065 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 20:56:14,066 checkpoint - return value: (0, 48, 48)
+2025-07-31 20:56:14,069 checkpoint - new size 196608 checksum 1ea56f1eb9482ebe303b7e5ed9968b4ccef4c7ec
+2025-07-31 20:56:14,069 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 20:56:14,069 checkpoint - return value: (0, 24, 24)
+2025-07-31 20:56:14,071 checkpoint - new size 98304 checksum 87594dd1fef25989813ef1b79514b994cc32afd1
+2025-07-31 20:56:14,079 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': 'b71b31ae1582c25ec44df3809bd7e53a1266dd3a',
+              'chunks': ['81643c4e-8e39-4cee-a07d-275652ede543'],
+              'mtime': datetime.datetime(2025, 7, 31, 20, 56, 8, 487050, tzinfo=tzlocal()),
+              'origin_checksum': '4b3103ac917950ae09373555ca454c35e28b675d',
+              'path': 'cuesta-trees.qgz',
+              'size': 35443},
+             {'checksum': '850cb16668890431855474c261fb5529f29c9243',
+              'chunks': ['b8298a6a-e3ec-4626-a151-188f02ba34bd'],
+              'diff': {'checksum': '32274f48e48d4350d3531dbfd66d68afd09de18c',
+                       'mtime': datetime.datetime(2025, 7, 31, 20, 56, 14, 76229, tzinfo=tzlocal()),
+                       'path': 'cuesta-trees.gpkg-diff-b04d9c82-5129-40a3-b4b9-3120bb000a92',
+                       'size': 132},
+              'mtime': datetime.datetime(2025, 7, 31, 20, 56, 14, 66213, tzinfo=tzlocal()),
+              'origin_checksum': '850cb16668890431855474c261fb5529f29c9243',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 20:56:14,290 got transaction ID 8ad9be95-0e7d-4715-9707-6c1e8927f418
+2025-07-31 20:56:14,290 will upload 2 items with total size 35575
+2025-07-31 20:56:14,292 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-b04d9c82-5129-40a3-b4b9-3120bb000a92 part=0
+2025-07-31 20:56:14,294 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 20:56:14,466 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-b04d9c82-5129-40a3-b4b9-3120bb000a92
+2025-07-31 20:56:14,594 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 20:56:14,612 Finishing transaction 8ad9be95-0e7d-4715-9707-6c1e8927f418
+2025-07-31 20:56:14,861 updating basefile (diff) for: cuesta-trees.gpkg
+2025-07-31 20:56:14,865 --- push finished - new project version v25
+2025-07-31 21:07:13,837 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:07:13,839 checkpoint - return value: (0, 48, 48)
+2025-07-31 21:07:13,842 checkpoint - new size 196608 checksum 82a575061245cca3fb814bb85892d73b6b9d6238
+2025-07-31 21:07:13,842 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:07:13,844 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:07:13,845 checkpoint - new size 98304 checksum b779ea7b966baccf0967591d2805f51d0e6524db
+2025-07-31 21:07:16,851 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:07:16,852 checkpoint - return value: (0, 48, 48)
+2025-07-31 21:07:16,855 checkpoint - new size 196608 checksum a736b6083cdb487c9aa16ddc543289d70f70ce36
+2025-07-31 21:07:16,855 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:07:16,856 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:07:16,857 checkpoint - new size 98304 checksum b2a068c7579338743dbe5bcda59088f8715b791f
+2025-07-31 21:07:17,125 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:07:17,125 --- start pull mergin/cuesta-trees
+2025-07-31 21:07:17,291 got project info: local version v25 / server version v26
+2025-07-31 21:07:17,294 pull changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': 'ec6cd6d8e50a6f17569afa914a1bdc8c6c23b1a8',
+              'diff': {'checksum': '8f3d09fc5489c803810f8a620f577c030d497cda',
+                       'location': 'v26/cuesta-trees.gpkg-diff-ebfb345a-1b0f-4b2d-b101-d5ad3a06a721',
+                       'path': 'cuesta-trees.gpkg-diff-ebfb345a-1b0f-4b2d-b101-d5ad3a06a721',
+                       'size': 132},
+              'diffs': ['cuesta-trees.gpkg-diff-ebfb345a-1b0f-4b2d-b101-d5ad3a06a721'],
+              'history': {'v25': {'change': 'updated',
+                                  'checksum': '518acce3324b2d797ab3760c0fc989a73eafdee4',
+                                  'diff': {'checksum': '32274f48e48d4350d3531dbfd66d68afd09de18c',
+                                           'path': 'cuesta-trees.gpkg-diff-b04d9c82-5129-40a3-b4b9-3120bb000a92',
+                                           'size': 132},
+                                  'expiration': '2025-08-03T03:56:14Z',
+                                  'path': 'cuesta-trees.gpkg',
+                                  'size': 196608},
+                          'v26': {'change': 'updated',
+                                  'checksum': 'ec6cd6d8e50a6f17569afa914a1bdc8c6c23b1a8',
+                                  'diff': {'checksum': '8f3d09fc5489c803810f8a620f577c030d497cda',
+                                           'path': 'cuesta-trees.gpkg-diff-ebfb345a-1b0f-4b2d-b101-d5ad3a06a721',
+                                           'size': 132},
+                                  'expiration': '2025-08-03T03:56:57Z',
+                                  'path': 'cuesta-trees.gpkg',
+                                  'size': 196608}},
+              'location': 'v26/cuesta-trees.gpkg',
+              'mtime': '2025-08-01T03:56:57.461895Z',
+              'origin_checksum': '518acce3324b2d797ab3760c0fc989a73eafdee4',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 21:07:17,295 will download 1 chunks, total size 132
+2025-07-31 21:07:17,295 Downloading cuesta-trees.gpkg version=v26 diff=True part=0
+2025-07-31 21:07:17,441 Download finished: cuesta-trees.gpkg
+2025-07-31 21:07:17,487 finalizing pull
+2025-07-31 21:07:17,504 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:07:17,505 checkpoint - return value: (0, 48, 48)
+2025-07-31 21:07:17,508 checkpoint - new size 196608 checksum cd0b696d33e45e5c2f0f5156f548051b9beac091
+2025-07-31 21:07:17,508 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:07:17,509 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:07:17,511 checkpoint - new size 98304 checksum dda7a911f89d6b2591b13a7a07e217aaa4dda819
+2025-07-31 21:07:17,530 updating file without rebase: cuesta-trees.gpkg
+2025-07-31 21:07:17,539 update successful
+2025-07-31 21:07:17,539 --- pull finished -- at version v26
+2025-07-31 21:07:17,934 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:07:17,934 --- start push mergin/cuesta-trees
+2025-07-31 21:07:18,060 got project info: local version v26 / server version v26
+2025-07-31 21:07:18,215 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:07:18,216 checkpoint - return value: (0, 51, 51)
+2025-07-31 21:07:18,219 checkpoint - new size 196608 checksum 950ccb31d0b1333f86deb608d7e385c4d07dec4d
+2025-07-31 21:07:18,219 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:07:18,221 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:07:18,223 checkpoint - new size 98304 checksum 6b7845ce77cf971c16f62c62efbe03aa463e61bf
+2025-07-31 21:07:18,230 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': 'b68e675178ebcdfa460a06b1d2dcb204226d0385',
+              'chunks': ['7e89f03e-27ec-4044-a1f4-9bd024f5b247'],
+              'mtime': datetime.datetime(2025, 7, 31, 21, 7, 11, 975266, tzinfo=tzlocal()),
+              'origin_checksum': 'b71b31ae1582c25ec44df3809bd7e53a1266dd3a',
+              'path': 'cuesta-trees.qgz',
+              'size': 35460}]}
+2025-07-31 21:07:18,351 got transaction ID e888ca4e-84db-4587-999f-30ef70d45323
+2025-07-31 21:07:18,352 will upload 1 items with total size 35460
+2025-07-31 21:07:18,354 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 21:07:18,531 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 21:07:18,568 Finishing transaction e888ca4e-84db-4587-999f-30ef70d45323
+2025-07-31 21:07:18,718 --- push finished - new project version v27
+2025-07-31 21:13:37,938 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:13:37,939 checkpoint - return value: (0, 60, 60)
+2025-07-31 21:13:37,942 checkpoint - new size 196608 checksum f0b670388df3313278c826316c2862cee7760d23
+2025-07-31 21:13:37,942 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:13:37,943 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:13:37,945 checkpoint - new size 98304 checksum 9e0ef27a2c10ad0b2f2660980f8e6d642633a458
+2025-07-31 21:13:40,111 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:13:40,113 checkpoint - return value: (0, 48, 48)
+2025-07-31 21:13:40,116 checkpoint - new size 196608 checksum 1999f774862edfdc0b759d37299d22f51720bc9f
+2025-07-31 21:13:40,116 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:13:40,116 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:13:40,118 checkpoint - new size 98304 checksum a5e3424312a28293e8087544858b47cb0b903d30
+2025-07-31 21:13:40,385 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:13:40,385 --- start pull mergin/cuesta-trees
+2025-07-31 21:13:40,627 got project info: local version v27 / server version v27
+2025-07-31 21:13:40,628 --- pull - nothing to do (already at server version)
+2025-07-31 21:13:41,045 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:13:41,045 --- start push mergin/cuesta-trees
+2025-07-31 21:13:41,525 got project info: local version v27 / server version v27
+2025-07-31 21:13:41,916 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:13:41,917 checkpoint - return value: (0, 48, 48)
+2025-07-31 21:13:41,920 checkpoint - new size 196608 checksum 0b2930961fb729110f367be63db50de1d1a29f52
+2025-07-31 21:13:41,920 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:13:41,921 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:13:41,922 checkpoint - new size 98304 checksum 0c8e44b555253b71ec2ed874297400818bbe45b4
+2025-07-31 21:13:41,930 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': 'c8ea4a313ea72172f02495ea54c6deab1b6c45e2',
+              'chunks': ['6460539f-4770-49e0-aadd-cd6aaaeb5ebc'],
+              'mtime': datetime.datetime(2025, 7, 31, 21, 13, 36, 42270, tzinfo=tzlocal()),
+              'origin_checksum': 'b68e675178ebcdfa460a06b1d2dcb204226d0385',
+              'path': 'cuesta-trees.qgz',
+              'size': 35469},
+             {'checksum': 'ec6cd6d8e50a6f17569afa914a1bdc8c6c23b1a8',
+              'chunks': ['b20e4e15-ea6e-409f-b387-0b9ac8cb4fce'],
+              'diff': {'checksum': 'f04a064d43418adca48b7a2d0cbac3b0e867e4c6',
+                       'mtime': datetime.datetime(2025, 7, 31, 21, 13, 41, 927587, tzinfo=tzlocal()),
+                       'path': 'cuesta-trees.gpkg-diff-0fa3d3a0-6e51-41f0-be33-493aee147ee6',
+                       'size': 132},
+              'mtime': datetime.datetime(2025, 7, 31, 21, 13, 41, 917230, tzinfo=tzlocal()),
+              'origin_checksum': 'ec6cd6d8e50a6f17569afa914a1bdc8c6c23b1a8',
+              'path': 'cuesta-trees.gpkg',
+              'size': 196608}]}
+2025-07-31 21:13:42,066 got transaction ID 31145de6-f660-44c3-b627-472f43bd7b6c
+2025-07-31 21:13:42,066 will upload 2 items with total size 35601
+2025-07-31 21:13:42,069 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-0fa3d3a0-6e51-41f0-be33-493aee147ee6 part=0
+2025-07-31 21:13:42,070 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 21:13:42,218 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg-diff-0fa3d3a0-6e51-41f0-be33-493aee147ee6
+2025-07-31 21:13:42,246 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 21:13:42,282 Finishing transaction 31145de6-f660-44c3-b627-472f43bd7b6c
+2025-07-31 21:13:42,452 updating basefile (diff) for: cuesta-trees.gpkg
+2025-07-31 21:13:42,455 --- push finished - new project version v28
+2025-07-31 21:26:03,960 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:26:03,962 checkpoint - return value: (0, 68, 68)
+2025-07-31 21:26:03,965 checkpoint - new size 204800 checksum 1ae603de0caee941da8ad9df2b310f238e19761c
+2025-07-31 21:26:03,965 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:26:03,967 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:26:03,968 checkpoint - new size 98304 checksum c359b1dd1ca5e0247ebcc8ac9c1fb517570a1291
+2025-07-31 21:26:03,972 GEODIFF: GeoPackage Table schemas are not the same for table: observations
+2025-07-31 21:26:03,972 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 21:26:04,317 Mergin Maps plugin: Unable to detect changes for cuesta-trees.gpkg
+2025-07-31 21:26:10,435 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:26:10,437 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:26:10,440 checkpoint - new size 204800 checksum 24aeeea5778f981a896f57f96432bba63a4ea12f
+2025-07-31 21:26:10,440 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:26:10,441 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:26:10,443 checkpoint - new size 98304 checksum fa2043f4fd2d299c9dca9ba10e3e322c14017111
+2025-07-31 21:26:10,446 GEODIFF: GeoPackage Table schemas are not the same for table: observations
+2025-07-31 21:26:10,446 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 21:26:10,708 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:26:10,708 --- start pull mergin/cuesta-trees
+2025-07-31 21:26:11,130 got project info: local version v28 / server version v28
+2025-07-31 21:26:11,130 --- pull - nothing to do (already at server version)
+2025-07-31 21:26:11,546 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:26:11,546 --- start push mergin/cuesta-trees
+2025-07-31 21:26:12,170 got project info: local version v28 / server version v28
+2025-07-31 21:26:12,331 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:26:12,332 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:26:12,335 checkpoint - new size 204800 checksum 3a2c80f84658c26aef491ab9bce903b0fe4a9ad2
+2025-07-31 21:26:12,335 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:26:12,336 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:26:12,338 checkpoint - new size 98304 checksum ee86a77c3faf0f7959ab7b7809664401e5c21ed8
+2025-07-31 21:26:12,342 GEODIFF: GeoPackage Table schemas are not the same for table: observations
+2025-07-31 21:26:12,342 failed to create changeset for cuesta-trees.gpkg
+2025-07-31 21:26:12,345 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '37506ce9796d913a9c886f9cf75673128ed1e4d2',
+              'chunks': ['f9c53cfc-4342-4b30-b209-c2af961c20f3'],
+              'mtime': datetime.datetime(2025, 7, 31, 21, 26, 1, 951785, tzinfo=tzlocal()),
+              'origin_checksum': 'c8ea4a313ea72172f02495ea54c6deab1b6c45e2',
+              'path': 'cuesta-trees.qgz',
+              'size': 35695},
+             {'checksum': '3a2c80f84658c26aef491ab9bce903b0fe4a9ad2',
+              'chunks': ['37bf5258-f654-4cc8-a3e3-4e42652e392f'],
+              'mtime': datetime.datetime(2025, 7, 31, 21, 26, 10, 436973, tzinfo=tzlocal()),
+              'origin_checksum': '25c1fcd743b0299dbfa596acfa821d4c8b931e6a',
+              'path': 'cuesta-trees.gpkg',
+              'size': 204800}]}
+2025-07-31 21:26:12,345 Making a temporary copy (full upload): cuesta-trees.gpkg
+2025-07-31 21:26:12,496 got transaction ID 540edc40-ccb2-4dcf-829c-a57f740ed364
+2025-07-31 21:26:12,497 will upload 2 items with total size 240495
+2025-07-31 21:26:12,500 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 21:26:12,501 Uploading /var/folders/ww/j283g5cd3bd9k7z7_f2mxslc0000gn/T/python-api-client-b5qm7fpt/cuesta-trees.gpkg part=0
+2025-07-31 21:26:12,676 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 21:26:12,775 Upload finished: /var/folders/ww/j283g5cd3bd9k7z7_f2mxslc0000gn/T/python-api-client-b5qm7fpt/cuesta-trees.gpkg
+2025-07-31 21:26:12,788 Finishing transaction 540edc40-ccb2-4dcf-829c-a57f740ed364
+2025-07-31 21:26:12,953 updating basefile (copy) for: cuesta-trees.gpkg
+2025-07-31 21:26:12,954 GEODIFF: MakeCopySqlite: Removed existing destination database: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/.mergin/cuesta-trees.gpkg
+2025-07-31 21:26:12,955 --- push finished - new project version v29
+2025-07-31 21:26:57,256 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:26:57,258 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:26:57,261 checkpoint - new size 204800 checksum ed172b99ddbac4a8587dcb38b66d0c41d9e8bf80
+2025-07-31 21:26:57,261 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:26:57,262 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:26:57,263 checkpoint - new size 98304 checksum c89714ed4432b5f764efa62772b5fbecfd778bb6
+2025-07-31 21:26:59,512 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:26:59,514 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:26:59,516 checkpoint - new size 204800 checksum 33959e8debb97d2b03c987e9c3c21b905812b2df
+2025-07-31 21:26:59,517 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:26:59,517 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:26:59,519 checkpoint - new size 98304 checksum 904fac705b2ce2e934d589f3ff2c5536f9c38374
+2025-07-31 21:26:59,786 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:26:59,786 --- start pull mergin/cuesta-trees
+2025-07-31 21:26:59,915 got project info: local version v29 / server version v30
+2025-07-31 21:26:59,918 pull changes:
+{'added': [{'checksum': 'daad6110e33da9788ca2b1b1fd06ca2d90b465e0',
+            'diff': None,
+            'history': {'v30': {'change': 'added',
+                                'checksum': 'daad6110e33da9788ca2b1b1fd06ca2d90b465e0',
+                                'expiration': None,
+                                'path': 'cuesta-trees (conflicted copy, kyle '
+                                        'v28).gpkg',
+                                'size': 196608}},
+            'location': 'v30/cuesta-trees (conflicted copy, kyle v28).gpkg',
+            'mtime': '2025-08-01T04:26:16.510895Z',
+            'path': 'cuesta-trees (conflicted copy, kyle v28).gpkg',
+            'size': 196608}],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': []}
+2025-07-31 21:26:59,919 will download 1 chunks, total size 196608
+2025-07-31 21:26:59,919 Downloading cuesta-trees (conflicted copy, kyle v28).gpkg version=v30 diff=False part=0
+2025-07-31 21:27:00,068 Download finished: cuesta-trees (conflicted copy, kyle v28).gpkg
+2025-07-31 21:27:00,208 finalizing pull
+2025-07-31 21:27:00,224 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:27:00,225 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:27:00,228 checkpoint - new size 204800 checksum 7c0a7f40b0cb1b655e029b2d82a1f7c5b747bfd9
+2025-07-31 21:27:00,228 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:27:00,229 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:27:00,231 checkpoint - new size 98304 checksum 87931bda2c03b56d44f85afa6433e5211a89ca47
+2025-07-31 21:27:00,254 --- pull finished -- at version v30
+2025-07-31 21:27:00,738 --- version: Python-client/0.10.2 Plugin/2025.3 QGIS/3.40.5 (Darwin/15.5)
+2025-07-31 21:27:00,738 --- start push mergin/cuesta-trees
+2025-07-31 21:27:00,878 got project info: local version v30 / server version v30
+2025-07-31 21:27:01,054 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg
+2025-07-31 21:27:01,056 checkpoint - return value: (0, 50, 50)
+2025-07-31 21:27:01,059 checkpoint - new size 204800 checksum 6a23898fa04142dd0f6fc945038fc591f5bb4f90
+2025-07-31 21:27:01,059 checkpoint - going to add it in /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/Survey_points.gpkg
+2025-07-31 21:27:01,060 checkpoint - return value: (0, 24, 24)
+2025-07-31 21:27:01,061 checkpoint - new size 98304 checksum 4e908c02a3906a7b1933013d7a9e92cce7346497
+2025-07-31 21:27:01,074 push changes:
+{'added': [],
+ 'removed': [],
+ 'renamed': [],
+ 'updated': [{'checksum': '182958c1091b55ba1504eb2ff6f054d05a8fb789',
+              'chunks': ['44d7615a-57c2-463c-9217-e087240e94b3'],
+              'mtime': datetime.datetime(2025, 7, 31, 21, 26, 55, 201228, tzinfo=tzlocal()),
+              'origin_checksum': '37506ce9796d913a9c886f9cf75673128ed1e4d2',
+              'path': 'cuesta-trees.qgz',
+              'size': 35688}]}
+2025-07-31 21:27:01,205 got transaction ID ba91372b-b952-4ef3-80cb-545ff0e6a60d
+2025-07-31 21:27:01,205 will upload 1 items with total size 35688
+2025-07-31 21:27:01,207 Uploading /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz part=0
+2025-07-31 21:27:01,387 Upload finished: /Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.qgz
+2025-07-31 21:27:01,399 Finishing transaction ba91372b-b952-4ef3-80cb-545ff0e6a60d
+2025-07-31 21:27:01,560 --- push finished - new project version v31

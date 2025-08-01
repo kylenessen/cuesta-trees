@@ -1,0 +1,13 @@
+tree_id,scientific_name,common_name,family,origin,note
+1,Sambucus mexicana,Blue Elderberry,Viburnaceae,"W USA, W Canada",Scientific name mismatch. Family mismatch.
+2,Yucca gigantea,Giant Yucca,Asparagaceae,"Mexico, C America",Scientific name mismatch. Family mismatch.
+5,Searsia lancea,African Sumac,Anacardiaceae,S Africa,Scientific name mismatch.
+34,Xylosma racemosum,Shiny Xylosma,Salicaceae,China,Scientific name mismatch. Common name mismatch. Family mismatch.
+37,Escallonia rubra,Crimson Spire,Escalloniaceae,S America,Family mismatch.
+38,Liquidambar styraciflua,American Sweetgum,Altingiaceae,Eastern USA,Family mismatch.
+85,Rhaphiolepis bibas,Loquat,Rosaceae,China,Scientific name mismatch.
+88,Malus domestica,Apple,Rosaceae,Central Asia,Scientific name mismatch.
+95,Cupaniopsis anacardioides,Carrotwood Tree,Sapindaceae,NE Australia,Scientific name mismatch.
+97,Metasequoia glyptostroboides,Dawn Redwood,Cupressaceae,China,Family mismatch.
+98,Sequoia sempervirens,Coast Redwood,Cupressaceae,California,Family mismatch.
+99,Sequoiadendron giganteum,Giant Sequoia,Cupressaceae,California,Family mismatch.
