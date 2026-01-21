@@ -133,6 +133,14 @@
             color: #444;
         }
 
+        .popup-photo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
         /* Tree label styling */
         .tree-label {
             background: none;
@@ -224,7 +232,12 @@
                     const coords = feature.geometry.coordinates;
                     const props = feature.properties;
 
+                    const photoHtml = props.photo_url
+                        ? `<img src="${props.photo_url}" alt="${props.common_name}" class="popup-photo">`
+                        : '';
+
                     const popupContent = `
+                        ${photoHtml}
                         <div class="popup-title">${props.common_name}</div>
                         <div class="popup-scientific">${props.scientific_name}</div>
                         <div class="popup-info">

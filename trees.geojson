@@ -15,7 +15,8 @@
         "common_name": "Blue Elderberry",
         "scientific_name": "Sambucus mexicana",
         "family": "Viburnaceae",
-        "origin": "W USA, W Canada"
+        "origin": "W USA, W Canada",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/411276825/medium.jpeg"
       }
     },
     {
@@ -32,7 +33,8 @@
         "common_name": "Giant Yucca",
         "scientific_name": "Yucca gigantea",
         "family": "Asparagaceae",
-        "origin": "Mexico, C America"
+        "origin": "Mexico, C America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/63924844/medium.jpeg"
       }
     },
     {
@@ -49,7 +51,8 @@
         "common_name": "Chinese Pistache",
         "scientific_name": "Pistacia chinensis",
         "family": "Anacardiaceae",
-        "origin": "China"
+        "origin": "China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/171142/medium.jpg"
       }
     },
     {
@@ -66,7 +69,8 @@
         "common_name": "Lemonade Berry",
         "scientific_name": "Rhus integrifolia",
         "family": "Anacardiaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14516370/medium.jpeg"
       }
     },
     {
@@ -83,7 +87,8 @@
         "common_name": "African Sumac",
         "scientific_name": "Searsia lancea",
         "family": "Anacardiaceae",
-        "origin": "S Africa"
+        "origin": "S Africa",
+        "photo_url": "https://static.inaturalist.org/photos/29551311/medium.jpg"
       }
     },
     {
@@ -100,7 +105,8 @@
         "common_name": "Sugar Bush",
         "scientific_name": "Rhus ovata",
         "family": "Anacardiaceae",
-        "origin": "S CA, AZ, Baja CA"
+        "origin": "S CA, AZ, Baja CA",
+        "photo_url": "https://static.inaturalist.org/photos/5762942/medium.jpg"
       }
     },
     {
@@ -117,7 +123,8 @@
         "common_name": "California Pepper Tree",
         "scientific_name": "Schinus molle",
         "family": "Anacardiaceae",
-        "origin": "South America"
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/382465760/medium.jpeg"
       }
     },
     {
@@ -134,7 +141,8 @@
         "common_name": "Brazilian Pepper Tree",
         "scientific_name": "Schinus terebinthifolia",
         "family": "Anacardiaceae",
-        "origin": "South America"
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57240422/medium.jpg"
       }
     },
     {
@@ -151,7 +159,8 @@
         "common_name": "Norfolk Island Pine",
         "scientific_name": "Araucaria heterophylla",
         "family": "Araucariaceae",
-        "origin": "Norfolk Island"
+        "origin": "Norfolk Island",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250438081/medium.jpg"
       }
     },
     {
@@ -168,7 +177,8 @@
         "common_name": "Canary Island Palm",
         "scientific_name": "Phoenix canariensis",
         "family": "Arecaceae",
-        "origin": "Canary Islands"
+        "origin": "Canary Islands",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/431136790/medium.jpeg"
       }
     },
     {
@@ -185,7 +195,8 @@
         "common_name": "Senegal Date Palm",
         "scientific_name": "Phoenix reclinata",
         "family": "Arecaceae",
-        "origin": "Africa"
+        "origin": "Africa",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12342659/medium.jpg"
       }
     },
     {
@@ -202,7 +213,8 @@
         "common_name": "Queen Palm",
         "scientific_name": "Syagrus romanzoffiana",
         "family": "Arecaceae",
-        "origin": "South America"
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123453473/medium.jpg"
       }
     },
     {
@@ -219,7 +231,8 @@
         "common_name": "Chinese Windmill Palm",
         "scientific_name": "Trachycarpus fortunei",
         "family": "Arecaceae",
-        "origin": "Central China"
+        "origin": "Central China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/418335608/medium.jpeg"
       }
     },
     {
@@ -236,7 +249,8 @@
         "common_name": "Mexican Fan Palm",
         "scientific_name": "Washingtonia robusta",
         "family": "Arecaceae",
-        "origin": "California, Mexico"
+        "origin": "California, Mexico",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/249270666/medium.jpeg"
       }
     },
     {
@@ -253,7 +267,8 @@
         "common_name": "California Alder (White Alder)",
         "scientific_name": "Alnus rhombifolia",
         "family": "Betulaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/55405328/medium.jpeg"
       }
     },
     {
@@ -270,7 +285,8 @@
         "common_name": "Chitalpa",
         "scientific_name": "Chitalpa tashkentensis",
         "family": "Bignoniaceae",
-        "origin": "hyb. from Uzbekistan"
+        "origin": "hyb. from Uzbekistan",
+        "photo_url": null
       }
     },
     {
@@ -287,7 +303,8 @@
         "common_name": "Jacaranda",
         "scientific_name": "Jacaranda mimosifolia",
         "family": "Bignoniaceae",
-        "origin": "Argentina, Bolivia"
+        "origin": "Argentina, Bolivia",
+        "photo_url": "https://static.inaturalist.org/photos/251075969/medium.jpg"
       }
     },
     {
@@ -304,7 +321,8 @@
         "common_name": "Horsetail Tree",
         "scientific_name": "Casuarina cunninghamiana",
         "family": "Casuarinaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57118907/medium.jpeg"
       }
     },
     {
@@ -321,7 +339,8 @@
         "common_name": "Incense Cedar",
         "scientific_name": "Calocedrus decurrens",
         "family": "Cupressaceae ",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52181671/medium.jpg"
       }
     },
     {
@@ -338,7 +357,8 @@
         "common_name": "Italian Cypress",
         "scientific_name": "Cupressus sempervirens",
         "family": "Cupressaceae ",
-        "origin": "Mediterranean"
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/169729261/medium.jpg"
       }
     },
     {
@@ -355,7 +375,8 @@
         "common_name": "Monterey Cypress",
         "scientific_name": "Hesperocyparis macrocarpa",
         "family": "Cupressaceae ",
-        "origin": "C California"
+        "origin": "C California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184809375/medium.jpeg"
       }
     },
     {
@@ -372,7 +393,8 @@
         "common_name": "Chinese Juniper",
         "scientific_name": "Juniperus chinensis",
         "family": "Cupressaceae ",
-        "origin": "China, Japan, Korea"
+        "origin": "China, Japan, Korea",
+        "photo_url": "https://static.inaturalist.org/photos/100132984/medium.jpeg"
       }
     },
     {
@@ -389,7 +411,8 @@
         "common_name": "Oriental Arborvitae",
         "scientific_name": "Platycladus orientalis",
         "family": "Cupressaceae ",
-        "origin": "E and N Asia"
+        "origin": "E and N Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg"
       }
     },
     {
@@ -406,7 +429,8 @@
         "common_name": "Japanese Persimmon",
         "scientific_name": "Diospyros kaki",
         "family": "Ebenaceae",
-        "origin": "China"
+        "origin": "China",
+        "photo_url": "https://static.inaturalist.org/photos/171386353/medium.jpeg"
       }
     },
     {
@@ -423,7 +447,8 @@
         "common_name": "Strawberry Tree",
         "scientific_name": "Arbutus unedo",
         "family": "Ericaceae",
-        "origin": "S Europe"
+        "origin": "S Europe",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/587076789/medium.jpg"
       }
     },
     {
@@ -440,7 +465,8 @@
         "common_name": "Acacia Tree",
         "scientific_name": "Acacia baileyana",
         "family": "Fabaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/224675585/medium.jpg"
       }
     },
     {
@@ -457,7 +483,8 @@
         "common_name": "Sydney Golden Wattle",
         "scientific_name": "Acacia longifolia",
         "family": "Fabaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52176937/medium.jpeg"
       }
     },
     {
@@ -474,7 +501,8 @@
         "common_name": "Mimosa (Silk Tree)",
         "scientific_name": "Albizia julibrissin",
         "family": "Fabaceae",
-        "origin": "Iran to China, Korea"
+        "origin": "Iran to China, Korea",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/146757188/medium.jpg"
       }
     },
     {
@@ -491,7 +519,8 @@
         "common_name": "Western Redbud",
         "scientific_name": "Cercis occidentalis",
         "family": "Fabaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/450999973/medium.jpeg"
       }
     },
     {
@@ -508,7 +537,8 @@
         "common_name": "Coast Live Oak",
         "scientific_name": "Quercus agrifolia",
         "family": "Fagaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18734105/medium.jpg"
       }
     },
     {
@@ -525,7 +555,8 @@
         "common_name": "Valley Oak",
         "scientific_name": "Quercus lobata",
         "family": "Fagaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/88494137/medium.jpeg"
       }
     },
     {
@@ -542,7 +573,8 @@
         "common_name": "Cork Oak",
         "scientific_name": "Quercus suber",
         "family": "Fagaceae",
-        "origin": "Mediterranean"
+        "origin": "Mediterranean",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159050222/medium.jpeg"
       }
     },
     {
@@ -559,7 +591,8 @@
         "common_name": "Coast Silktassel",
         "scientific_name": "Garrya elliptica",
         "family": "Garryaceae",
-        "origin": "CA, OR coast"
+        "origin": "CA, OR coast",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/348744523/medium.jpg"
       }
     },
     {
@@ -576,7 +609,8 @@
         "common_name": "Ginkgo",
         "scientific_name": "Ginkgo biloba",
         "family": "Ginkgoaceae",
-        "origin": "SE China"
+        "origin": "SE China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/397250612/medium.jpeg"
       }
     },
     {
@@ -593,7 +627,8 @@
         "common_name": "Crimson Spire",
         "scientific_name": "Escallonia rubra",
         "family": "Escalloniaceae",
-        "origin": "S America"
+        "origin": "S America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/62036750/medium.jpeg"
       }
     },
     {
@@ -610,7 +645,8 @@
         "common_name": "American Sweetgum",
         "scientific_name": "Liquidambar styraciflua",
         "family": "Altingiaceae",
-        "origin": "Eastern USA"
+        "origin": "Eastern USA",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/151075271/medium.jpg"
       }
     },
     {
@@ -627,7 +663,8 @@
         "common_name": "California Black Walnut",
         "scientific_name": "Juglans californica",
         "family": "Juglandaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7086/medium.jpg"
       }
     },
     {
@@ -644,7 +681,8 @@
         "common_name": "Crape Myrtle",
         "scientific_name": "Lagerstroemia spp.",
         "family": "Lythraceae",
-        "origin": "China, Japan"
+        "origin": "China, Japan",
+        "photo_url": null
       }
     },
     {
@@ -661,7 +699,8 @@
         "common_name": "Pomegranate",
         "scientific_name": "Punica granatum",
         "family": "Lythraceae",
-        "origin": "Iran, N India"
+        "origin": "Iran, N India",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4956594/medium.jpeg"
       }
     },
     {
@@ -678,7 +717,8 @@
         "common_name": "Southern Magnolia",
         "scientific_name": "Magnolia grandiflora",
         "family": "Magnoliaceae",
-        "origin": "S USA"
+        "origin": "S USA",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/82254330/medium.jpg"
       }
     },
     {
@@ -695,7 +735,8 @@
         "common_name": "Saucer Magnolia",
         "scientific_name": "Magnolia \u00d7soulangeana",
         "family": "Magnoliaceae",
-        "origin": "bred in France"
+        "origin": "bred in France",
+        "photo_url": null
       }
     },
     {
@@ -712,7 +753,8 @@
         "common_name": "Australian Flame Tree",
         "scientific_name": "Brachychiton acerifolius",
         "family": "Malvaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761699/medium.JPG"
       }
     },
     {
@@ -729,7 +771,8 @@
         "common_name": "Kurrajong",
         "scientific_name": "Brachychiton populneus",
         "family": "Malvaceae",
-        "origin": "E Australia"
+        "origin": "E Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/58113928/medium.jpg"
       }
     },
     {
@@ -746,7 +789,8 @@
         "common_name": "Queensland Bottle Tree",
         "scientific_name": "Brachychiton rupestris",
         "family": "Malvaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52329647/medium.jpeg"
       }
     },
     {
@@ -763,7 +807,8 @@
         "common_name": "Common Fig",
         "scientific_name": "Ficus carica",
         "family": "Moraceae",
-        "origin": "Middle East, W Asia"
+        "origin": "Middle East, W Asia",
+        "photo_url": "https://static.inaturalist.org/photos/97971657/medium.jpeg"
       }
     },
     {
@@ -780,7 +825,8 @@
         "common_name": "Willow Peppermint",
         "scientific_name": "Agonis flexuosa",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://static.inaturalist.org/photos/25628874/medium.jpg"
       }
     },
     {
@@ -797,7 +843,8 @@
         "common_name": "Weeping Bottlebrush",
         "scientific_name": "Callistemon viminalis",
         "family": "Myrtaceae",
-        "origin": "NE Australia"
+        "origin": "NE Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/192336/medium.jpg"
       }
     },
     {
@@ -814,7 +861,8 @@
         "common_name": "Red-Flowering Gum",
         "scientific_name": "Corymbia ficifolia",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/15394901/medium.jpg"
       }
     },
     {
@@ -831,7 +879,8 @@
         "common_name": "Tasmanian Blue Gum",
         "scientific_name": "Eucalyptus globulus",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://static.inaturalist.org/photos/30675602/medium.jpg"
       }
     },
     {
@@ -848,7 +897,8 @@
         "common_name": "Flooded Gum",
         "scientific_name": "Eucalyptus grandis",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/70464623/medium.jpg"
       }
     },
     {
@@ -865,7 +915,8 @@
         "common_name": "White Ironbark",
         "scientific_name": "Eucalyptus leucoxylon",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/73988808/medium.jpeg"
       }
     },
     {
@@ -882,7 +933,8 @@
         "common_name": "Red Spotted Gum",
         "scientific_name": "Eucalyptus mannifera",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/331814958/medium.jpeg"
       }
     },
     {
@@ -899,7 +951,8 @@
         "common_name": "Yellow Box",
         "scientific_name": "Eucalyptus melliodora",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95333941/medium.jpeg"
       }
     },
     {
@@ -916,7 +969,8 @@
         "common_name": "Narrow-leafed Peppermint",
         "scientific_name": "Eucalyptus nicholii",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/352904123/medium.jpeg"
       }
     },
     {
@@ -933,7 +987,8 @@
         "common_name": "Silver Dollar Gum",
         "scientific_name": "Eucalyptus polyanthemos",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/150097925/medium.jpeg"
       }
     },
     {
@@ -950,7 +1005,8 @@
         "common_name": "Swamp Mahogany",
         "scientific_name": "Eucalyptus robusta",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://static.inaturalist.org/photos/169915850/medium.jpg"
       }
     },
     {
@@ -967,7 +1023,8 @@
         "common_name": "Desert Gum",
         "scientific_name": "Eucalyptus rudis",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/133990980/medium.jpg"
       }
     },
     {
@@ -984,7 +1041,8 @@
         "common_name": "Sydney Blue Gum",
         "scientific_name": "Eucalyptus saligna",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/70314522/medium.jpg"
       }
     },
     {
@@ -1001,7 +1059,8 @@
         "common_name": "Red Ironbark",
         "scientific_name": "Eucalyptus sideroxylon",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://static.inaturalist.org/photos/142847321/medium.jpeg"
       }
     },
     {
@@ -1018,7 +1077,8 @@
         "common_name": "Swamp Mallee",
         "scientific_name": "Eucalyptus spathulata",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/341167029/medium.jpeg"
       }
     },
     {
@@ -1035,7 +1095,8 @@
         "common_name": "Manna Gum",
         "scientific_name": "Eucalyptus viminalis",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/21705753/medium.jpeg"
       }
     },
     {
@@ -1052,7 +1113,8 @@
         "common_name": "Green Mallee",
         "scientific_name": "Eucalyptus viridis",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/314795478/medium.jpeg"
       }
     },
     {
@@ -1069,7 +1131,8 @@
         "common_name": "Pineapple Guava",
         "scientific_name": "Feijoa sellowiana",
         "family": "Myrtaceae",
-        "origin": "South America"
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/148368813/medium.jpeg"
       }
     },
     {
@@ -1086,7 +1149,8 @@
         "common_name": "Australian Tea Tree",
         "scientific_name": "Leptospermum laevigatum",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/86160292/medium.jpg"
       }
     },
     {
@@ -1103,7 +1167,8 @@
         "common_name": "Prickly Paperbark",
         "scientific_name": "Melaleuca quinquenervia",
         "family": "Myrtaceae",
-        "origin": "Australia"
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/68697633/medium.jpeg"
       }
     },
     {
@@ -1120,7 +1185,8 @@
         "common_name": "Tomlinson Ash",
         "scientific_name": "Fraxinus uhdei",
         "family": "Oleaceae",
-        "origin": "Mexico"
+        "origin": "Mexico",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/10688128/medium.jpg"
       }
     },
     {
@@ -1137,7 +1203,8 @@
         "common_name": "Mission Olive",
         "scientific_name": "Olea europaea",
         "family": "Oleaceae",
-        "origin": "Mediterranean, Asia"
+        "origin": "Mediterranean, Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/87194494/medium.jpg"
       }
     },
     {
@@ -1154,7 +1221,8 @@
         "common_name": "Atlas Cedar",
         "scientific_name": "Cedrus atlantica",
         "family": "Pinaceae",
-        "origin": "Morocco, Algeria"
+        "origin": "Morocco, Algeria",
+        "photo_url": "https://static.inaturalist.org/photos/13985521/medium.jpg"
       }
     },
     {
@@ -1171,7 +1239,8 @@
         "common_name": "Bishop Pine",
         "scientific_name": "Pinus muricata",
         "family": "Pinaceae ",
-        "origin": "California "
+        "origin": "California ",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174607076/medium.jpeg"
       }
     },
     {
@@ -1188,7 +1257,8 @@
         "common_name": "Italian Stone Pine",
         "scientific_name": "Pinus pinea",
         "family": "Pinaceae",
-        "origin": "Mediterranean"
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/2052389/medium.jpg"
       }
     },
     {
@@ -1205,7 +1275,8 @@
         "common_name": "Monterey Pine",
         "scientific_name": "Pinus radiata",
         "family": "Pinaceae ",
-        "origin": "California "
+        "origin": "California ",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/168316058/medium.jpg"
       }
     },
     {
@@ -1222,7 +1293,8 @@
         "common_name": "Torrey Pine",
         "scientific_name": "Pinus torreyana",
         "family": "Pinaceae",
-        "origin": "S California"
+        "origin": "S California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/546706374/medium.jpg"
       }
     },
     {
@@ -1239,7 +1311,8 @@
         "common_name": "Western Sycamore",
         "scientific_name": "Platanus racemosa",
         "family": "Platanaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/38512081/medium.jpg"
       }
     },
     {
@@ -1256,7 +1329,8 @@
         "common_name": "Yew Tree",
         "scientific_name": "Podocarpus macrophyllus",
         "family": "Podocarpaceae",
-        "origin": "China, Japan"
+        "origin": "China, Japan",
+        "photo_url": "https://static.inaturalist.org/photos/91052089/medium.jpeg"
       }
     },
     {
@@ -1273,7 +1347,8 @@
         "common_name": "Silk Oak",
         "scientific_name": "Grevillea robusta",
         "family": "Proteaceae",
-        "origin": "E Australia"
+        "origin": "E Australia",
+        "photo_url": "https://static.inaturalist.org/photos/251288010/medium.jpeg"
       }
     },
     {
@@ -1290,7 +1365,8 @@
         "common_name": "California Coffee Berry",
         "scientific_name": "Frangula californica",
         "family": "Rhamnaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/49491423/medium.jpg"
       }
     },
     {
@@ -1307,7 +1383,8 @@
         "common_name": "Loquat",
         "scientific_name": "Rhaphiolepis bibas",
         "family": "Rosaceae",
-        "origin": "China"
+        "origin": "China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/317638914/medium.jpg"
       }
     },
     {
@@ -1324,7 +1401,8 @@
         "common_name": "Toyon",
         "scientific_name": "Heteromeles arbutifolia",
         "family": "Rosaceae",
-        "origin": "W USA, Baja CA, BC"
+        "origin": "W USA, Baja CA, BC",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/342304993/medium.jpg"
       }
     },
     {
@@ -1341,7 +1419,8 @@
         "common_name": "Catalina Ironwood",
         "scientific_name": "Lyonothamnus floribundus",
         "family": "Rosaceae",
-        "origin": "Catalina Island"
+        "origin": "Catalina Island",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40743676/medium.jpg"
       }
     },
     {
@@ -1358,7 +1437,8 @@
         "common_name": "Apple",
         "scientific_name": "Malus domestica",
         "family": "Rosaceae",
-        "origin": "Central Asia"
+        "origin": "Central Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/268437/medium.jpg"
       }
     },
     {
@@ -1375,7 +1455,8 @@
         "common_name": "Red Flowering Plum",
         "scientific_name": "Prunus cerasifera",
         "family": "Rosaceae",
-        "origin": "Mediterranean"
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/62295627/medium.jpg"
       }
     },
     {
@@ -1392,7 +1473,8 @@
         "common_name": "Ornamental Pear ",
         "scientific_name": "Pyrus calleryana",
         "family": "Rosaceae",
-        "origin": "China, Taiwan"
+        "origin": "China, Taiwan",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269351075/medium.jpg"
       }
     },
     {
@@ -1409,7 +1491,8 @@
         "common_name": "Ornamental Pear ",
         "scientific_name": "Pyrus calleryana",
         "family": "Rosaceae",
-        "origin": "China, Taiwan"
+        "origin": "China, Taiwan",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269351075/medium.jpg"
       }
     },
     {
@@ -1426,7 +1509,8 @@
         "common_name": "Ornamental Pear ",
         "scientific_name": "Pyrus calleryana",
         "family": "Rosaceae",
-        "origin": "China, Taiwan"
+        "origin": "China, Taiwan",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269351075/medium.jpg"
       }
     },
     {
@@ -1443,7 +1527,8 @@
         "common_name": "Australian Willow",
         "scientific_name": "Geijera parviflora",
         "family": "Rutaceae",
-        "origin": "E Australia"
+        "origin": "E Australia",
+        "photo_url": "https://static.inaturalist.org/photos/404874038/medium.jpeg"
       }
     },
     {
@@ -1460,7 +1545,8 @@
         "common_name": "Arroyo Willow",
         "scientific_name": "Salix lasiolepis",
         "family": "Salicaceae",
-        "origin": "W North America"
+        "origin": "W North America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/16056750/medium.jpg"
       }
     },
     {
@@ -1477,7 +1563,8 @@
         "common_name": "Japanese Maple",
         "scientific_name": "Acer palmatum",
         "family": "Sapindaceae",
-        "origin": "Japan"
+        "origin": "Japan",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5641007/medium.jpg"
       }
     },
     {
@@ -1494,7 +1581,8 @@
         "common_name": "Buckeye",
         "scientific_name": "Aesculus californica",
         "family": "Sapindaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/72460428/medium.jpg"
       }
     },
     {
@@ -1511,7 +1599,8 @@
         "common_name": "Carrotwood Tree",
         "scientific_name": "Cupaniopsis anacardioides",
         "family": "Sapindaceae",
-        "origin": "NE Australia"
+        "origin": "NE Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1330673/medium.jpg"
       }
     },
     {
@@ -1528,7 +1617,8 @@
         "common_name": "Chinese Flame Tree",
         "scientific_name": "Koelreuteria bipinnata",
         "family": "Sapindaceae",
-        "origin": "SW China"
+        "origin": "SW China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236143455/medium.jpg"
       }
     },
     {
@@ -1545,7 +1635,8 @@
         "common_name": "Dawn Redwood",
         "scientific_name": "Metasequoia glyptostroboides",
         "family": "Cupressaceae",
-        "origin": "China"
+        "origin": "China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/285729025/medium.jpeg"
       }
     },
     {
@@ -1562,7 +1653,8 @@
         "common_name": "Coast Redwood",
         "scientific_name": "Sequoia sempervirens",
         "family": "Cupressaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://static.inaturalist.org/photos/61295436/medium.jpeg"
       }
     },
     {
@@ -1579,7 +1671,8 @@
         "common_name": "Giant Sequoia",
         "scientific_name": "Sequoiadendron giganteum",
         "family": "Cupressaceae",
-        "origin": "California"
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60664816/medium.jpg"
       }
     },
     {
@@ -1596,7 +1689,8 @@
         "common_name": "English Elm",
         "scientific_name": "Ulmus procera",
         "family": "Ulmaceae",
-        "origin": "Europe, W Asia"
+        "origin": "Europe, W Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/419559493/medium.jpg"
       }
     },
     {
@@ -1613,7 +1707,8 @@
         "common_name": "Pacific Wax Myrtle",
         "scientific_name": "Morella californica",
         "family": "Myricaceae",
-        "origin": "W USA Coast"
+        "origin": "W USA Coast",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/16145/medium.jpg"
       }
     },
     {
@@ -1630,7 +1725,8 @@
         "common_name": "Pindo palm ",
         "scientific_name": "Butia odorata ",
         "family": "Arecaceae",
-        "origin": "Brazil"
+        "origin": "Brazil",
+        "photo_url": "https://static.inaturalist.org/photos/45523506/medium.jpeg"
       }
     },
     {
@@ -1647,7 +1743,8 @@
         "common_name": "Aleppo pine",
         "scientific_name": "Pinus halepensis",
         "family": "Pinaceae",
-        "origin": "Mediterranean"
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/5810251/medium.jpg"
       }
     },
     {
@@ -1664,7 +1761,8 @@
         "common_name": "Myoporum ",
         "scientific_name": "Myoporum laetum",
         "family": "Scrophulariaceae",
-        "origin": "New Zealand"
+        "origin": "New Zealand",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/600853170/medium.jpg"
       }
     },
     {
@@ -1681,7 +1779,8 @@
         "common_name": "Birch",
         "scientific_name": "Betula spp.",
         "family": "Betulaceae",
-        "origin": "Unknown"
+        "origin": "Unknown",
+        "photo_url": null
       }
     }
   ]

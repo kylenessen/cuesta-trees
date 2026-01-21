@@ -3,7 +3,7 @@
 Export Trees to GeoJSON
 
 Exports tree locations with species information from the geopackage
-to a GeoJSON file for use in the web map.
+to a GeoJSON file for use in the web map. Fetches photos from iNaturalist.
 
 Uses only Python standard library (no geopandas required).
 
@@ -14,6 +14,9 @@ import sqlite3
 import struct
 import json
 import os
+import urllib.request
+import urllib.parse
+import time
 
 # Configuration
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -65,6 +68,65 @@ def parse_gpkg_point(blob):
     return x, y  # lon, lat
 
 
+def fetch_inaturalist_photo(scientific_name):
+    """
+    Fetch the default photo URL for a species from iNaturalist.
+    Returns the medium-sized photo URL or None if not found.
+    """
+    try:
+        encoded_name = urllib.parse.quote(scientific_name)
+        url = f"https://api.inaturalist.org/v1/taxa?q={encoded_name}&rank=species"
+
+        req = urllib.request.Request(url, headers={
+            'User-Agent': 'CuestaTreeMap/1.0 (educational project)'
+        })
+
+        with urllib.request.urlopen(req, timeout=10) as response:
+            data = json.loads(response.read().decode('utf-8'))
+
+            if data.get('results'):
+                # Find exact match for scientific name
+                for taxon in data['results']:
+                    if taxon.get('name', '').lower() == scientific_name.lower():
+                        photo = taxon.get('default_photo')
+                        if photo:
+                            return photo.get('medium_url')
+
+                # Fallback: use first result if no exact match
+                first_result = data['results'][0]
+                photo = first_result.get('default_photo')
+                if photo:
+                    return photo.get('medium_url')
+    except Exception as e:
+        print(f"  Warning: Could not fetch photo for '{scientific_name}': {e}")
+
+    return None
+
+
+def fetch_all_photos(scientific_names):
+    """
+    Fetch photos for all unique species names.
+    Returns a dict mapping scientific_name -> photo_url
+    """
+    print(f"Fetching photos from iNaturalist for {len(scientific_names)} species...")
+    photos = {}
+
+    for i, name in enumerate(scientific_names):
+        if name and name != "Unknown":
+            print(f"  [{i+1}/{len(scientific_names)}] {name}...", end=" ", flush=True)
+            photo_url = fetch_inaturalist_photo(name)
+            if photo_url:
+                photos[name] = photo_url
+                print("OK")
+            else:
+                print("No photo")
+            # Be respectful to the API
+            time.sleep(0.1)
+
+    print(f"Found photos for {len(photos)} species.")
+    return photos
+
+
 def export_trees():
     """
     Load tree locations and species data, join them, and export as GeoJSON.
@@ -91,6 +153,10 @@ def export_trees():
     rows = cursor.fetchall()
     print(f"Loaded {len(rows)} tree locations.")
 
+    # Get unique scientific names and fetch photos
+    scientific_names = list(set(row[3] for row in rows if row[3]))
+    photos = fetch_all_photos(scientific_names)
+
     # Build GeoJSON
     features = []
     missing_count = 0
@@ -106,6 +172,9 @@ def export_trees():
         if common_name is None:
             missing_count += 1
 
+        # Get photo URL for this species
+        photo_url = photos.get(scientific_name) if scientific_name else None
+
         feature = {
             "type": "Feature",
             "geometry": {
@@ -117,7 +186,8 @@ def export_trees():
                 "common_name": common_name or "Unknown",
                 "scientific_name": scientific_name or "Unknown",
                 "family": family or "Unknown",
-                "origin": origin or "Unknown"
+                "origin": origin or "Unknown",
+                "photo_url": photo_url
             }
         }
         features.append(feature)
