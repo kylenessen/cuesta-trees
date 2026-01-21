@@ -1,0 +1,108 @@
+tree_id,common_name,scientific_name,family,origin
+1,Blue Elderberry,Sambucus mexicana,Viburnaceae,"W USA, W Canada"
+2,Giant Yucca,Yucca gigantea,Asparagaceae,"Mexico, C America"
+3,Chinese Pistache,Pistacia chinensis,Anacardiaceae,China
+4,Lemonade Berry,Rhus integrifolia,Anacardiaceae,California
+5,African Sumac,Searsia lancea,Anacardiaceae,S Africa
+6,Sugar Bush,Rhus ovata,Anacardiaceae,"S CA, AZ, Baja CA"
+7,California Pepper Tree,Schinus molle,Anacardiaceae,South America
+8,Brazilian Pepper Tree,Schinus terebinthifolia,Anacardiaceae,South America
+9,Norfolk Island Pine,Araucaria heterophylla,Araucariaceae,Norfolk Island
+10,Canary Island Palm,Phoenix canariensis,Arecaceae,Canary Islands
+11,Senegal Date Palm,Phoenix reclinata,Arecaceae,Africa
+12,Queen Palm,Syagrus romanzoffiana,Arecaceae,South America
+13,Chinese Windmill Palm,Trachycarpus fortunei,Arecaceae,Central China
+14,Mexican Fan Palm,Washingtonia robusta,Arecaceae,"California, Mexico"
+15,California Alder (White Alder),Alnus rhombifolia,Betulaceae,California
+16,Chitalpa,Chitalpa tashkentensis,Bignoniaceae,hyb. from Uzbekistan
+17,Jacaranda,Jacaranda mimosifolia,Bignoniaceae,"Argentina, Bolivia"
+18,Horsetail Tree,Casuarina cunninghamiana,Casuarinaceae,Australia
+19,Incense Cedar,Calocedrus decurrens,Cupressaceae ,California
+20,Italian Cypress,Cupressus sempervirens,Cupressaceae ,Mediterranean
+21,Monterey Cypress,Hesperocyparis macrocarpa,Cupressaceae ,C California
+22,Chinese Juniper,Juniperus chinensis,Cupressaceae ,"China, Japan, Korea"
+23,Oriental Arborvitae,Platycladus orientalis,Cupressaceae ,E and N Asia
+24,Japanese Persimmon,Diospyros kaki,Ebenaceae,China
+25,Pacific Madrone,Arbutus menziesii,Ericaceae,California
+26,Strawberry Tree,Arbutus unedo,Ericaceae,S Europe
+27,Acacia Tree,Acacia baileyana,Fabaceae,Australia
+28,Sydney Golden Wattle,Acacia longifolia,Fabaceae,Australia
+29,Mimosa (Silk Tree),Albizia julibrissin,Fabaceae,"Iran to China, Korea"
+30,Western Redbud,Cercis occidentalis,Fabaceae,California
+31,Coast Live Oak,Quercus agrifolia,Fagaceae,California
+32,Valley Oak,Quercus lobata,Fagaceae,California
+33,Cork Oak,Quercus suber,Fagaceae,Mediterranean
+34,Shiny Xylosma,Xylosma racemosum,Salicaceae,China
+35,Coast Silktassel,Garrya elliptica,Garryaceae,"CA, OR coast"
+36,Ginkgo,Ginkgo biloba,Ginkgoaceae,SE China
+37,Crimson Spire,Escallonia rubra,Escalloniaceae,S America
+38,American Sweetgum,Liquidambar styraciflua,Altingiaceae,Eastern USA
+39,California Black Walnut,Juglans californica,Juglandaceae,California
+40,Crape Myrtle,Lagerstroemia spp.,Lythraceae,"China, Japan"
+41,Pomegranate,Punica granatum,Lythraceae,"Iran, N India"
+42,Southern Magnolia,Magnolia grandiflora,Magnoliaceae,S USA
+43,Saucer Magnolia,Magnolia ×soulangeana,Magnoliaceae,bred in France
+44,Australian Flame Tree,Brachychiton acerifolius,Malvaceae,Australia
+45,Kurrajong,Brachychiton populneus,Malvaceae,E Australia
+46,Queensland Bottle Tree,Brachychiton rupestris,Malvaceae,Australia
+47,Common Fig,Ficus carica,Moraceae,"Middle East, W Asia"
+48,Willow Peppermint,Agonis flexuosa,Myrtaceae,Australia
+49,Weeping Bottlebrush,Callistemon viminalis,Myrtaceae,NE Australia
+50,Red-Flowering Gum,Corymbia ficifolia,Myrtaceae,Australia
+51,Tasmanian Blue Gum,Eucalyptus globulus,Myrtaceae,Australia
+52,Flooded Gum,Eucalyptus grandis,Myrtaceae,Australia
+53,White Ironbark,Eucalyptus leucoxylon,Myrtaceae,Australia
+54,Red Spotted Gum,Eucalyptus mannifera,Myrtaceae,Australia
+55,Yellow Box,Eucalyptus melliodora,Myrtaceae,Australia
+56,Narrow-leafed Peppermint,Eucalyptus nicholii,Myrtaceae,Australia
+57,Silver Dollar Gum,Eucalyptus polyanthemos,Myrtaceae,Australia
+58,Swamp Mahogany,Eucalyptus robusta,Myrtaceae,Australia
+59,Desert Gum,Eucalyptus rudis,Myrtaceae,Australia
+60,Sydney Blue Gum,Eucalyptus saligna,Myrtaceae,Australia
+61,Red Ironbark,Eucalyptus sideroxylon,Myrtaceae,Australia
+62,Swamp Mallee,Eucalyptus spathulata,Myrtaceae,Australia
+63,Coral Gum (removed),Eucalyptus torquata,Myrtaceae,Australia
+64,Manna Gum,Eucalyptus viminalis,Myrtaceae,Australia
+65,Green Mallee,Eucalyptus viridis,Myrtaceae,Australia
+66,Pineapple Guava,Feijoa sellowiana,Myrtaceae,South America
+67,Australian Tea Tree,Leptospermum laevigatum,Myrtaceae,Australia
+68,Manuka,Leptospermum scoparium,Myrtaceae,"Australia, New Zeal."
+69,Pink Melaleuca,Melaleuca nesophila,Myrtaceae,Australia
+70,Prickly Paperbark,Melaleuca quinquenervia,Myrtaceae,Australia
+71,Tomlinson Ash,Fraxinus uhdei,Oleaceae,Mexico
+72,Mission Olive,Olea europaea,Oleaceae,"Mediterranean, Asia"
+73,Atlas Cedar,Cedrus atlantica,Pinaceae,"Morocco, Algeria"
+74,Canary Island Pine,Pinus canariensis,Pinaceae,Canary Islands
+75,Bishop Pine,Pinus muricata,Pinaceae ,California 
+76,Italian Stone Pine,Pinus pinea,Pinaceae,Mediterranean
+77,Monterey Pine,Pinus radiata,Pinaceae ,California 
+78,Japanese Black Pine,Pinus thunbergii,Pinaceae,"Japan, S Korea"
+79,Torrey Pine,Pinus torreyana,Pinaceae,S California
+80,Mock Orange,Pittosporum undulatum,Pittosporaceae,E Australia
+81,Western Sycamore,Platanus racemosa,Platanaceae,California
+82,Yew Tree,Podocarpus macrophyllus,Podocarpaceae,"China, Japan"
+83,Silk Oak,Grevillea robusta,Proteaceae,E Australia
+84,California Coffee Berry,Frangula californica,Rhamnaceae,California
+85,Loquat,Rhaphiolepis bibas,Rosaceae,China
+86,Toyon,Heteromeles arbutifolia,Rosaceae,"W USA, Baja CA, BC"
+87,Catalina Ironwood,Lyonothamnus floribundus,Rosaceae,Catalina Island
+88,Apple,Malus domestica,Rosaceae,Central Asia
+89,Red Flowering Plum,Prunus cerasifera,Rosaceae,Mediterranean
+90,Ornamental Pear ,Pyrus calleryana,Rosaceae,"China, Taiwan"
+91,Australian Willow,Geijera parviflora,Rutaceae,E Australia
+92,Arroyo Willow,Salix lasiolepis,Salicaceae,W North America
+93,Japanese Maple,Acer palmatum,Sapindaceae,Japan
+94,Buckeye,Aesculus californica,Sapindaceae,California
+95,Carrotwood Tree,Cupaniopsis anacardioides,Sapindaceae,NE Australia
+96,Chinese Flame Tree,Koelreuteria bipinnata,Sapindaceae,SW China
+97,Dawn Redwood,Metasequoia glyptostroboides,Cupressaceae,China
+98,Coast Redwood,Sequoia sempervirens,Cupressaceae,California
+99,Giant Sequoia,Sequoiadendron giganteum,Cupressaceae,California
+100,English Elm,Ulmus procera,Ulmaceae,"Europe, W Asia"
+101,Pacific Wax Myrtle,Morella californica,Myricaceae,W USA Coast
+102,Pindo palm ,Butia odorata ,Arecaceae,Brazil
+103,Aleppo pine,Pinus halepensis,Pinaceae,Mediterranean
+104,Myoporum ,Myoporum laetum,Scrophulariaceae,New Zealand
+105,Common Pear,Pyrus communis,Rosaceae,Europe. SW Asia
+106,Stellar Ruby Magnolia,Magnolia ×'Stellar Ruby',Magnoliaceae,China
+107,Birch,Betula spp.,Betulaceae,
