@@ -115,35 +115,6 @@
             border-color: #2d5016;
         }
 
-        /* View Toggle */
-        .view-toggle {
-            display: flex;
-            padding: 10px 15px;
-            gap: 8px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .view-btn {
-            flex: 1;
-            padding: 8px;
-            border: 1px solid #ddd;
-            background: white;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-
-        .view-btn.active {
-            background: #2d5016;
-            color: white;
-            border-color: #2d5016;
-        }
-
-        .view-btn:hover:not(.active) {
-            background: #f5f5f5;
-        }
-
         /* Family Filters */
         .filters-section {
             padding: 10px 15px;
@@ -373,6 +344,10 @@
             #map {
                 width: 100%;
             }
+
+            .sidebar-collapse-btn {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -393,11 +368,6 @@
 
         <div class="search-box">
             <input type="text" id="search" placeholder="Search trees..." autocomplete="off">
-        </div>
-
-        <div class="view-toggle">
-            <button class="view-btn active" data-view="map">Map View</button>
-            <button class="view-btn" data-view="list">List View</button>
         </div>
 
         <div class="filters-section">
@@ -434,7 +404,6 @@
         let markers = [];
         let markerMap = new Map();
         let selectedFamilies = new Set();
-        let currentView = 'map';
         let searchQuery = '';
 
         // DOM elements
@@ -444,7 +413,6 @@
         const visibleCountEl = document.getElementById('visible-count');
         const treeCountEl = document.getElementById('tree-count');
         const clearFiltersBtn = document.getElementById('clearFilters');
-        const viewBtns = document.querySelectorAll('.view-btn');
         const sidebarToggle = document.getElementById('sidebarToggle');
         const sidebar = document.getElementById('sidebar');
 
@@ -609,21 +577,6 @@
         searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value.trim();
             updateDisplay();
-        });
-
-        // Event: View toggle
-        viewBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                viewBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentView = btn.dataset.view;
-
-                if (currentView === 'list') {
-                    treeListContainer.style.display = 'block';
-                } else {
-                    treeListContainer.style.display = 'block';
-                }
-            });
         });
 
         // Event: Tree list item click
