@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuesta College Tree Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .header {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            z-index: 1000;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            max-width: calc(100% - 100px);
+        }
+
+        .header h1 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #2d5016;
+        }
+
+        .header .count {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .search-container {
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            z-index: 1000;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 280px;
+            max-width: calc(100% - 100px);
+        }
+
+        #search {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        #search::placeholder {
+            color: #999;
+        }
+
+        .results-list {
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .results-list.active {
+            display: block;
+            border-top: 1px solid #eee;
+        }
+
+        .result-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .result-item:hover {
+            background: #f5f5f5;
+        }
+
+        .result-item .name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .result-item .scientific {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .leaflet-popup-content {
+            margin: 12px 15px;
+            line-height: 1.5;
+        }
+
+        .popup-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d5016;
+            margin-bottom: 8px;
+        }
+
+        .popup-scientific {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .popup-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .popup-info span {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .popup-info strong {
+            color: #444;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .header {
+                left: 10px;
+                max-width: calc(100% - 20px);
+            }
+
+            .search-container {
+                left: 10px;
+                width: calc(100% - 20px);
+                max-width: none;
+            }
+
+            .header h1 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Cuesta College Tree Map</h1>
+        <div class="count"><span id="tree-count">0</span> trees on campus</div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search by name..." autocomplete="off">
+        <div class="results-list" id="results"></div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize map centered on Cuesta College
+        const map = L.map('map').setView([35.329, -120.741], 17);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 20,
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Tree marker style
+        const treeIcon = L.divIcon({
+            className: 'tree-marker',
+            html: '<div style="background: #2d5016; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.3);"></div>',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6]
+        });
+
+        let treesData = [];
+        let markers = [];
+        let markerMap = new Map();
+
+        // Load tree data
+        fetch('trees.geojson')
+            .then(response => response.json())
+            .then(data => {
+                treesData = data.features;
+                document.getElementById('tree-count').textContent = treesData.length;
+
+                // Add markers for each tree
+                treesData.forEach((feature, index) => {
+                    const coords = feature.geometry.coordinates;
+                    const props = feature.properties;
+
+                    const popupContent = `
+                        <div class="popup-title">${props.common_name}</div>
+                        <div class="popup-scientific">${props.scientific_name}</div>
+                        <div class="popup-info">
+                            <span><strong>Family:</strong> ${props.family}</span>
+                            <span><strong>Origin:</strong> ${props.origin}</span>
+                        </div>
+                    `;
+
+                    const marker = L.marker([coords[1], coords[0]], { icon: treeIcon })
+                        .bindPopup(popupContent)
+                        .addTo(map);
+
+                    markers.push(marker);
+                    markerMap.set(index, marker);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading tree data:', error);
+                document.getElementById('tree-count').textContent = 'Error loading data';
+            });
+
+        // Search functionality
+        const searchInput = document.getElementById('search');
+        const resultsContainer = document.getElementById('results');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+
+            if (query.length < 2) {
+                resultsContainer.classList.remove('active');
+                resultsContainer.innerHTML = '';
+                return;
+            }
+
+            const matches = treesData.filter((feature, index) => {
+                const props = feature.properties;
+                return props.common_name.toLowerCase().includes(query) ||
+                       props.scientific_name.toLowerCase().includes(query) ||
+                       props.family.toLowerCase().includes(query);
+            }).slice(0, 8); // Limit to 8 results
+
+            if (matches.length === 0) {
+                resultsContainer.classList.remove('active');
+                resultsContainer.innerHTML = '';
+                return;
+            }
+
+            resultsContainer.innerHTML = matches.map((feature, i) => {
+                const props = feature.properties;
+                const originalIndex = treesData.indexOf(feature);
+                return `
+                    <div class="result-item" data-index="${originalIndex}">
+                        <div class="name">${props.common_name}</div>
+                        <div class="scientific">${props.scientific_name}</div>
+                    </div>
+                `;
+            }).join('');
+
+            resultsContainer.classList.add('active');
+        });
+
+        // Handle result clicks
+        resultsContainer.addEventListener('click', function(e) {
+            const item = e.target.closest('.result-item');
+            if (!item) return;
+
+            const index = parseInt(item.dataset.index);
+            const marker = markerMap.get(index);
+
+            if (marker) {
+                map.setView(marker.getLatLng(), 19);
+                marker.openPopup();
+            }
+
+            searchInput.value = '';
+            resultsContainer.classList.remove('active');
+            resultsContainer.innerHTML = '';
+        });
+
+        // Close results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.search-container')) {
+                resultsContainer.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
