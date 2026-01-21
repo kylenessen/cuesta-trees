@@ -133,6 +133,30 @@
             color: #444;
         }
 
+        /* Tree label styling */
+        .tree-label {
+            background: none;
+            border: none;
+            box-shadow: none;
+            font-size: 11px;
+            font-weight: 500;
+            color: #2d5016;
+            white-space: nowrap;
+            text-shadow:
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white,
+                0 -1px 0 white,
+                0 1px 0 white,
+                -1px 0 0 white,
+                1px 0 0 white;
+        }
+
+        .tree-label::before {
+            display: none;
+        }
+
         /* Mobile adjustments */
         @media (max-width: 600px) {
             .header {
@@ -170,10 +194,10 @@
         // Initialize map centered on Cuesta College
         const map = L.map('map').setView([35.329, -120.741], 17);
 
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        // Add Carto Positron (grayscale) tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             maxZoom: 20,
-            attribution: '&copy; OpenStreetMap contributors'
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         }).addTo(map);
 
         // Tree marker style
@@ -211,6 +235,12 @@
 
                     const marker = L.marker([coords[1], coords[0]], { icon: treeIcon })
                         .bindPopup(popupContent)
+                        .bindTooltip(props.common_name, {
+                            permanent: true,
+                            direction: 'top',
+                            offset: [0, 6],
+                            className: 'tree-label'
+                        })
                         .addTo(map);
 
                     markers.push(marker);
