@@ -14,93 +14,190 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            height: 100vh;
         }
 
         #map {
-            height: 100vh;
-            width: 100%;
+            flex: 1;
+            height: 100%;
         }
 
-        .header {
-            position: absolute;
-            top: 10px;
-            left: 50px;
-            z-index: 1000;
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            height: 100%;
             background: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            max-width: calc(100% - 100px);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
         }
 
-        .header h1 {
+        .sidebar-header {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .sidebar-header h1 {
             font-size: 1.2rem;
-            margin-bottom: 5px;
             color: #2d5016;
+            margin-bottom: 5px;
         }
 
-        .header .count {
+        .sidebar-header .count {
             font-size: 0.85rem;
             color: #666;
         }
 
-        .search-container {
-            position: absolute;
-            top: 80px;
-            left: 50px;
-            z-index: 1000;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-            width: 280px;
-            max-width: calc(100% - 100px);
+        /* Search */
+        .search-box {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
         }
 
         #search {
             width: 100%;
-            padding: 12px 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.95rem;
             outline: none;
         }
 
-        #search::placeholder {
-            color: #999;
+        #search:focus {
+            border-color: #2d5016;
         }
 
-        .results-list {
-            max-height: 200px;
-            overflow-y: auto;
-            display: none;
-        }
-
-        .results-list.active {
-            display: block;
-            border-top: 1px solid #eee;
-        }
-
-        .result-item {
+        /* View Toggle */
+        .view-toggle {
+            display: flex;
             padding: 10px 15px;
-            cursor: pointer;
-            border-bottom: 1px solid #f0f0f0;
+            gap: 8px;
+            border-bottom: 1px solid #eee;
         }
 
-        .result-item:hover {
+        .view-btn {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .view-btn.active {
+            background: #2d5016;
+            color: white;
+            border-color: #2d5016;
+        }
+
+        .view-btn:hover:not(.active) {
             background: #f5f5f5;
         }
 
-        .result-item .name {
-            font-weight: 500;
-            color: #333;
+        /* Family Filters */
+        .filters-section {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
         }
 
-        .result-item .scientific {
+        .filters-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .filters-header h3 {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .clear-filters {
+            font-size: 0.75rem;
+            color: #2d5016;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .family-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+        .family-chip {
+            padding: 4px 10px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .family-chip:hover {
+            border-color: #2d5016;
+        }
+
+        .family-chip.active {
+            background: #2d5016;
+            color: white;
+            border-color: #2d5016;
+        }
+
+        /* Tree List */
+        .tree-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .tree-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .tree-item:hover {
+            background: #f9f9f9;
+        }
+
+        .tree-item .name {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .tree-item .scientific {
             font-size: 0.85rem;
             color: #666;
             font-style: italic;
+            margin-bottom: 4px;
         }
 
+        .tree-item .family-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            color: #666;
+        }
+
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Popup styles */
         .leaflet-popup-content {
             margin: 12px 15px;
             line-height: 1.5;
@@ -165,37 +262,76 @@
             display: none;
         }
 
+        /* Mobile toggle button */
+        .sidebar-toggle {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1001;
+            padding: 10px 15px;
+            background: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
         /* Mobile adjustments */
-        @media (max-width: 600px) {
-            .header {
-                left: 10px;
-                max-width: calc(100% - 20px);
+        @media (max-width: 768px) {
+            .sidebar {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translateX(100%);
+                transition: transform 0.3s;
             }
 
-            .search-container {
-                left: 10px;
-                width: calc(100% - 20px);
-                max-width: none;
+            .sidebar.open {
+                transform: translateX(0);
             }
 
-            .header h1 {
-                font-size: 1rem;
+            .sidebar-toggle {
+                display: block;
+            }
+
+            #map {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Cuesta College Tree Map</h1>
-        <div class="count"><span id="tree-count">0</span> trees on campus</div>
-    </div>
-
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search by name..." autocomplete="off">
-        <div class="results-list" id="results"></div>
-    </div>
+    <button class="sidebar-toggle" id="sidebarToggle">Menu</button>
 
     <div id="map"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h1>Cuesta College Trees</h1>
+            <div class="count">Showing <span id="visible-count">0</span> of <span id="tree-count">0</span> trees</div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search trees..." autocomplete="off">
+        </div>
+
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="map">Map View</button>
+            <button class="view-btn" data-view="list">List View</button>
+        </div>
+
+        <div class="filters-section">
+            <div class="filters-header">
+                <h3>Filter by Family</h3>
+                <span class="clear-filters" id="clearFilters">Clear all</span>
+            </div>
+            <div class="family-filters" id="familyFilters"></div>
+        </div>
+
+        <div class="tree-list" id="treeList"></div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
@@ -205,7 +341,7 @@
         // Add Carto Positron (grayscale) tiles
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             maxZoom: 20,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            attribution: '&copy; OpenStreetMap &copy; CARTO'
         }).addTo(map);
 
         // Tree marker style
@@ -219,13 +355,31 @@
         let treesData = [];
         let markers = [];
         let markerMap = new Map();
+        let selectedFamilies = new Set();
+        let currentView = 'map';
+        let searchQuery = '';
+
+        // DOM elements
+        const searchInput = document.getElementById('search');
+        const familyFiltersContainer = document.getElementById('familyFilters');
+        const treeListContainer = document.getElementById('treeList');
+        const visibleCountEl = document.getElementById('visible-count');
+        const treeCountEl = document.getElementById('tree-count');
+        const clearFiltersBtn = document.getElementById('clearFilters');
+        const viewBtns = document.querySelectorAll('.view-btn');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
 
         // Load tree data
         fetch('trees.geojson')
             .then(response => response.json())
             .then(data => {
                 treesData = data.features;
-                document.getElementById('tree-count').textContent = treesData.length;
+                treeCountEl.textContent = treesData.length;
+
+                // Extract unique families
+                const families = [...new Set(treesData.map(f => f.properties.family))].sort();
+                renderFamilyFilters(families);
 
                 // Add markers for each tree
                 treesData.forEach((feature, index) => {
@@ -259,55 +413,138 @@
                     markers.push(marker);
                     markerMap.set(index, marker);
                 });
+
+                updateDisplay();
             })
             .catch(error => {
                 console.error('Error loading tree data:', error);
-                document.getElementById('tree-count').textContent = 'Error loading data';
+                treeCountEl.textContent = 'Error';
             });
 
-        // Search functionality
-        const searchInput = document.getElementById('search');
-        const resultsContainer = document.getElementById('results');
+        function renderFamilyFilters(families) {
+            familyFiltersContainer.innerHTML = families.map(family =>
+                `<span class="family-chip" data-family="${family}">${family}</span>`
+            ).join('');
+        }
 
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase().trim();
+        function getFilteredTrees() {
+            return treesData.filter((feature, index) => {
+                const props = feature.properties;
 
-            if (query.length < 2) {
-                resultsContainer.classList.remove('active');
-                resultsContainer.innerHTML = '';
+                // Check family filter
+                if (selectedFamilies.size > 0 && !selectedFamilies.has(props.family)) {
+                    return false;
+                }
+
+                // Check search query
+                if (searchQuery) {
+                    const query = searchQuery.toLowerCase();
+                    if (!props.common_name.toLowerCase().includes(query) &&
+                        !props.scientific_name.toLowerCase().includes(query) &&
+                        !props.family.toLowerCase().includes(query)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+        }
+
+        function updateDisplay() {
+            const filtered = getFilteredTrees();
+            visibleCountEl.textContent = filtered.length;
+
+            // Update marker visibility
+            treesData.forEach((feature, index) => {
+                const marker = markerMap.get(index);
+                const isVisible = filtered.includes(feature);
+
+                if (isVisible) {
+                    marker.addTo(map);
+                } else {
+                    marker.remove();
+                }
+            });
+
+            // Update list view
+            renderTreeList(filtered);
+        }
+
+        function renderTreeList(trees) {
+            if (trees.length === 0) {
+                treeListContainer.innerHTML = '<div class="no-results">No trees match your filters</div>';
                 return;
             }
 
-            const matches = treesData.filter((feature, index) => {
-                const props = feature.properties;
-                return props.common_name.toLowerCase().includes(query) ||
-                       props.scientific_name.toLowerCase().includes(query) ||
-                       props.family.toLowerCase().includes(query);
-            }).slice(0, 8); // Limit to 8 results
+            // Sort by common name
+            const sorted = [...trees].sort((a, b) =>
+                a.properties.common_name.localeCompare(b.properties.common_name)
+            );
 
-            if (matches.length === 0) {
-                resultsContainer.classList.remove('active');
-                resultsContainer.innerHTML = '';
-                return;
-            }
-
-            resultsContainer.innerHTML = matches.map((feature, i) => {
+            treeListContainer.innerHTML = sorted.map(feature => {
                 const props = feature.properties;
-                const originalIndex = treesData.indexOf(feature);
+                const index = treesData.indexOf(feature);
                 return `
-                    <div class="result-item" data-index="${originalIndex}">
+                    <div class="tree-item" data-index="${index}">
                         <div class="name">${props.common_name}</div>
                         <div class="scientific">${props.scientific_name}</div>
+                        <span class="family-tag">${props.family}</span>
                     </div>
                 `;
             }).join('');
+        }
 
-            resultsContainer.classList.add('active');
+        // Event: Family filter clicks
+        familyFiltersContainer.addEventListener('click', (e) => {
+            const chip = e.target.closest('.family-chip');
+            if (!chip) return;
+
+            const family = chip.dataset.family;
+
+            if (selectedFamilies.has(family)) {
+                selectedFamilies.delete(family);
+                chip.classList.remove('active');
+            } else {
+                selectedFamilies.add(family);
+                chip.classList.add('active');
+            }
+
+            updateDisplay();
         });
 
-        // Handle result clicks
-        resultsContainer.addEventListener('click', function(e) {
-            const item = e.target.closest('.result-item');
+        // Event: Clear filters
+        clearFiltersBtn.addEventListener('click', () => {
+            selectedFamilies.clear();
+            document.querySelectorAll('.family-chip').forEach(chip => chip.classList.remove('active'));
+            searchInput.value = '';
+            searchQuery = '';
+            updateDisplay();
+        });
+
+        // Event: Search input
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim();
+            updateDisplay();
+        });
+
+        // Event: View toggle
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                viewBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentView = btn.dataset.view;
+
+                if (currentView === 'list') {
+                    treeListContainer.style.display = 'block';
+                } else {
+                    treeListContainer.style.display = 'block';
+                }
+            });
+        });
+
+        // Event: Tree list item click
+        treeListContainer.addEventListener('click', (e) => {
+            const item = e.target.closest('.tree-item');
             if (!item) return;
 
             const index = parseInt(item.dataset.index);
@@ -316,18 +553,24 @@
             if (marker) {
                 map.setView(marker.getLatLng(), 19);
                 marker.openPopup();
-            }
 
-            searchInput.value = '';
-            resultsContainer.classList.remove('active');
-            resultsContainer.innerHTML = '';
+                // On mobile, close sidebar
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('open');
+                    sidebarToggle.textContent = 'Menu';
+                }
+            }
         });
 
-        // Close results when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.search-container')) {
-                resultsContainer.classList.remove('active');
-            }
+        // Event: Mobile sidebar toggle
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            sidebarToggle.textContent = sidebar.classList.contains('open') ? 'Close' : 'Menu';
+        });
+
+        // Fix map size when window resizes
+        window.addEventListener('resize', () => {
+            map.invalidateSize();
         });
     </script>
 </body>
