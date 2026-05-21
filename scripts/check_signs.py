@@ -26,7 +26,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Go up one level to get the project root.
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 # Construct the full path to the geopackage file.
-GEOPACKAGE_PATH = os.path.join(PROJECT_ROOT, "cuesta-trees", "cuesta-trees.gpkg")
+GEOPACKAGE_PATH = os.path.join(PROJECT_ROOT, "map", "cuesta-trees.gpkg")
 # Define the output CSV name, which will be saved in the same directory as the script.
 OUTPUT_CSV_NAME = os.path.join(SCRIPT_DIR, "new_sign_orders.csv")
 
@@ -157,4 +157,3 @@ if __name__ == "__main__":
         print(f"Error: The file '{GEOPACKAGE_PATH}' was not found.")
     else:
         check_and_correct_signs()
-

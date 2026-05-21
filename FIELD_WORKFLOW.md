@@ -1,5 +1,7 @@
 # Cuesta Trees Field Workflow
 
+The active QGIS and Mergin Maps project lives in `map/`. Open `map/cuesta-trees.qgz` when working in QGIS.
+
 The mobile project should stay centered on tree points and observation records. In the field, tap a tree point and add an observation. Use that observation to record tree condition, sign condition, needed work, priority, notes, and a photo when useful.
 
 The `tree_locations` layer is the map layer for physical tree locations. Keep it mostly stable. It should hold geometry, stable IDs, and display fields. Do not use it as the main place for ongoing notes or sign work.

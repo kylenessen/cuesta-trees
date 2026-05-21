@@ -1,1 +1,4 @@
 .DS_Store
+*/.mergin/.cache/
+*/.mergin/client-log.txt
+*/.mergin/*-diff-*

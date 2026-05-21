@@ -4322,7 +4322,7 @@
                 <Option type="int" name="FetchLimitNumber" value="100"/>
                 <Option type="bool" name="MapIdentification" value="false"/>
                 <Option type="bool" name="ReadOnly" value="false"/>
-                <Option type="QString" name="ReferencedLayerDataSource" value="/Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg|layername=tree_locations"/>
+                <Option type="QString" name="ReferencedLayerDataSource" value="./cuesta-trees.gpkg|layername=tree_locations"/>
                 <Option type="QString" name="ReferencedLayerId" value="tree_locations_edd10780_80b0_4c3a_a741_0ee7e2fc801d"/>
                 <Option type="QString" name="ReferencedLayerName" value="Tree Locations"/>
                 <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
@@ -5032,7 +5032,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="int" name="FetchLimitNumber" value="100"/>
                 <Option type="bool" name="MapIdentification" value="false"/>
                 <Option type="bool" name="ReadOnly" value="false"/>
-                <Option type="QString" name="ReferencedLayerDataSource" value="/Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg|layername=tree_locations"/>
+                <Option type="QString" name="ReferencedLayerDataSource" value="./cuesta-trees.gpkg|layername=tree_locations"/>
                 <Option type="QString" name="ReferencedLayerId" value="tree_locations_edd10780_80b0_4c3a_a741_0ee7e2fc801d"/>
                 <Option type="QString" name="ReferencedLayerName" value="Tree Locations"/>
                 <Option type="QString" name="ReferencedLayerProviderKey" value="ogr"/>
@@ -6238,7 +6238,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" name="Layer" value="species_master_current_acee4227_20ab_4944_a3a4_f3de38951cad"/>
                 <Option type="QString" name="LayerName" value="Species List"/>
                 <Option type="QString" name="LayerProviderName" value="ogr"/>
-                <Option type="QString" name="LayerSource" value="/Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg|layername=species_master_current"/>
+                <Option type="QString" name="LayerSource" value="./cuesta-trees.gpkg|layername=species_master_current"/>
                 <Option type="int" name="NofColumns" value="1"/>
                 <Option type="bool" name="OrderByValue" value="false"/>
                 <Option type="bool" name="UseCompleter" value="false"/>
@@ -6833,7 +6833,7 @@ def my_form_open(dialog, layer, feature):
       </spatialrefsys>
     </CoordinateCustomCrs>
   </ProjectDisplaySettings>
-  <ProjectGpsSettings autoAddTrackVertices="0" destinationLayerSource="/Users/kylenessen/Documents/Code/cuesta-trees/cuesta-trees/cuesta-trees.gpkg|layername=tree_locations" autoCommitFeatures="0" destinationLayer="tree_locations_edd10780_80b0_4c3a_a741_0ee7e2fc801d" destinationLayerName="Tree Locations" destinationFollowsActiveLayer="1" destinationLayerProvider="ogr">
+  <ProjectGpsSettings autoAddTrackVertices="0" destinationLayerSource="./cuesta-trees.gpkg|layername=tree_locations" autoCommitFeatures="0" destinationLayer="tree_locations_edd10780_80b0_4c3a_a741_0ee7e2fc801d" destinationLayerName="Tree Locations" destinationFollowsActiveLayer="1" destinationLayerProvider="ogr">
     <timeStampFields/>
   </ProjectGpsSettings>
 </qgis>
