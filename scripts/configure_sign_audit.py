@@ -5,9 +5,14 @@ Run this script with qgis_process and pass the target project with
 insert or update tree or observation records.
 """
 
+import os
+import re
+import tempfile
 from collections import Counter
+from html import escape
+from pathlib import Path
+from zipfile import ZipFile
 
-from qgis.PyQt.QtCore import QMetaType
 from qgis.core import (
     QgsCategorizedSymbolRenderer,
     QgsDefaultValue,
@@ -19,7 +24,7 @@ from qgis.core import (
     QgsProcessingParameterString,
     QgsRendererCategory,
 )
-
+from qgis.PyQt.QtCore import QMetaType
 
 AUDIT_EXPRESSION = r"""
 with_variable(
@@ -72,6 +77,173 @@ AUDIT_CATEGORIES = (
     ("Orphan Sign Nearby", "#8c6d31"),
     ("Other", "#666666"),
 )
+
+
+def read_project_archive(project_path):
+    with ZipFile(project_path) as archive:
+        entries = [(info, archive.read(info.filename)) for info in archive.infolist()]
+
+    qgs_entries = [(info, data) for info, data in entries if info.filename.endswith(".qgs")]
+    if len(qgs_entries) != 1:
+        raise QgsProcessingException("The QGZ project must contain exactly one QGS file")
+
+    qgs_info, qgs_data = qgs_entries[0]
+    return entries, qgs_info.filename, qgs_data.decode("utf-8")
+
+
+def write_project_archive(project_path, entries, qgs_name, qgs_text):
+    project_path = Path(project_path)
+    file_descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f".{project_path.stem}-",
+        suffix=".qgz",
+        dir=project_path.parent,
+    )
+    os.close(file_descriptor)
+
+    try:
+        with ZipFile(temporary_name, "w") as archive:
+            for info, data in entries:
+                archive.writestr(info, qgs_text.encode("utf-8") if info.filename == qgs_name else data)
+        os.replace(temporary_name, project_path)
+    finally:
+        if os.path.exists(temporary_name):
+            os.unlink(temporary_name)
+
+
+def map_layer_xml(project_xml, layer_name):
+    for match in re.finditer(r"  <maplayer\b.*?</maplayer>", project_xml, re.DOTALL):
+        if f"<layername>{layer_name}</layername>" in match.group(0):
+            return match
+    raise QgsProcessingException(f"Could not find {layer_name} in the saved project XML")
+
+
+def replace_project_variable(project_xml, variable_name, variable_value):
+    names_match = re.search(
+        r'(      <properties name="variableNames" type="QStringList">)(.*?)(      </properties>)',
+        project_xml,
+        re.DOTALL,
+    )
+    values_match = re.search(
+        r'(      <properties name="variableValues" type="QStringList">)(.*?)(      </properties>)',
+        project_xml,
+        re.DOTALL,
+    )
+    if not names_match or not values_match:
+        raise QgsProcessingException("Project variables are not stored as QStringList values")
+
+    names = re.findall(r"<value>(.*?)</value>", names_match.group(2))
+    values = re.findall(r"<value>(.*?)</value>", values_match.group(2))
+    if len(names) != len(values):
+        raise QgsProcessingException("Project variable names and values have different lengths")
+
+    if variable_name in names:
+        values[names.index(variable_name)] = variable_value
+    else:
+        names.append(variable_name)
+        values.append(variable_value)
+
+    def value_lines(items):
+        return "\n" + "\n".join(
+            f"        <value>{escape(item, quote=False)}</value>" for item in items
+        ) + "\n"
+
+    project_xml = project_xml.replace(
+        names_match.group(0),
+        names_match.group(1) + value_lines(names) + names_match.group(3),
+        1,
+    )
+    project_xml = project_xml.replace(
+        values_match.group(0),
+        values_match.group(1) + value_lines(values) + values_match.group(3),
+        1,
+    )
+    return project_xml
+
+
+def merge_audit_configuration(original_xml, configured_xml, audit_start):
+    original_tree_match = map_layer_xml(original_xml, "Tree Locations")
+    configured_tree_match = map_layer_xml(configured_xml, "Tree Locations")
+    original_tree = original_tree_match.group(0)
+    configured_tree = configured_tree_match.group(0)
+
+    configured_manager_match = re.search(
+        r"      <map-layer-style-manager\b.*?</map-layer-style-manager>",
+        configured_tree,
+        re.DOTALL,
+    )
+    original_manager_match = re.search(
+        r"      <map-layer-style-manager\b.*?</map-layer-style-manager>",
+        original_tree,
+        re.DOTALL,
+    )
+    if not configured_manager_match or not original_manager_match:
+        raise QgsProcessingException("Could not find the Tree Locations style manager")
+
+    configured_prefix = configured_tree[: configured_manager_match.start()]
+    audit_field_match = re.search(
+        r'^        <field .*name="sign_audit_status".*/>$',
+        configured_prefix,
+        re.MULTILINE,
+    )
+    if not audit_field_match:
+        raise QgsProcessingException("Could not find the generated sign audit expression field")
+
+    original_prefix = original_tree[: original_manager_match.start()]
+    original_suffix = original_tree[original_manager_match.end() :]
+    original_prefix = re.sub(
+        r'\n        <field .*name="sign_audit_status".*/>',
+        "",
+        original_prefix,
+    )
+    if "      </expressionfields>" not in original_prefix:
+        raise QgsProcessingException("Could not find Tree Locations expression fields")
+    original_prefix = original_prefix.replace(
+        "      </expressionfields>",
+        audit_field_match.group(0) + "\n      </expressionfields>",
+        1,
+    )
+    merged_tree = (
+        original_prefix
+        + configured_manager_match.group(0)
+        + original_suffix
+    )
+    merged_xml = (
+        original_xml[: original_tree_match.start()]
+        + merged_tree
+        + original_xml[original_tree_match.end() :]
+    )
+
+    merged_xml, default_count = re.subn(
+        r'<default applyOnUpdate="0" expression="[^"]*" field="status"/>',
+        '<default applyOnUpdate="0" expression="attribute(@parent, \'latest_status\')" field="status"/>',
+        merged_xml,
+        count=1,
+    )
+    if default_count != 1:
+        raise QgsProcessingException("Could not update the observation status default")
+
+    configured_themes_match = re.search(
+        r"  <visibility-presets>.*?</visibility-presets>",
+        configured_xml,
+        re.DOTALL,
+    )
+    if not configured_themes_match:
+        raise QgsProcessingException("Could not find the generated map themes")
+    merged_xml, theme_count = re.subn(
+        r"  <visibility-presets(?:/>|>.*?</visibility-presets>)",
+        configured_themes_match.group(0),
+        merged_xml,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if theme_count != 1:
+        raise QgsProcessingException("Could not replace the project map themes")
+
+    configured_header = configured_xml.splitlines()[1]
+    original_lines = merged_xml.splitlines()
+    original_lines[1] = configured_header
+    merged_xml = "\n".join(original_lines) + ("\n" if merged_xml.endswith("\n") else "")
+    return replace_project_variable(merged_xml, "sign_audit_started", audit_start)
 
 
 def marker_symbol(color):
@@ -134,6 +306,11 @@ class ConfigureSignAudit(QgsProcessingAlgorithm):
         project = context.project()
         if project is None or not project.fileName():
             raise QgsProcessingException("Pass a QGIS project with --PROJECT_PATH")
+
+        project_path = Path(project.fileName())
+        if project_path.suffix.lower() != ".qgz":
+            raise QgsProcessingException("This configuration script requires a QGZ project")
+        original_entries, original_qgs_name, original_xml = read_project_archive(project_path)
 
         audit_start = self.parameterAsString(parameters, self.AUDIT_START, context).strip()
         if not audit_start:
@@ -198,6 +375,14 @@ class ConfigureSignAudit(QgsProcessingAlgorithm):
         project.setDirty(True)
         if not project.write():
             raise QgsProcessingException(f"Could not save {project.fileName()}")
+        _, _, configured_xml = read_project_archive(project_path)
+        merged_xml = merge_audit_configuration(original_xml, configured_xml, audit_start)
+        write_project_archive(
+            project_path,
+            original_entries,
+            original_qgs_name,
+            merged_xml,
+        )
 
         feedback.pushInfo(f"Configured sign audit starting {audit_start}")
         feedback.pushInfo(f"Saved {project.fileName()}")
