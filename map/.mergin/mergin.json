@@ -28,7 +28,7 @@
   },
   "created": "2025-07-31T03:56:45Z",
   "creator": 1,
-  "disk_usage": 483700,
+  "disk_usage": 494253,
   "files": [
     {
       "checksum": "d40bcd61b65f2be55e8ab43511d5654191b562cc",
@@ -49,16 +49,21 @@
       "size": 35079
     },
     {
-      "checksum": "c2ade2239cf278ec15f487f9d4e72619a57cc9b2",
-      "mtime": "2026-05-21T07:50:12Z",
+      "checksum": "a2cf6fed59ce457d921154ac3ca5e6a72ed65ea3",
+      "diff": {
+        "checksum": "b22c2b31698a1a201aa361772cfdb89303555bb0",
+        "path": "cuesta-trees.gpkg-diff-f729ef5d-be26-43e4-94b5-51cf89222755",
+        "size": 145
+      },
+      "mtime": "2026-08-08T09:56:46Z",
       "path": "cuesta-trees.gpkg",
       "size": 204800
     },
     {
-      "checksum": "5b495e305498d1ea7a81557f95cd0c4d38801663",
-      "mtime": "2026-05-21T08:06:08Z",
+      "checksum": "67192551e069abc8ba2c2da6aa132072ad3ab56e",
+      "mtime": "2026-08-08T09:56:46Z",
       "path": "cuesta-trees.qgz",
-      "size": 38952
+      "size": 49505
     }
   ],
   "id": "55652f5d-ce68-4bbf-b24e-bc9d37099eb2",
@@ -76,8 +81,8 @@
     "valid_qgis",
     "input_use"
   ],
-  "updated": "2026-05-21T08:06:08Z",
+  "updated": "2026-08-08T09:56:46Z",
   "uploads": [],
-  "version": "v44",
+  "version": "v48",
   "workspace_id": 1
 }
