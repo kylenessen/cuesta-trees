@@ -34,33 +34,56 @@ with_variable(
     'uuid',
     "tree_uuid",
     with_variable(
-      'checked_at',
+      'eligible_at',
       aggregate(
         'Observations',
         'max',
         "dateobserved",
         filter :=
           "tree_uuid" = @uuid
-          AND "dateobserved" >= @cutoff
-          AND coalesce("sign_status", '') NOT IN ('', 'Not Checked')
+          AND "dateobserved" < @cutoff
       ),
-      CASE
-        WHEN "latest_status" NOT IN ('OK', 'Needs Attention')
-          THEN 'Not in audit'
-        WHEN @checked_at IS NULL
-          THEN 'Not Checked'
-        ELSE
-          array_first(
-            aggregate(
-              'Observations',
-              'array_agg',
-              "sign_status",
-              filter :=
-                "tree_uuid" = @uuid
-                AND "dateobserved" = @checked_at
-            )
+      with_variable(
+        'eligible_status',
+        array_first(
+          aggregate(
+            'Observations',
+            'array_agg',
+            "status",
+            filter :=
+              "tree_uuid" = @uuid
+              AND "dateobserved" = @eligible_at
           )
-      END
+        ),
+        with_variable(
+          'checked_at',
+          aggregate(
+            'Observations',
+            'max',
+            "dateobserved",
+            filter :=
+              "tree_uuid" = @uuid
+              AND "dateobserved" >= @cutoff
+          ),
+          CASE
+            WHEN @eligible_status NOT IN ('OK', 'Needs Attention')
+              THEN 'Not in audit'
+            WHEN @checked_at IS NULL
+              THEN 'Not Checked'
+            ELSE
+              array_first(
+                aggregate(
+                  'Observations',
+                  'array_agg',
+                  "status",
+                  filter :=
+                    "tree_uuid" = @uuid
+                    AND "dateobserved" = @checked_at
+                )
+              )
+          END
+        )
+      )
     )
   )
 )
@@ -69,14 +92,16 @@ with_variable(
 
 AUDIT_CATEGORIES = (
     ("Not Checked", "#f2c94c"),
-    ("Looks Good", "#1b9e77"),
-    ("Missing", "#d73027"),
-    ("Damaged", "#f46d43"),
-    ("Incorrect Text", "#8e44ad"),
-    ("Needs Install", "#2c7fb8"),
-    ("Orphan Sign Nearby", "#8c6d31"),
-    ("Other", "#666666"),
+    ("OK", "#1b9e77"),
+    ("Needs Attention", "#d73027"),
+    ("No Sign", "#f46d43"),
+    ("New Species", "#8e44ad"),
+    ("Removed", "#7f8c8d"),
+    ("Other", "#2c7fb8"),
 )
+
+VISIBLE_OBSERVATION_FIELDS = ("status", "notes", "photo")
+RETIRED_OBSERVATION_FIELDS = ("sign_status", "action_needed", "priority")
 
 
 def read_project_archive(project_path):
@@ -173,6 +198,69 @@ def make_gps_destination_portable(project_xml):
     return project_xml
 
 
+def simplify_observation_form(project_xml):
+    observation_match = map_layer_xml(project_xml, "Observations")
+    observation_xml = observation_match.group(0)
+    form_match = re.search(
+        r"      <attributeEditorForm>.*?      </attributeEditorForm>",
+        observation_xml,
+        re.DOTALL,
+    )
+    if not form_match:
+        raise QgsProcessingException("Could not find the Observations form layout")
+
+    visible_widgets = []
+    for field_name in VISIBLE_OBSERVATION_FIELDS:
+        widget_match = re.search(
+            rf'        <attributeEditorField\b[^>]*name="{field_name}".*?'
+            r"        </attributeEditorField>",
+            form_match.group(0),
+            re.DOTALL,
+        )
+        if not widget_match:
+            raise QgsProcessingException(
+                f"Could not find the {field_name} widget in the Observations form"
+            )
+        visible_widgets.append(widget_match.group(0))
+
+    simple_form = (
+        "      <attributeEditorForm>\n"
+        + "\n".join(visible_widgets)
+        + "\n      </attributeEditorForm>"
+    )
+    observation_xml = observation_xml.replace(form_match.group(0), simple_form, 1)
+
+    for field_name in RETIRED_OBSERVATION_FIELDS:
+        observation_xml, default_count = re.subn(
+            rf'<default applyOnUpdate="[01]" expression="[^"]*" field="{field_name}"/>',
+            f'<default applyOnUpdate="0" expression="" field="{field_name}"/>',
+            observation_xml,
+            count=1,
+        )
+        observation_xml, editable_count = re.subn(
+            rf'<field editable="[01]" name="{field_name}"/>',
+            f'<field editable="0" name="{field_name}"/>',
+            observation_xml,
+            count=1,
+        )
+        observation_xml, column_count = re.subn(
+            rf'<column hidden="[01]" name="{field_name}" type="field"',
+            f'<column hidden="1" name="{field_name}" type="field"',
+            observation_xml,
+            count=1,
+        )
+        if (default_count, editable_count, column_count) != (1, 1, 1):
+            raise QgsProcessingException(
+                f"Could not retire every project setting for {field_name}"
+            )
+
+    return (
+        project_xml[: observation_match.start()]
+        + observation_xml
+        + project_xml[observation_match.end() :]
+    )
+
+
 def merge_audit_configuration(original_xml, configured_xml, audit_start):
     original_tree_match = map_layer_xml(original_xml, "Tree Locations")
     configured_tree_match = map_layer_xml(configured_xml, "Tree Locations")
@@ -257,7 +345,8 @@ def merge_audit_configuration(original_xml, configured_xml, audit_start):
     original_lines[1] = configured_header
     merged_xml = "\n".join(original_lines) + ("\n" if merged_xml.endswith("\n") else "")
     merged_xml = replace_project_variable(merged_xml, "sign_audit_started", audit_start)
-    return make_gps_destination_portable(merged_xml)
+    merged_xml = make_gps_destination_portable(merged_xml)
+    return simplify_observation_form(merged_xml)
 
 
 def marker_symbol(color):
