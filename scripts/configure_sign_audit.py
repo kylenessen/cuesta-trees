@@ -160,6 +160,19 @@ def replace_project_variable(project_xml, variable_name, variable_value):
     return project_xml
 
 
+def make_gps_destination_portable(project_xml):
+    portable_source = "./cuesta-trees.gpkg|layername=tree_locations"
+    project_xml, replacement_count = re.subn(
+        r'destinationLayerSource="[^"]*cuesta-trees\.gpkg\|layername=tree_locations"',
+        f'destinationLayerSource="{portable_source}"',
+        project_xml,
+        count=1,
+    )
+    if replacement_count != 1:
+        raise QgsProcessingException("Could not update the GPS destination layer path")
+    return project_xml
+
+
 def merge_audit_configuration(original_xml, configured_xml, audit_start):
     original_tree_match = map_layer_xml(original_xml, "Tree Locations")
     configured_tree_match = map_layer_xml(configured_xml, "Tree Locations")
@@ -243,7 +256,8 @@ def merge_audit_configuration(original_xml, configured_xml, audit_start):
     original_lines = merged_xml.splitlines()
     original_lines[1] = configured_header
     merged_xml = "\n".join(original_lines) + ("\n" if merged_xml.endswith("\n") else "")
-    return replace_project_variable(merged_xml, "sign_audit_started", audit_start)
+    merged_xml = replace_project_variable(merged_xml, "sign_audit_started", audit_start)
+    return make_gps_destination_portable(merged_xml)
 
 
 def marker_symbol(color):
