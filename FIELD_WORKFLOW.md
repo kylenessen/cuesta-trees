@@ -20,12 +20,6 @@ The basic field routine is simple. Open the tree point, add an observation, choo
 
 Use the `Sign Audit` map theme when checking signs. The project variable `sign_audit_started` defines the beginning of the current campaign. Trees whose status at the start was `OK` or `Needs Attention` appear as `Not Checked` until they receive an observation after that date. The new observation status then controls the audit symbol. Trees that were already in another status when the campaign began are not part of the audit and are hidden by the audit style.
 
-Record only real field visits as observations. Do not create bulk placeholder observations to reset the map. Starting a new audit requires changing `sign_audit_started` in the QGIS project variables, saving the project, and synchronizing it to Mergin Maps.
+Record only real field visits as observations. Do not create bulk placeholder observations to reset the map.
 
-The configuration can be rebuilt from the command line with QGIS Processing. Replace the application path if a different QGIS installation is active.
-
-```sh
-/Applications/QGIS.app/Contents/MacOS/qgis_process run scripts/configure_sign_audit.py \
-  --PROJECT_PATH=map/cuesta-trees.qgz \
-  -- AUDIT_START='2026-08-08 00:00:00'
-```
+Starting a new audit requires advancing `sign_audit_started`, checking the result, and synchronizing the project to Mergin Maps. Follow [SIGN_AUDIT.md](SIGN_AUDIT.md) for the annual reset procedure, validation steps, field workflow, and troubleshooting.
