@@ -102,6 +102,7 @@ AUDIT_CATEGORIES = (
 
 VISIBLE_OBSERVATION_FIELDS = ("status", "notes", "photo")
 RETIRED_OBSERVATION_FIELDS = ("sign_status", "action_needed", "priority")
+TREE_PREVIEW_FIELDS = ("scientific_name", "latest_status", "last_observed")
 
 
 def read_project_archive(project_path):
@@ -261,6 +262,25 @@ def simplify_observation_form(project_xml):
     )
 
 
+def configure_tree_preview(project_xml):
+    tree_match = map_layer_xml(project_xml, "Tree Locations")
+    tree_xml = tree_match.group(0)
+    preview_content = "# fields\n" + "\n".join(TREE_PREVIEW_FIELDS)
+    tree_xml, replacement_count = re.subn(
+        r'<mapTip enabled="[01]">.*?</mapTip>',
+        f'<mapTip enabled="1">{preview_content}</mapTip>',
+        tree_xml,
+        flags=re.DOTALL,
+    )
+    if replacement_count == 0:
+        raise QgsProcessingException("Could not configure the Tree Locations preview")
+    return (
+        project_xml[: tree_match.start()]
+        + tree_xml
+        + project_xml[tree_match.end() :]
+    )
+
+
 def merge_audit_configuration(original_xml, configured_xml, audit_start):
     original_tree_match = map_layer_xml(original_xml, "Tree Locations")
     configured_tree_match = map_layer_xml(configured_xml, "Tree Locations")
@@ -346,7 +366,8 @@ def merge_audit_configuration(original_xml, configured_xml, audit_start):
     merged_xml = "\n".join(original_lines) + ("\n" if merged_xml.endswith("\n") else "")
     merged_xml = replace_project_variable(merged_xml, "sign_audit_started", audit_start)
     merged_xml = make_gps_destination_portable(merged_xml)
-    return simplify_observation_form(merged_xml)
+    merged_xml = simplify_observation_form(merged_xml)
+    return configure_tree_preview(merged_xml)
 
 
 def marker_symbol(color):

@@ -4,6 +4,8 @@ The active QGIS and Mergin Maps project lives in `map/`. Open `map/cuesta-trees.
 
 The mobile project should stay centered on tree points and observation records. In the field, tap a tree point and add an observation. The observation form contains only status, notes, and photo. Observer, date, and tree identifiers are filled automatically.
 
+Tapping a tree shows its scientific name, latest observation status, and latest observation date. This mobile preview is configured through the Tree Locations HTML map tip in QGIS.
+
 The `tree_locations` layer is the map layer for physical tree locations. Keep it mostly stable. It should hold geometry, stable IDs, and display fields. Do not use it as the main place for ongoing notes or sign work.
 
 The `observations` table is the main work log. Each visit, sign check, maintenance note, or tree health concern should be a new observation. This preserves history and lets reports query the most recent observation for each tree. Use status for the overall result and notes for the specific problem or needed work.
