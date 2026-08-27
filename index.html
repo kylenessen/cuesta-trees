@@ -377,9 +377,22 @@
             minZoom: 1
         }).setView([35.329, -120.741], 17);
 
-        // Add OpenFreeMap Positron vector basemap
-        maplibreGL({
+        // Add selectable base maps
+        const positron = maplibreGL({
             style: 'https://tiles.openfreemap.org/styles/positron'
+        });
+        const satellite = L.tileLayer(
+            'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+            {
+                maxZoom: 19,
+                attribution: 'Tiles &copy; Esri'
+            }
+        );
+
+        satellite.addTo(map);
+        L.control.layers({
+            Satellite: satellite,
+            Positron: positron
         }).addTo(map);
 
         // Tree marker style
