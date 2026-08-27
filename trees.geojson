@@ -6,24 +6,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.74077558754314,
-          35.32830604267316
-        ]
-      },
-      "properties": {
-        "tree_id": 1,
-        "common_name": "Blue Elderberry",
-        "scientific_name": "Sambucus mexicana",
-        "family": "Viburnaceae",
-        "origin": "W USA, W Canada",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/411276825/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.73908943446597,
           35.33021295266383
         ]
@@ -53,60 +35,6 @@
         "family": "Anacardiaceae",
         "origin": "China",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/171142/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74529729399389,
-          35.32863950052968
-        ]
-      },
-      "properties": {
-        "tree_id": 4,
-        "common_name": "Lemonade Berry",
-        "scientific_name": "Rhus integrifolia",
-        "family": "Anacardiaceae",
-        "origin": "California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/14516370/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74210892196407,
-          35.331092891437535
-        ]
-      },
-      "properties": {
-        "tree_id": 5,
-        "common_name": "African Sumac",
-        "scientific_name": "Searsia lancea",
-        "family": "Anacardiaceae",
-        "origin": "S Africa",
-        "photo_url": "https://static.inaturalist.org/photos/29551311/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74522131895385,
-          35.32874340578566
-        ]
-      },
-      "properties": {
-        "tree_id": 6,
-        "common_name": "Sugar Bush",
-        "scientific_name": "Rhus ovata",
-        "family": "Anacardiaceae",
-        "origin": "S CA, AZ, Baja CA",
-        "photo_url": "https://static.inaturalist.org/photos/5762942/medium.jpg"
       }
     },
     {
@@ -204,24 +132,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.74058584272564,
-          35.32787380976744
-        ]
-      },
-      "properties": {
-        "tree_id": 12,
-        "common_name": "Queen Palm",
-        "scientific_name": "Syagrus romanzoffiana",
-        "family": "Arecaceae",
-        "origin": "South America",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123453473/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.73955538911756,
           35.32902386867386
         ]
@@ -251,42 +161,6 @@
         "family": "Arecaceae",
         "origin": "California, Mexico",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/249270666/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.7428754928047,
-          35.328580138922916
-        ]
-      },
-      "properties": {
-        "tree_id": 15,
-        "common_name": "California Alder (White Alder)",
-        "scientific_name": "Alnus rhombifolia",
-        "family": "Betulaceae",
-        "origin": "California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/55405328/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74530805809994,
-          35.32879840756867
-        ]
-      },
-      "properties": {
-        "tree_id": 16,
-        "common_name": "Chitalpa",
-        "scientific_name": "Chitalpa tashkentensis",
-        "family": "Bignoniaceae",
-        "origin": "hyb. from Uzbekistan",
-        "photo_url": null
       }
     },
     {
@@ -341,78 +215,6 @@
         "family": "Cupressaceae ",
         "origin": "California",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52181671/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73943483893096,
-          35.32720977201852
-        ]
-      },
-      "properties": {
-        "tree_id": 20,
-        "common_name": "Italian Cypress",
-        "scientific_name": "Cupressus sempervirens",
-        "family": "Cupressaceae ",
-        "origin": "Mediterranean",
-        "photo_url": "https://static.inaturalist.org/photos/169729261/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74231989114138,
-          35.328648021662055
-        ]
-      },
-      "properties": {
-        "tree_id": 21,
-        "common_name": "Monterey Cypress",
-        "scientific_name": "Hesperocyparis macrocarpa",
-        "family": "Cupressaceae ",
-        "origin": "C California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184809375/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74064263112317,
-          35.3279179038629
-        ]
-      },
-      "properties": {
-        "tree_id": 22,
-        "common_name": "Chinese Juniper",
-        "scientific_name": "Juniperus chinensis",
-        "family": "Cupressaceae ",
-        "origin": "China, Japan, Korea",
-        "photo_url": "https://static.inaturalist.org/photos/100132984/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74424477383276,
-          35.32894450510818
-        ]
-      },
-      "properties": {
-        "tree_id": 23,
-        "common_name": "Oriental Arborvitae",
-        "scientific_name": "Platycladus orientalis",
-        "family": "Cupressaceae ",
-        "origin": "E and N Asia",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg"
       }
     },
     {
@@ -485,24 +287,6 @@
         "family": "Fabaceae",
         "origin": "Australia",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52176937/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74103916384676,
-          35.33088424824376
-        ]
-      },
-      "properties": {
-        "tree_id": 29,
-        "common_name": "Mimosa (Silk Tree)",
-        "scientific_name": "Albizia julibrissin",
-        "family": "Fabaceae",
-        "origin": "Iran to China, Korea",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/146757188/medium.jpg"
       }
     },
     {
@@ -618,42 +402,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.7413013513228,
-          35.3310205746111
-        ]
-      },
-      "properties": {
-        "tree_id": 37,
-        "common_name": "Crimson Spire",
-        "scientific_name": "Escallonia rubra",
-        "family": "Escalloniaceae",
-        "origin": "S America",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/62036750/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74276951273173,
-          35.329754510513595
-        ]
-      },
-      "properties": {
-        "tree_id": 38,
-        "common_name": "American Sweetgum",
-        "scientific_name": "Liquidambar styraciflua",
-        "family": "Altingiaceae",
-        "origin": "Eastern USA",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/151075271/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.74555662338824,
           35.328192982937395
         ]
@@ -665,42 +413,6 @@
         "family": "Juglandaceae",
         "origin": "California",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7086/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73980992443506,
-          35.330603500172785
-        ]
-      },
-      "properties": {
-        "tree_id": 40,
-        "common_name": "Crape Myrtle",
-        "scientific_name": "Lagerstroemia spp.",
-        "family": "Lythraceae",
-        "origin": "China, Japan",
-        "photo_url": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74538491886119,
-          35.32844630931245
-        ]
-      },
-      "properties": {
-        "tree_id": 41,
-        "common_name": "Pomegranate",
-        "scientific_name": "Punica granatum",
-        "family": "Lythraceae",
-        "origin": "Iran, N India",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4956594/medium.jpeg"
       }
     },
     {
@@ -942,8 +654,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.74229229709346,
-          35.32893873024415
+          -120.7424489236356,
+          35.32886901044251
         ]
       },
       "properties": {
@@ -1104,24 +816,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.73895031487989,
-          35.32992192528664
-        ]
-      },
-      "properties": {
-        "tree_id": 65,
-        "common_name": "Green Mallee",
-        "scientific_name": "Eucalyptus viridis",
-        "family": "Myrtaceae",
-        "origin": "Australia",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/314795478/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.74502139449258,
           35.329162049771476
         ]
@@ -1140,17 +834,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.74025008571826,
-          35.32848458963237
+          -120.74092194916649,
+          35.32959065059004
         ]
       },
       "properties": {
-        "tree_id": 67,
-        "common_name": "Australian Tea Tree",
-        "scientific_name": "Leptospermum laevigatum",
+        "tree_id": 69,
+        "common_name": "Pink Melaleuca",
+        "scientific_name": "Melaleuca nesophila",
         "family": "Myrtaceae",
         "origin": "Australia",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/86160292/medium.jpg"
+        "photo_url": null
       }
     },
     {
@@ -1356,24 +1050,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.739778720503,
-          35.3296794258327
-        ]
-      },
-      "properties": {
-        "tree_id": 84,
-        "common_name": "California Coffee Berry",
-        "scientific_name": "Frangula californica",
-        "family": "Rhamnaceae",
-        "origin": "California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/49491423/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.74422996327314,
           35.32884537424598
         ]
@@ -1392,24 +1068,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.74228214825528,
-          35.32902568934732
-        ]
-      },
-      "properties": {
-        "tree_id": 86,
-        "common_name": "Toyon",
-        "scientific_name": "Heteromeles arbutifolia",
-        "family": "Rosaceae",
-        "origin": "W USA, Baja CA, BC",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/342304993/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.74465786554596,
           35.329696024176926
         ]
@@ -1421,24 +1079,6 @@
         "family": "Rosaceae",
         "origin": "Catalina Island",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40743676/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74045342428217,
-          35.32775723044729
-        ]
-      },
-      "properties": {
-        "tree_id": 88,
-        "common_name": "Apple",
-        "scientific_name": "Malus domestica",
-        "family": "Rosaceae",
-        "origin": "Central Asia",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/268437/medium.jpg"
       }
     },
     {
@@ -1482,114 +1122,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.73760118333333,
-          35.32571573333333
-        ]
-      },
-      "properties": {
-        "tree_id": 90,
-        "common_name": "Ornamental Pear ",
-        "scientific_name": "Pyrus calleryana",
-        "family": "Rosaceae",
-        "origin": "China, Taiwan",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269351075/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73884769005275,
-          35.33062593380117
-        ]
-      },
-      "properties": {
-        "tree_id": 90,
-        "common_name": "Ornamental Pear ",
-        "scientific_name": "Pyrus calleryana",
-        "family": "Rosaceae",
-        "origin": "China, Taiwan",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269351075/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.738251845859,
-          35.3311086200135
-        ]
-      },
-      "properties": {
-        "tree_id": 91,
-        "common_name": "Australian Willow",
-        "scientific_name": "Geijera parviflora",
-        "family": "Rutaceae",
-        "origin": "E Australia",
-        "photo_url": "https://static.inaturalist.org/photos/404874038/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.7453902493393,
-          35.32859341979366
-        ]
-      },
-      "properties": {
-        "tree_id": 92,
-        "common_name": "Arroyo Willow",
-        "scientific_name": "Salix lasiolepis",
-        "family": "Salicaceae",
-        "origin": "W North America",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/16056750/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74096509811368,
-          35.33023123486822
-        ]
-      },
-      "properties": {
-        "tree_id": 93,
-        "common_name": "Japanese Maple",
-        "scientific_name": "Acer palmatum",
-        "family": "Sapindaceae",
-        "origin": "Japan",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5641007/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74277678000718,
-          35.32879623415444
-        ]
-      },
-      "properties": {
-        "tree_id": 94,
-        "common_name": "Buckeye",
-        "scientific_name": "Aesculus californica",
-        "family": "Sapindaceae",
-        "origin": "California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/72460428/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.73885825752292,
           35.33064122942939
         ]
@@ -1626,60 +1158,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -120.73932787899852,
-          35.32877284738434
-        ]
-      },
-      "properties": {
-        "tree_id": 97,
-        "common_name": "Dawn Redwood",
-        "scientific_name": "Metasequoia glyptostroboides",
-        "family": "Cupressaceae",
-        "origin": "China",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/285729025/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73916518898726,
-          35.32841618484481
-        ]
-      },
-      "properties": {
-        "tree_id": 98,
-        "common_name": "Coast Redwood",
-        "scientific_name": "Sequoia sempervirens",
-        "family": "Cupressaceae",
-        "origin": "California",
-        "photo_url": "https://static.inaturalist.org/photos/61295436/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73955693020552,
-          35.32881607144115
-        ]
-      },
-      "properties": {
-        "tree_id": 99,
-        "common_name": "Giant Sequoia",
-        "scientific_name": "Sequoiadendron giganteum",
-        "family": "Cupressaceae",
-        "origin": "California",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60664816/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -120.74164534927766,
           35.33053157463239
         ]
@@ -1691,96 +1169,6 @@
         "family": "Ulmaceae",
         "origin": "Europe, W Asia",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/419559493/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.7453592014335,
-          35.32858249934341
-        ]
-      },
-      "properties": {
-        "tree_id": 101,
-        "common_name": "Pacific Wax Myrtle",
-        "scientific_name": "Morella californica",
-        "family": "Myricaceae",
-        "origin": "W USA Coast",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/16145/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.737083126654,
-          35.3257445037924
-        ]
-      },
-      "properties": {
-        "tree_id": 102,
-        "common_name": "Pindo palm ",
-        "scientific_name": "Butia odorata ",
-        "family": "Arecaceae",
-        "origin": "Brazil",
-        "photo_url": "https://static.inaturalist.org/photos/45523506/medium.jpeg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74395500350944,
-          35.33112623171463
-        ]
-      },
-      "properties": {
-        "tree_id": 103,
-        "common_name": "Aleppo pine",
-        "scientific_name": "Pinus halepensis",
-        "family": "Pinaceae",
-        "origin": "Mediterranean",
-        "photo_url": "https://static.inaturalist.org/photos/5810251/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.73904607235296,
-          35.329393406764325
-        ]
-      },
-      "properties": {
-        "tree_id": 104,
-        "common_name": "Myoporum ",
-        "scientific_name": "Myoporum laetum",
-        "family": "Scrophulariaceae",
-        "origin": "New Zealand",
-        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/600853170/medium.jpg"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -120.74392237282474,
-          35.32824367737416
-        ]
-      },
-      "properties": {
-        "tree_id": 107,
-        "common_name": "Birch",
-        "scientific_name": "Betula spp.",
-        "family": "Betulaceae",
-        "origin": "Unknown",
-        "photo_url": null
       }
     }
   ]

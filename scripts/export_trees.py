@@ -1,8 +1,9 @@
-"""Export Cuesta tree locations for the GitHub Pages map.
+"""Export checked-good Cuesta tree locations for the GitHub Pages map.
 
-The sign inventory is historical and is not used to select locations. Photo
-URLs already in the GeoJSON file are retained. Pass ``--fetch-photos`` to look
-up photos for any newly added trees.
+A point is included only when its most recent linked observation has status
+``OK``. The historical sign inventory is not used. Photo URLs already in the
+GeoJSON file are retained. Pass ``--fetch-photos`` to look up photos for any
+newly added trees.
 """
 
 from __future__ import annotations
@@ -77,11 +78,23 @@ def fetch_inaturalist_photo(scientific_name: str) -> str | None:
     return None
 
 
-def tree_rows(package_path: Path) -> list[sqlite3.Row]:
+def checked_good_tree_rows(package_path: Path) -> list[sqlite3.Row]:
     with sqlite3.connect(package_path) as connection:
         connection.row_factory = sqlite3.Row
         return connection.execute(
             """
+            WITH ranked_observations AS (
+                SELECT
+                    tree_uuid,
+                    status,
+                    dateobserved,
+                    row_number() OVER (
+                        PARTITION BY tree_uuid
+                        ORDER BY dateobserved DESC, fid DESC
+                    ) AS latest_rank
+                FROM observations
+                WHERE tree_uuid IS NOT NULL AND tree_uuid <> ''
+            )
             SELECT
                 t.tree_id,
                 t.geom,
@@ -90,15 +103,18 @@ def tree_rows(package_path: Path) -> list[sqlite3.Row]:
                 s.family,
                 s.origin
             FROM tree_locations AS t
+            JOIN ranked_observations AS o
+                ON o.tree_uuid = t.tree_uuid AND o.latest_rank = 1
             LEFT JOIN species_master_current AS s ON s.tree_id = t.tree_id
-            ORDER BY t.tree_id
+            WHERE o.status = 'OK'
+            ORDER BY t.tree_id, t.point_id
             """
         ).fetchall()
 
 
 def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> int:
-    """Write mapped trees to a GeoJSON FeatureCollection."""
-    rows = tree_rows(package_path)
+    """Write checked-good mapped trees to a GeoJSON FeatureCollection."""
+    rows = checked_good_tree_rows(package_path)
     cached_photos = existing_photo_urls(output_path)
     features = []
 
@@ -136,7 +152,7 @@ def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> i
         )
         output_file.write("\n")
 
-    print(f"Exported {len(features)} tree locations to {output_path}.")
+    print(f"Exported {len(features)} checked-good tree locations to {output_path}.")
     return len(features)
 
 
