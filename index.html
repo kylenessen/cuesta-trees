@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuesta College Confirmed Tree Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        #map {
+            flex: 1;
+            height: 100%;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            height: 100%;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            transition: width 0.3s, min-width 0.3s;
+        }
+
+        .sidebar.collapsed {
+            width: 0;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .sidebar-collapse-btn {
+            position: absolute;
+            right: 320px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1001;
+            width: 24px;
+            height: 60px;
+            background: white;
+            border: none;
+            border-radius: 8px 0 0 8px;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: right 0.3s;
+        }
+
+        .sidebar-collapse-btn:hover {
+            background: #f5f5f5;
+        }
+
+        .sidebar.collapsed + .sidebar-collapse-btn,
+        .sidebar-collapse-btn.collapsed {
+            right: 0;
+        }
+
+        .collapse-icon {
+            font-size: 14px;
+            color: #666;
+            transition: transform 0.3s;
+        }
+
+        .sidebar.collapsed ~ .sidebar-collapse-btn .collapse-icon,
+        .collapse-icon.collapsed {
+            transform: rotate(180deg);
+        }
+
+        .sidebar-header {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.2rem;
+            color: #2d5016;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-header .count {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Search */
+        .search-box {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        #search {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        #search:focus {
+            border-color: #2d5016;
+        }
+
+        /* Family Filters */
+        .filters-section {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .filters-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .filters-header h3 {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .clear-filters {
+            font-size: 0.75rem;
+            color: #2d5016;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .family-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+        .family-chip {
+            padding: 4px 10px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .family-chip:hover {
+            border-color: #2d5016;
+        }
+
+        .family-chip.active {
+            background: #2d5016;
+            color: white;
+            border-color: #2d5016;
+        }
+
+        /* Tree List */
+        .tree-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .tree-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .tree-item:hover {
+            background: #f9f9f9;
+        }
+
+        .tree-item-photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: #f0f0f0;
+        }
+
+        .tree-item-photo.no-photo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 20px;
+        }
+
+        .tree-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .tree-item .name {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .tree-item .scientific {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .tree-item .family-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            color: #666;
+        }
+
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Popup styles */
+        .leaflet-popup-content {
+            margin: 12px 15px;
+            line-height: 1.5;
+        }
+
+        .popup-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d5016;
+            margin-bottom: 8px;
+        }
+
+        .popup-scientific {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .popup-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .popup-info span {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .popup-info strong {
+            color: #444;
+        }
+
+        .popup-photo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Tree label styling */
+        .tree-label {
+            background: none;
+            border: none;
+            box-shadow: none;
+            font-size: 11px;
+            font-weight: 500;
+            color: #2d5016;
+            white-space: nowrap;
+            text-shadow:
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white,
+                0 -1px 0 white,
+                0 1px 0 white,
+                -1px 0 0 white,
+                1px 0 0 white;
+        }
+
+        .tree-label::before {
+            display: none;
+        }
+
+        /* Mobile toggle button */
+        .sidebar-toggle {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1001;
+            padding: 10px 15px;
+            background: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translateX(100%);
+                transition: transform 0.3s;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .sidebar-toggle {
+                display: block;
+            }
+
+            #map {
+                width: 100%;
+            }
+
+            .sidebar-collapse-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="sidebar-toggle" id="sidebarToggle">Menu</button>
+
+    <div id="map"></div>
+
+    <button class="sidebar-collapse-btn" id="collapseBtn">
+        <span class="collapse-icon">&#9654;</span>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h1>Cuesta College Confirmed Trees</h1>
+            <div class="count">Showing <span id="visible-count">0</span> of <span id="tree-count">0</span> confirmed trees</div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search trees..." autocomplete="off">
+        </div>
+
+        <div class="filters-section">
+            <div class="filters-header">
+                <h3>Filter by Family</h3>
+                <span class="clear-filters" id="clearFilters">Clear all</span>
+            </div>
+            <div class="family-filters" id="familyFilters"></div>
+        </div>
+
+        <div class="tree-list" id="treeList"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize map centered on Cuesta College
+        const map = L.map('map').setView([35.329, -120.741], 17);
+
+        // Add Carto Positron (grayscale) tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 20,
+            attribution: '&copy; OpenStreetMap &copy; CARTO'
+        }).addTo(map);
+
+        // Tree marker style
+        const treeIcon = L.divIcon({
+            className: 'tree-marker',
+            html: '<div style="background: #2d5016; width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.3);"></div>',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6]
+        });
+
+        let treesData = [];
+        let markers = [];
+        let markerMap = new Map();
+        let selectedFamilies = new Set();
+        let searchQuery = '';
+
+        // DOM elements
+        const searchInput = document.getElementById('search');
+        const familyFiltersContainer = document.getElementById('familyFilters');
+        const treeListContainer = document.getElementById('treeList');
+        const visibleCountEl = document.getElementById('visible-count');
+        const treeCountEl = document.getElementById('tree-count');
+        const clearFiltersBtn = document.getElementById('clearFilters');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        // Load tree data
+        fetch('trees.geojson')
+            .then(response => response.json())
+            .then(data => {
+                treesData = data.features;
+                treeCountEl.textContent = treesData.length;
+
+                // Extract unique families
+                const families = [...new Set(treesData.map(f => f.properties.family))].sort();
+                renderFamilyFilters(families);
+
+                // Add markers for each tree
+                treesData.forEach((feature, index) => {
+                    const coords = feature.geometry.coordinates;
+                    const props = feature.properties;
+
+                    const photoHtml = props.photo_url
+                        ? `<img src="${props.photo_url}" alt="${props.common_name}" class="popup-photo">`
+                        : '';
+
+                    const popupContent = `
+                        ${photoHtml}
+                        <div class="popup-title">${props.common_name}</div>
+                        <div class="popup-scientific">${props.scientific_name}</div>
+                        <div class="popup-info">
+                            <span><strong>Family:</strong> ${props.family}</span>
+                            <span><strong>Origin:</strong> ${props.origin}</span>
+                        </div>
+                    `;
+
+                    const marker = L.marker([coords[1], coords[0]], { icon: treeIcon })
+                        .bindPopup(popupContent)
+                        .bindTooltip(props.common_name, {
+                            permanent: true,
+                            direction: 'top',
+                            offset: [0, 6],
+                            className: 'tree-label'
+                        })
+                        .addTo(map);
+
+                    markers.push(marker);
+                    markerMap.set(index, marker);
+                });
+
+                updateDisplay();
+            })
+            .catch(error => {
+                console.error('Error loading tree data:', error);
+                treeCountEl.textContent = 'Error';
+            });
+
+        function renderFamilyFilters(families) {
+            familyFiltersContainer.innerHTML = families.map(family =>
+                `<span class="family-chip" data-family="${family}">${family}</span>`
+            ).join('');
+        }
+
+        function getFilteredTrees() {
+            return treesData.filter((feature, index) => {
+                const props = feature.properties;
+
+                // Check family filter
+                if (selectedFamilies.size > 0 && !selectedFamilies.has(props.family)) {
+                    return false;
+                }
+
+                // Check search query
+                if (searchQuery) {
+                    const query = searchQuery.toLowerCase();
+                    if (!props.common_name.toLowerCase().includes(query) &&
+                        !props.scientific_name.toLowerCase().includes(query) &&
+                        !props.family.toLowerCase().includes(query)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+        }
+
+        function updateDisplay() {
+            const filtered = getFilteredTrees();
+            visibleCountEl.textContent = filtered.length;
+
+            // Update marker visibility
+            treesData.forEach((feature, index) => {
+                const marker = markerMap.get(index);
+                const isVisible = filtered.includes(feature);
+
+                if (isVisible) {
+                    marker.addTo(map);
+                } else {
+                    marker.remove();
+                }
+            });
+
+            // Update list view
+            renderTreeList(filtered);
+        }
+
+        function renderTreeList(trees) {
+            if (trees.length === 0) {
+                treeListContainer.innerHTML = '<div class="no-results">No trees match your filters</div>';
+                return;
+            }
+
+            // Sort by common name
+            const sorted = [...trees].sort((a, b) =>
+                a.properties.common_name.localeCompare(b.properties.common_name)
+            );
+
+            treeListContainer.innerHTML = sorted.map(feature => {
+                const props = feature.properties;
+                const index = treesData.indexOf(feature);
+                const photoHtml = props.photo_url
+                    ? `<img src="${props.photo_url}" alt="${props.common_name}" class="tree-item-photo">`
+                    : `<div class="tree-item-photo no-photo">🌳</div>`;
+                return `
+                    <div class="tree-item" data-index="${index}">
+                        ${photoHtml}
+                        <div class="tree-item-info">
+                            <div class="name">${props.common_name}</div>
+                            <div class="scientific">${props.scientific_name}</div>
+                            <span class="family-tag">${props.family}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Event: Family filter clicks
+        familyFiltersContainer.addEventListener('click', (e) => {
+            const chip = e.target.closest('.family-chip');
+            if (!chip) return;
+
+            const family = chip.dataset.family;
+
+            if (selectedFamilies.has(family)) {
+                selectedFamilies.delete(family);
+                chip.classList.remove('active');
+            } else {
+                selectedFamilies.add(family);
+                chip.classList.add('active');
+            }
+
+            updateDisplay();
+        });
+
+        // Event: Clear filters
+        clearFiltersBtn.addEventListener('click', () => {
+            selectedFamilies.clear();
+            document.querySelectorAll('.family-chip').forEach(chip => chip.classList.remove('active'));
+            searchInput.value = '';
+            searchQuery = '';
+            updateDisplay();
+        });
+
+        // Event: Search input
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.trim();
+            updateDisplay();
+        });
+
+        // Event: Tree list item click
+        treeListContainer.addEventListener('click', (e) => {
+            const item = e.target.closest('.tree-item');
+            if (!item) return;
+
+            const index = parseInt(item.dataset.index);
+            const marker = markerMap.get(index);
+
+            if (marker) {
+                map.setView(marker.getLatLng(), 19);
+                marker.openPopup();
+
+                // On mobile, close sidebar
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('open');
+                    sidebarToggle.textContent = 'Menu';
+                }
+            }
+        });
+
+        // Event: Mobile sidebar toggle
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            sidebarToggle.textContent = sidebar.classList.contains('open') ? 'Close' : 'Menu';
+        });
+
+        // Event: Collapse sidebar
+        const collapseBtn = document.getElementById('collapseBtn');
+        collapseBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+            collapseBtn.classList.toggle('collapsed');
+            // Trigger map resize after transition
+            setTimeout(() => map.invalidateSize(), 300);
+        });
+
+        // Fix map size when window resizes
+        window.addEventListener('resize', () => {
+            map.invalidateSize();
+        });
+    </script>
+</body>
+</html>

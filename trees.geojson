@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.742331913569,
+          35.329905725697316
+        ]
+      },
+      "properties": {
+        "tree_id": 7,
+        "common_name": "California Pepper Tree",
+        "scientific_name": "Schinus molle",
+        "family": "Anacardiaceae",
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/382465760/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.7415082835067,
+          35.32939460310605
+        ]
+      },
+      "properties": {
+        "tree_id": 9,
+        "common_name": "Norfolk Island Pine",
+        "scientific_name": "Araucaria heterophylla",
+        "family": "Araucariaceae",
+        "origin": "Norfolk Island",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/250438081/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.7428754928047,
+          35.328580138922916
+        ]
+      },
+      "properties": {
+        "tree_id": 15,
+        "common_name": "California Alder (White Alder)",
+        "scientific_name": "Alnus rhombifolia",
+        "family": "Betulaceae",
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/55405328/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74530805809994,
+          35.32879840756867
+        ]
+      },
+      "properties": {
+        "tree_id": 16,
+        "common_name": "Chitalpa",
+        "scientific_name": "Chitalpa tashkentensis",
+        "family": "Bignoniaceae",
+        "origin": "hyb. from Uzbekistan",
+        "photo_url": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74118770555096,
+          35.331355312276145
+        ]
+      },
+      "properties": {
+        "tree_id": 18,
+        "common_name": "Horsetail Tree",
+        "scientific_name": "Casuarina cunninghamiana",
+        "family": "Casuarinaceae",
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/57118907/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.7410227323684,
+          35.32822625125444
+        ]
+      },
+      "properties": {
+        "tree_id": 19,
+        "common_name": "Incense Cedar",
+        "scientific_name": "Calocedrus decurrens",
+        "family": "Cupressaceae ",
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52181671/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74231989114138,
+          35.328648021662055
+        ]
+      },
+      "properties": {
+        "tree_id": 21,
+        "common_name": "Monterey Cypress",
+        "scientific_name": "Hesperocyparis macrocarpa",
+        "family": "Cupressaceae ",
+        "origin": "C California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184809375/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74424477383276,
+          35.32894450510818
+        ]
+      },
+      "properties": {
+        "tree_id": 23,
+        "common_name": "Oriental Arborvitae",
+        "scientific_name": "Platycladus orientalis",
+        "family": "Cupressaceae ",
+        "origin": "E and N Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.7376565402288,
+          35.325578209537866
+        ]
+      },
+      "properties": {
+        "tree_id": 24,
+        "common_name": "Japanese Persimmon",
+        "scientific_name": "Diospyros kaki",
+        "family": "Ebenaceae",
+        "origin": "China",
+        "photo_url": "https://static.inaturalist.org/photos/171386353/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74103916384676,
+          35.33088424824376
+        ]
+      },
+      "properties": {
+        "tree_id": 29,
+        "common_name": "Mimosa (Silk Tree)",
+        "scientific_name": "Albizia julibrissin",
+        "family": "Fabaceae",
+        "origin": "Iran to China, Korea",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/146757188/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73919672438679,
+          35.328826995476604
+        ]
+      },
+      "properties": {
+        "tree_id": 30,
+        "common_name": "Western Redbud",
+        "scientific_name": "Cercis occidentalis",
+        "family": "Fabaceae",
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/450999973/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73823882406792,
+          35.32645905024365
+        ]
+      },
+      "properties": {
+        "tree_id": 33,
+        "common_name": "Cork Oak",
+        "scientific_name": "Quercus suber",
+        "family": "Fagaceae",
+        "origin": "Mediterranean",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159050222/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74480602424303,
+          35.32950177165868
+        ]
+      },
+      "properties": {
+        "tree_id": 45,
+        "common_name": "Kurrajong",
+        "scientific_name": "Brachychiton populneus",
+        "family": "Malvaceae",
+        "origin": "E Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/58113928/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74502876034715,
+          35.3289548413371
+        ]
+      },
+      "properties": {
+        "tree_id": 46,
+        "common_name": "Queensland Bottle Tree",
+        "scientific_name": "Brachychiton rupestris",
+        "family": "Malvaceae",
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52329647/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73766138333336,
+          35.32563955
+        ]
+      },
+      "properties": {
+        "tree_id": 47,
+        "common_name": "Common Fig",
+        "scientific_name": "Ficus carica",
+        "family": "Moraceae",
+        "origin": "Middle East, W Asia",
+        "photo_url": "https://static.inaturalist.org/photos/97971657/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73754458333332,
+          35.32569856666667
+        ]
+      },
+      "properties": {
+        "tree_id": 49,
+        "common_name": "Weeping Bottlebrush",
+        "scientific_name": "Callistemon viminalis",
+        "family": "Myrtaceae",
+        "origin": "NE Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/192336/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74284008716388,
+          35.32844488036787
+        ]
+      },
+      "properties": {
+        "tree_id": 50,
+        "common_name": "Red-Flowering Gum",
+        "scientific_name": "Corymbia ficifolia",
+        "family": "Myrtaceae",
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/15394901/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74161164710246,
+          35.32754762460489
+        ]
+      },
+      "properties": {
+        "tree_id": 56,
+        "common_name": "Narrow-leafed Peppermint",
+        "scientific_name": "Eucalyptus nicholii",
+        "family": "Myrtaceae",
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/352904123/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74502139449258,
+          35.329162049771476
+        ]
+      },
+      "properties": {
+        "tree_id": 66,
+        "common_name": "Pineapple Guava",
+        "scientific_name": "Feijoa sellowiana",
+        "family": "Myrtaceae",
+        "origin": "South America",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/148368813/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74425657294856,
+          35.330376169177626
+        ]
+      },
+      "properties": {
+        "tree_id": 76,
+        "common_name": "Italian Stone Pine",
+        "scientific_name": "Pinus pinea",
+        "family": "Pinaceae",
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/2052389/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74128245979936,
+          35.328381130925266
+        ]
+      },
+      "properties": {
+        "tree_id": 77,
+        "common_name": "Monterey Pine",
+        "scientific_name": "Pinus radiata",
+        "family": "Pinaceae ",
+        "origin": "California ",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/168316058/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74322327005473,
+          35.32864839927868
+        ]
+      },
+      "properties": {
+        "tree_id": 81,
+        "common_name": "Western Sycamore",
+        "scientific_name": "Platanus racemosa",
+        "family": "Platanaceae",
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/38512081/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73994361307791,
+          35.326923092493814
+        ]
+      },
+      "properties": {
+        "tree_id": 82,
+        "common_name": "Yew Tree",
+        "scientific_name": "Podocarpus macrophyllus",
+        "family": "Podocarpaceae",
+        "origin": "China, Japan",
+        "photo_url": "https://static.inaturalist.org/photos/91052089/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74465786554596,
+          35.329696024176926
+        ]
+      },
+      "properties": {
+        "tree_id": 87,
+        "common_name": "Catalina Ironwood",
+        "scientific_name": "Lyonothamnus floribundus",
+        "family": "Rosaceae",
+        "origin": "Catalina Island",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40743676/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74215774010955,
+          35.32875533005914
+        ]
+      },
+      "properties": {
+        "tree_id": 89,
+        "common_name": "Red Flowering Plum",
+        "scientific_name": "Prunus cerasifera",
+        "family": "Rosaceae",
+        "origin": "Mediterranean",
+        "photo_url": "https://static.inaturalist.org/photos/62295627/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.738251845859,
+          35.3311086200135
+        ]
+      },
+      "properties": {
+        "tree_id": 91,
+        "common_name": "Australian Willow",
+        "scientific_name": "Geijera parviflora",
+        "family": "Rutaceae",
+        "origin": "E Australia",
+        "photo_url": "https://static.inaturalist.org/photos/404874038/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74310618052922,
+          35.32851785151246
+        ]
+      },
+      "properties": {
+        "tree_id": 96,
+        "common_name": "Chinese Flame Tree",
+        "scientific_name": "Koelreuteria bipinnata",
+        "family": "Sapindaceae",
+        "origin": "SW China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236143455/medium.jpg"
+      }
+    }
+  ]
+}
