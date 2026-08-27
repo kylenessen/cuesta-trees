@@ -1,8 +1,8 @@
-"""Export confirmed Cuesta tree locations for the GitHub Pages map.
+"""Export Cuesta tree locations for the GitHub Pages map.
 
-Only locations whose sign inventory is marked ``Installed`` are exported. By
-default, photo URLs already in the GeoJSON file are retained. Pass
-``--fetch-photos`` to look up photos for any newly added trees.
+The sign inventory is historical and is not used to select locations. Photo
+URLs already in the GeoJSON file are retained. Pass ``--fetch-photos`` to look
+up photos for any newly added trees.
 """
 
 from __future__ import annotations
@@ -77,7 +77,7 @@ def fetch_inaturalist_photo(scientific_name: str) -> str | None:
     return None
 
 
-def confirmed_tree_rows(package_path: Path) -> list[sqlite3.Row]:
+def tree_rows(package_path: Path) -> list[sqlite3.Row]:
     with sqlite3.connect(package_path) as connection:
         connection.row_factory = sqlite3.Row
         return connection.execute(
@@ -90,17 +90,15 @@ def confirmed_tree_rows(package_path: Path) -> list[sqlite3.Row]:
                 s.family,
                 s.origin
             FROM tree_locations AS t
-            JOIN sign_inventory_current AS si ON si.point_id = t.point_id
             LEFT JOIN species_master_current AS s ON s.tree_id = t.tree_id
-            WHERE si.sign_status = 'Installed'
             ORDER BY t.tree_id
             """
         ).fetchall()
 
 
 def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> int:
-    """Write confirmed mapped trees to a GeoJSON FeatureCollection."""
-    rows = confirmed_tree_rows(package_path)
+    """Write mapped trees to a GeoJSON FeatureCollection."""
+    rows = tree_rows(package_path)
     cached_photos = existing_photo_urls(output_path)
     features = []
 
@@ -138,7 +136,7 @@ def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> i
         )
         output_file.write("\n")
 
-    print(f"Exported {len(features)} confirmed tree locations to {output_path}.")
+    print(f"Exported {len(features)} tree locations to {output_path}.")
     return len(features)
 
 
