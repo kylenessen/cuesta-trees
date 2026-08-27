@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuesta College Confirmed Tree Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.3.0/dist/maplibre-gl.css" />
     <style>
         * {
             margin: 0;
@@ -357,15 +358,28 @@
         <div class="tree-list" id="treeList"></div>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        // Initialize map centered on Cuesta College
-        const map = L.map('map').setView([35.329, -120.741], 17);
+    <script type="importmap">
+        {
+            "imports": {
+                "leaflet": "https://unpkg.com/leaflet@1.9.4/dist/leaflet-src.esm.js",
+                "maplibre-gl": "https://unpkg.com/maplibre-gl@6.3.0/dist/maplibre-gl.mjs"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as L from 'leaflet';
+        import { maplibreGL } from 'https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.4/dist/leaflet-maplibre-gl.mjs';
 
-        // Add Carto Positron (grayscale) tiles
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            maxZoom: 20,
-            attribution: '&copy; OpenStreetMap &copy; CARTO'
+        // Initialize map centered on Cuesta College
+        const map = L.map('map', {
+            maxBounds: [[-85.0511, -Infinity], [85.0511, Infinity]],
+            maxBoundsViscosity: 1,
+            minZoom: 1
+        }).setView([35.329, -120.741], 17);
+
+        // Add OpenFreeMap Positron vector basemap
+        maplibreGL({
+            style: 'https://tiles.openfreemap.org/styles/positron'
         }).addTo(map);
 
         // Tree marker style
