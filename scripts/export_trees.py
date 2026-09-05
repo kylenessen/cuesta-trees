@@ -1,7 +1,8 @@
-"""Export checked-good Cuesta tree locations for the GitHub Pages map.
+"""Export signed Cuesta tree locations for the GitHub Pages map.
 
-A point is included only when its most recent linked observation has status
-``OK``. The historical sign inventory is not used. Photo URLs already in the
+A point is included only when its most recent linked observation records
+``sign_presence = Present``. Maintenance status does not control visibility.
+The historical sign inventory is not used. Photo URLs already in the
 GeoJSON file are retained. Pass ``--fetch-photos`` to look up photos for any
 newly added trees.
 """
@@ -78,15 +79,17 @@ def fetch_inaturalist_photo(scientific_name: str) -> str | None:
     return None
 
 
-def checked_good_tree_rows(package_path: Path) -> list[sqlite3.Row]:
-    with sqlite3.connect(package_path) as connection:
+def signed_tree_rows(package_path: Path) -> list[sqlite3.Row]:
+    with sqlite3.connect(
+        f"{package_path.resolve().as_uri()}?mode=ro", uri=True
+    ) as connection:
         connection.row_factory = sqlite3.Row
         return connection.execute(
             """
             WITH ranked_observations AS (
                 SELECT
                     tree_uuid,
-                    status,
+                    sign_presence,
                     dateobserved,
                     row_number() OVER (
                         PARTITION BY tree_uuid
@@ -106,15 +109,15 @@ def checked_good_tree_rows(package_path: Path) -> list[sqlite3.Row]:
             JOIN ranked_observations AS o
                 ON o.tree_uuid = t.tree_uuid AND o.latest_rank = 1
             LEFT JOIN species_master_current AS s ON s.tree_id = t.tree_id
-            WHERE o.status = 'OK'
+            WHERE o.sign_presence = 'Present'
             ORDER BY t.tree_id, t.point_id
             """
         ).fetchall()
 
 
 def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> int:
-    """Write checked-good mapped trees to a GeoJSON FeatureCollection."""
-    rows = checked_good_tree_rows(package_path)
+    """Write signed mapped trees to a GeoJSON FeatureCollection."""
+    rows = signed_tree_rows(package_path)
     cached_photos = existing_photo_urls(output_path)
     features = []
 
@@ -152,7 +155,7 @@ def export_trees(package_path: Path, output_path: Path, fetch_photos: bool) -> i
         )
         output_file.write("\n")
 
-    print(f"Exported {len(features)} checked-good tree locations to {output_path}.")
+    print(f"Exported {len(features)} signed tree locations to {output_path}.")
     return len(features)
 
 

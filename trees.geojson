@@ -6,6 +6,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.74077558754314,
+          35.32830604267316
+        ]
+      },
+      "properties": {
+        "tree_id": 1,
+        "common_name": "Blue Elderberry",
+        "scientific_name": "Sambucus mexicana",
+        "family": "Viburnaceae",
+        "origin": "W USA, W Canada",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/411276825/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.73908943446597,
           35.33021295266383
         ]
@@ -168,6 +186,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.74530805809994,
+          35.32879840756867
+        ]
+      },
+      "properties": {
+        "tree_id": 16,
+        "common_name": "Chitalpa",
+        "scientific_name": "Chitalpa tashkentensis",
+        "family": "Bignoniaceae",
+        "origin": "hyb. from Uzbekistan",
+        "photo_url": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.74176797376586,
           35.33023134627865
         ]
@@ -215,6 +251,42 @@
         "family": "Cupressaceae ",
         "origin": "California",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52181671/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74231989114138,
+          35.328648021662055
+        ]
+      },
+      "properties": {
+        "tree_id": 21,
+        "common_name": "Monterey Cypress",
+        "scientific_name": "Hesperocyparis macrocarpa",
+        "family": "Cupressaceae ",
+        "origin": "C California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184809375/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.74424477383276,
+          35.32894450510818
+        ]
+      },
+      "properties": {
+        "tree_id": 23,
+        "common_name": "Oriental Arborvitae",
+        "scientific_name": "Platycladus orientalis",
+        "family": "Cupressaceae ",
+        "origin": "E and N Asia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114662945/medium.jpeg"
       }
     },
     {
@@ -413,6 +485,24 @@
         "family": "Juglandaceae",
         "origin": "California",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/7086/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73980992443506,
+          35.330603500172785
+        ]
+      },
+      "properties": {
+        "tree_id": 40,
+        "common_name": "Crape Myrtle",
+        "scientific_name": "Lagerstroemia spp.",
+        "family": "Lythraceae",
+        "origin": "China, Japan",
+        "photo_url": null
       }
     },
     {
@@ -834,6 +924,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.74025008571826,
+          35.32848458963237
+        ]
+      },
+      "properties": {
+        "tree_id": 67,
+        "common_name": "Australian Tea Tree",
+        "scientific_name": "Leptospermum laevigatum",
+        "family": "Myrtaceae",
+        "origin": "Australia",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/86160292/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.74092194916649,
           35.32959065059004
         ]
@@ -844,7 +952,7 @@
         "scientific_name": "Melaleuca nesophila",
         "family": "Myrtaceae",
         "origin": "Australia",
-        "photo_url": null
+        "photo_url": "https://static.inaturalist.org/photos/1477429/medium.jpg"
       }
     },
     {
@@ -1050,6 +1158,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -120.74119818369279,
+          35.33009907862789
+        ]
+      },
+      "properties": {
+        "tree_id": 84,
+        "common_name": "California Coffee Berry",
+        "scientific_name": "Frangula californica",
+        "family": "Rhamnaceae",
+        "origin": "California",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/49491423/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -120.74422996327314,
           35.32884537424598
         ]
@@ -1151,6 +1277,60 @@
         "family": "Sapindaceae",
         "origin": "SW China",
         "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236143455/medium.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73932787899852,
+          35.32877284738434
+        ]
+      },
+      "properties": {
+        "tree_id": 97,
+        "common_name": "Dawn Redwood",
+        "scientific_name": "Metasequoia glyptostroboides",
+        "family": "Cupressaceae",
+        "origin": "China",
+        "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/285729025/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73916518898726,
+          35.32841618484481
+        ]
+      },
+      "properties": {
+        "tree_id": 98,
+        "common_name": "Coast Redwood",
+        "scientific_name": "Sequoia sempervirens",
+        "family": "Cupressaceae",
+        "origin": "California",
+        "photo_url": "https://static.inaturalist.org/photos/61295436/medium.jpeg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.73955693020552,
+          35.32881607144115
+        ]
+      },
+      "properties": {
+        "tree_id": 99,
+        "common_name": "Giant Sequoia",
+        "scientific_name": "Sequoiadendron giganteum",
+        "family": "Cupressaceae",
+        "origin": "California",
+        "photo_url": "https://static.inaturalist.org/photos/119771254/medium.jpg"
       }
     },
     {
