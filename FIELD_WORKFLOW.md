@@ -31,3 +31,5 @@ Adding `sign_presence` changes the database schema. Before deploying, synchroniz
 After all edits are safe, remove the old local project from field devices, upload the revised desktop project to the same Mergin project, and freshly download it on each device. Verify that a new observation shows the presence dropdown before collecting more data. Do not upload edits made against an old schema after deployment. These steps follow [Mergin Maps guidance for revised projects](https://merginmaps.com/docs/manage/deploy-new-project/).
 
 The GitHub Pages map and Mergin Maps deploy separately. Pushing Git commits publishes the public map. It does not synchronize the mobile project.
+
+The sign presence revision was deployed to `mergin/cuesta-trees` as version `v55` on September 4, 2026. Server version `v54` was downloaded first and matched the source data used for the migration. A fresh download of `v55` passed QGIS validation for all 103 locations and preserved all 177 observations. Desktop synchronization reports no changes. Existing field-device copies must be replaced with a fresh download before further data collection.

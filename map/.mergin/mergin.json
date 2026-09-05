@@ -28,42 +28,42 @@
   },
   "created": "2025-07-31T03:56:45Z",
   "creator": 1,
-  "disk_usage": 494689,
+  "disk_usage": 506744,
   "files": [
     {
       "checksum": "d40bcd61b65f2be55e8ab43511d5654191b562cc",
       "mtime": "2025-07-31T23:02:17Z",
       "path": "mergin-config.json",
-      "size": 69
+      "size": 69,
+      "version": "v55"
     },
     {
       "checksum": "086b07d599f1d9f9516341a56c1d9f035f65bd17",
       "mtime": "2025-11-11T06:20:02Z",
       "path": "cuesta-trees.bak.gpkg",
-      "size": 204800
+      "size": 204800,
+      "version": "v55"
     },
     {
       "checksum": "599030b8e661c927016d1fef4ef97b7b01d135f3",
       "mtime": "2025-11-11T06:20:02Z",
       "path": "cuesta-trees.qgz.bak",
-      "size": 35079
+      "size": 35079,
+      "version": "v55"
     },
     {
-      "checksum": "a2cf6fed59ce457d921154ac3ca5e6a72ed65ea3",
-      "diff": {
-        "checksum": "b22c2b31698a1a201aa361772cfdb89303555bb0",
-        "path": "cuesta-trees.gpkg-diff-f729ef5d-be26-43e4-94b5-51cf89222755",
-        "size": 145
-      },
-      "mtime": "2026-08-08T09:56:46Z",
+      "checksum": "03148db0bbee4dcb56a3c0b6fec943cb1f6dd7a6",
+      "mtime": "2026-09-05T00:24:43Z",
       "path": "cuesta-trees.gpkg",
-      "size": 204800
+      "size": 217088,
+      "version": "v55"
     },
     {
-      "checksum": "4e5ce2767423e6283bc12b3da49ac5e3fa81d1ff",
-      "mtime": "2026-08-08T10:26:51Z",
+      "checksum": "71678628fab76e33ae00c461ad97291bff68f533",
+      "mtime": "2026-09-05T00:24:43Z",
       "path": "cuesta-trees.qgz",
-      "size": 49941
+      "size": 49708,
+      "version": "v55"
     }
   ],
   "id": "55652f5d-ce68-4bbf-b24e-bc9d37099eb2",
@@ -74,15 +74,12 @@
     "update": true,
     "upload": true
   },
-  "public": false,
-  "removed_at": null,
   "role": "owner",
   "tags": [
     "valid_qgis",
     "input_use"
   ],
-  "updated": "2026-08-08T10:26:51Z",
+  "updated": "2026-09-05T00:24:43Z",
   "uploads": [],
-  "version": "v50",
-  "workspace_id": 1
+  "version": "v55"
 }
