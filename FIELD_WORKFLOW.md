@@ -1,25 +1,33 @@
 # Cuesta Trees Field Workflow
 
-The active QGIS and Mergin Maps project lives in `map/`. Open `map/cuesta-trees.qgz` when working in QGIS.
+The active QGIS and Mergin Maps project lives in `map/`. Open `map/cuesta-trees.qgz` in QGIS.
 
-The mobile project should stay centered on tree points and observation records. In the field, tap a tree point and add an observation. The observation form contains only status, notes, and photo. Observer, date, and tree identifiers are filled automatically.
+Tap a tree and add an observation for each real visit. The form shows Sign Presence, Observation Status, Notes, and Photo. Observer, date, and tree identifiers are filled automatically. The tree preview shows scientific name, latest sign presence, latest status, and last observed date.
 
-Tapping a tree shows its scientific name, latest observation status, and latest observation date. This mobile preview is configured through the Tree Locations HTML map tip in QGIS.
+## Sign presence and status
 
-The `tree_locations` layer is the map layer for physical tree locations. Keep it mostly stable. It should hold geometry, stable IDs, and display fields. Do not use it as the main place for ongoing notes or sign work.
+Choose `Present` when an identifying sign or plaque is at the tree. It still counts when screws are missing, vegetation obscures it, or its text needs correction. Choose `Absent` when no sign is there, including when you take one away for repair. Choose `Unknown` when you did not establish whether a sign is present.
 
-The `observations` table is the main work log. Each visit, sign check, maintenance note, or tree health concern should be a new observation. This preserves history and lets reports query the most recent observation for each tree. Use status for the overall result and notes for the specific problem or needed work.
+A new observation starts with `Unknown` so an earlier sign is never silently carried forward as a new confirmation. Set presence for the current visit. Unknown observations hide that location from the public map until presence is confirmed again.
 
-The `sign_inventory_current` table is still available as reference data. It should not be the primary field entry workflow. Sign work is captured through the main observation status, with details in notes and a photo when useful.
+Use `OK` when there is no outstanding issue. Use `Needs Attention` for repairs, missing signs, vegetation, placement, or identification questions. Use `New Species` for a new inventory candidate, `Removed` when the tree is gone, and `Other` when the result does not fit those categories. `No Sign` is no longer a status because presence records that information directly. Notes hold the specific problem and needed work. The public map uses sign presence alone.
 
-The old sign inventory is useful for order lists and audits. If orphan signs need field mapping later, create a small `orphan_signs` point layer rather than forcing them into `tree_locations`.
+When a tree has been removed, record its sign as `Absent` if it is gone too, or `Unknown` if you did not check. Do not assume a past sign is still present. If a sign remains without its tree, record that orphan sign in notes for follow-up.
 
-The basic field routine is simple. Open the tree point, add an observation, choose the status, add notes, and attach a photo if it helps.
+The `tree_locations` layer holds durable geometry and identifiers. The `observations` table is the work history. Do not use tree points as the main place for ongoing notes. Correct classification mistakes in the actual observation rather than adding a fictitious field visit. Preserve the original visit date and notes.
+
+The `sign_inventory_current` table remains available for historical reference and order lists. Its fields and the retired observation fields `sign_status`, `action_needed`, and `priority` do not control current visibility. The retired fields are retained for history and hidden from the field form.
 
 ## Sign audit campaigns
 
-Use the `Sign Audit` map theme when checking signs. The project variable `sign_audit_started` defines the beginning of the current campaign. Trees whose status at the start was `OK` or `Needs Attention` appear as `Not Checked` until they receive an observation after that date. The new observation status then controls the audit symbol. Trees that were already in another status when the campaign began are not part of the audit and are hidden by the audit style.
+The `Sign Audit` theme selects trees whose last observation before `sign_audit_started` recorded a present sign. Included trees appear as `Not Checked` until a real observation is recorded during the campaign. Current sign presence and status then control their audit symbols. The `Tree Condition` theme shows normal observation status for all working locations, including unsigned trees.
 
-Record only real field visits as observations. Do not create bulk placeholder observations to reset the map.
+Do not create bulk placeholder observations to reset the map. Follow [SIGN_AUDIT.md](SIGN_AUDIT.md) to advance the campaign and validate the result.
 
-Starting a new audit requires advancing `sign_audit_started`, checking the result, and synchronizing the project to Mergin Maps. Follow [SIGN_AUDIT.md](SIGN_AUDIT.md) for the annual reset procedure, validation steps, field workflow, and troubleshooting.
+## Deploying the new sign presence field to Mergin Maps
+
+Adding `sign_presence` changes the database schema. Before deploying, synchronize all existing field-device edits using the old schema and verify the server contains them. If new observations arrive, incorporate them into the source data and review their sign presence before publishing the revised project.
+
+After all edits are safe, remove the old local project from field devices, upload the revised desktop project to the same Mergin project, and freshly download it on each device. Verify that a new observation shows the presence dropdown before collecting more data. Do not upload edits made against an old schema after deployment. These steps follow [Mergin Maps guidance for revised projects](https://merginmaps.com/docs/manage/deploy-new-project/).
+
+The GitHub Pages map and Mergin Maps deploy separately. Pushing Git commits publishes the public map. It does not synchronize the mobile project.

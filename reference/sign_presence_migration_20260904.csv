@@ -1,0 +1,178 @@
+observation_fid,tree_uuid,tree_id,point_id,dateobserved,previous_status,status,sign_presence,reason
+1,{dc4a197b-2209-4f3d-ad62-cce2c27780ce},46,1,2021-03-28T16:09:08.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+2,{30a67eb0-da62-45b1-b290-207789aafa11},50,2,2021-03-28T15:49:17.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+3,{3531f5a9-7d76-4218-916e-b073cd5019cf},14,3,2021-03-28T16:58:16.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+4,{5a7a9a05-0c63-4fa0-9128-454635ee7702},94,4,2021-03-28T15:58:41.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+5,{f0edd2ce-5abf-461a-9697-49b1b4a914b8},36,5,2021-03-28T15:59:57.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+6,{5cb79cc2-6673-44ad-bcc6-7f59b8df1298},16,6,2021-03-28T16:10:09.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+7,{54f97eac-f2de-4947-b87f-f9212b65d9b8},49,7,2025-05-28T09:30:24.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+8,{678f768e-ee5a-4da5-a55d-9803872d6668},35,8,2021-03-28T16:27:48.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+9,{b12b7717-4c0e-43cc-ba56-757950b98163},107,9,2021-03-28T18:51:40.000Z,New Species,New Species,Unknown,No explicit evidence of sign presence
+10,{9dbf31a2-3f9f-411a-8648-3f65fb8e9cb3},15,10,2021-03-28T15:50:10.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+11,{611f6daf-2f65-4882-9856-f3f729c076cf},96,11,2021-03-28T15:51:03.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+12,{16187c6c-4183-4e77-9695-ba6e39d8a5bb},31,12,2021-03-28T15:56:42.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+13,{8d362e81-d6f0-4b04-b7c1-a0eb22c070ee},32,13,2021-03-28T15:57:08.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+14,{6c9bfda6-875d-41f0-bf84-21acd5e8fbe5},44,14,2021-03-28T16:04:04.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+15,{4efd937d-4de9-4bc4-9ee8-d73dd0af79e0},75,15,2021-03-28T16:04:38.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+16,{5cc6021e-32b9-4cd5-99be-679cb07bdb8e},76,16,2021-03-28T16:05:47.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+17,{db3267a3-15fd-4258-8956-503d4028a434},87,17,2021-03-28T16:06:29.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+18,{2d974322-e9fd-476a-8df7-dc991505118c},92,18,2025-05-28T10:37:55.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+19,{27e37836-951c-486a-b758-7384d3140a58},61,19,2025-05-28T10:00:04.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+20,{8efe0a0f-3657-443c-9ede-24cdd1eca6c2},56,20,2021-03-28T16:19:43.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+21,{9c5a0731-39cb-47e6-a9ed-35588a7a3cfa},19,21,2025-05-28T09:57:01.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+22,{95869303-0b9a-4a82-8944-104f5cae75ae},1,22,2021-03-28T16:22:09.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+23,{0f5ad71c-4c19-46bc-9aa8-383591889fa3},12,23,2025-05-28T09:58:09.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+24,{674e00de-3579-46ba-9cf3-5d3b145788c8},47,24,2025-05-28T09:21:28.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+25,{90e3df5a-3d42-4532-b692-c94cb36ada94},24,25,2025-05-28T09:19:54.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+26,{c3359863-8181-49a6-9500-32277511d011},98,26,2025-05-28T11:08:47.000Z,Needs Attention,Needs Attention,Present,Sign card has wrong family
+27,{4a7be455-e92c-4a93-af8b-dbebc053baa7},97,27,2021-03-28T16:33:01.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+28,{b3acedcb-4aa8-47ca-b298-a3e951388314},99,28,2021-03-28T16:33:46.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+29,{acb77fcc-1eb4-482a-b31d-3b2328c6b344},67,29,2021-03-28T16:35:54.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+30,{2865b668-b1e4-4baa-b927-ae0fa71b490f},62,30,2021-03-28T16:36:50.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+31,{b3b31693-2384-4e87-90d4-e06635528b65},58,31,2021-03-28T16:37:03.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+32,{9f16f47b-d3e3-4b44-a813-deeeff331b4a},21,32,2025-05-28T10:17:37.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+33,{6c9ee562-80de-407e-98ae-2f7dd00360f0},89,33,2025-05-28T10:18:04.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+34,{0e555513-86ba-4d82-a8b6-7d59d396946c},77,34,2021-03-28T17:17:11.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+35,{0bf8d8b6-800f-4b79-9de5-dc1d1e739724},82,35,2025-05-28T09:47:41.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+36,{db461f80-23a7-42d5-9807-27a56ad66be3},88,36,2021-03-28T17:24:47.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+37,{90138fa2-cdc5-4d13-8c53-0c30c41059fe},22,37,2025-05-28T09:57:46.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+38,{2ae63bd5-aa51-41f3-9b70-846898d722a9},28,38,2021-03-28T17:31:53.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+39,{ebea4a73-477a-4acc-996d-4cd04b2fe5f4},102,39,2025-05-28T09:43:27.000Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+40,{59c08a22-1ac2-4ba2-ae74-e67770652a07},91,40,2021-03-28T17:52:07.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+41,{a0c57734-9500-41cd-8550-63f396ca516f},27,41,2021-03-28T16:55:32.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+42,{72c94474-64de-4a43-85bb-4b5832623467},100,42,2021-03-28T16:56:08.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+43,{0a36b0fe-32d4-484a-94c5-9dc43b09f2a6},17,43,2021-03-28T16:56:47.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+44,{ec6cf087-c2f4-4686-8fbd-3d2abbab322f},90,44,2021-03-28T16:57:29.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+45,{7e0cb061-b940-482d-8929-68bb8025d379},11,45,2021-03-28T16:58:03.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+46,{dbe4259c-f5f7-486a-a9f5-3f8a10960a6e},65,46,2021-03-28T17:47:57.000Z,No Sign,Needs Attention,Unknown,Note explicitly asks whether a sign is present
+47,{e7d297a0-a69a-4819-bad8-e89d30c5f4d5},84,47,2021-03-28T18:00:04.000Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+48,{da0d87ce-4cfa-4812-9e06-752c965211b4},93,48,2021-03-28T18:06:13.000Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+49,{9931d8ee-b70c-48d4-b519-35a2da4830f1},29,49,2021-03-28T18:11:26.000Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+50,{908a7dc4-fae9-40b7-a2b2-79c954aa893b},37,50,2021-03-28T18:29:56.000Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+51,{b1383e70-405e-4ff3-b28a-16b83bee70cb},4,51,2025-05-28T10:37:42.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+52,{c6d15f9f-1b0e-497f-8df2-3774c2e8ce84},104,52,2021-03-28T17:39:08.000Z,New Species,New Species,Unknown,No explicit evidence of sign presence
+53,{3bac35a8-86d1-4b54-a383-adc0b595ee19},8,53,2021-03-28T16:37:38.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+54,{5c54e654-b978-44c3-a862-2734b0329b02},70,54,2021-03-28T16:38:46.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+55,{da8172c5-70a2-4faa-b472-ea2ce7f8db3b},9,55,2021-03-28T16:44:25.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+56,{0418db8a-4b7d-48f7-8737-4bc8f231cce2},2,56,2021-03-28T16:46:40.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+57,{324fa496-4054-4ffd-9cdd-ae322e4b4ece},53,57,2021-03-28T16:47:44.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+58,{34bb67b7-6940-4bb6-971f-72c360dafe7a},52,58,2021-03-28T16:48:00.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+59,{6dadb723-7f5a-48c7-9691-587cab2eb5fd},42,59,2021-03-28T16:48:49.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+60,{2e0ba497-f878-4fdf-9d3d-7d3b85b415eb},83,60,2021-03-28T16:49:16.000Z,Needs Attention,Needs Attention,Present,Sign needs backing out
+61,{48f6b5ca-c5ba-43bd-88a7-9cd12bb73ad3},59,61,2021-03-28T16:50:00.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+62,{2e4130c5-2f98-4280-8e76-7172af5d4383},18,62,2021-03-28T16:53:03.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+63,{33e109c1-f75f-4809-9fb0-abecde1ac7d5},43,63,2021-03-28T16:54:42.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+64,{c94d1e38-9baa-4bf0-bd06-389a1f3b39e2},79,64,2021-03-28T16:55:15.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+65,{8d5d8486-2579-4dab-8753-e8f4b4b4f750},26,65,2021-03-28T16:58:42.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+66,{0f45e187-847d-404b-8585-bf689299f878},7,66,2021-03-28T17:01:29.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+67,{636b6272-1475-4931-b316-6dbbeafa795c},71,67,2021-03-28T17:02:34.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+68,{9ea80a22-1034-45c4-952e-4c09a0257406},38,68,2021-03-28T17:03:25.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+69,{1c414ce7-d634-49d6-a952-40e1c2bfb9d0},72,69,2021-03-28T17:04:02.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+70,{4e70e12f-f07d-49b2-b61f-0e988e2863ee},60,70,2021-03-28T17:04:50.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+71,{5351c966-77d3-47a4-b539-d6e9fbb0fe29},86,71,2021-03-28T17:05:27.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+72,{663cf335-8ff5-4e63-94e7-17a2aa22756d},57,72,2021-03-28T17:05:58.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+73,{372889aa-7b5e-41e9-91a3-709b60914760},30,73,2021-03-28T16:33:14.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+74,{a737794f-1ee5-40c1-8d22-735e92bb3f5a},33,74,2025-05-28T09:45:15.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+75,{839facb5-9105-4a93-b05d-d6950043378e},81,75,2021-03-28T15:51:44.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+76,{8ae20c93-df14-4396-9fed-aaf0ab972bfd},3,76,2021-03-28T15:56:06.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+77,{25961fc9-0beb-4a6c-ad56-29afd8f1aa32},41,77,2025-05-28T10:38:26.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+78,{4fd146e4-006c-482a-96e4-dadbac677873},6,78,2025-05-28T10:37:27.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+79,{23e3f746-b122-45f6-b7b1-c835989e9c27},45,79,2021-03-28T16:07:37.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+80,{291a66b2-89cc-4824-beac-cea0b8a5df7e},10,80,2021-03-28T16:54:21.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+81,{186fa406-5dff-4e63-b42c-be3f2f6985ff},54,81,2021-03-28T17:34:23.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+82,{a30fed7a-ffdc-4acb-bb5b-784dc3e20181},95,82,2021-03-28T17:53:05.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+83,{797c75a6-c100-417b-a607-67e31ad2a0aa},40,83,2021-03-28T18:08:58.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+84,{da166981-c3a9-4887-8359-3d94edae9c04},48,84,2021-03-28T18:13:08.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+85,{920aa742-a09f-4ee3-9ded-ff69ba839128},51,85,2021-03-28T18:19:04.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+86,{05f202c4-ef3b-475e-9eef-219d1a59d9e2},5,86,2021-03-28T18:20:01.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+87,{dc52f311-212c-42c7-b53a-9f06a50c3c03},73,87,2021-03-28T18:21:45.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+88,{b5a11a17-bdca-4ab9-aedd-133933a21f18},55,88,2021-03-28T18:32:49.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+89,{bda56a74-de59-4d2c-9899-bb6d802d1718},64,89,2021-03-28T18:34:07.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+90,{2fbd9cf2-7ee7-4125-bf70-de14afcd5973},101,90,2025-05-28T10:38:13.000Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+91,{09cce816-e89c-454c-91b4-806697b46991},39,91,2021-03-28T18:49:22.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+92,{8d9e66a5-4a87-4166-b03b-e524ca9f4725},23,92,2021-03-28T18:53:50.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+93,{88b1f418-5219-4e11-8d4f-7dc389b496c8},85,93,2021-03-28T18:52:28.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+94,{daeefb53-b752-4fc3-889f-696e5c0fa071},66,94,2021-03-28T18:37:16.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+95,{3c375118-42b5-4d85-a5e2-9156762da5d1},13,95,2021-03-28T17:41:12.000Z,OK,OK,Present,Historical OK classification indicates signed tree
+96,{914c1eaf-47d6-4913-a6e2-17014ffe3403},90,96,2025-05-28T09:27:49.731Z,New Species,New Species,Absent,New species note explicitly says needs sign
+97,{77393f25-7485-4d8b-8abe-6218ec08fe72},20,97,2025-05-28T09:51:24.825Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+98,{a09dfb2b-b601-40c0-ac44-70e89afa1899},103,98,2025-05-28T10:46:49.024Z,New Species,New Species,Unknown,No explicit evidence of sign presence
+99,{ce151d13-014e-4505-9b2b-0db324c51be9},90,99,2025-05-28T10:52:07.956Z,New Species,New Species,Unknown,No explicit evidence of sign presence
+112,,,,2025-11-11T06:20:35.390Z,Other,Other,Unknown,No explicit evidence of sign presence
+114,,,,2025-11-11T18:25:36.195Z,Other,Other,Unknown,No explicit evidence of sign presence
+117,{09cce816-e89c-454c-91b4-806697b46991},,,2026-08-08T20:59:17.984Z,OK,OK,Present,Historical OK classification indicates signed tree
+118,{611f6daf-2f65-4882-9856-f3f729c076cf},,,2026-08-08T21:18:34.328Z,OK,OK,Present,Historical OK classification indicates signed tree
+119,{839facb5-9105-4a93-b05d-d6950043378e},,,2026-08-08T21:19:39.081Z,OK,OK,Present,Historical OK classification indicates signed tree
+120,{8ae20c93-df14-4396-9fed-aaf0ab972bfd},,,2026-08-08T21:20:41.276Z,OK,OK,Present,Historical OK classification indicates signed tree
+121,{f0edd2ce-5abf-461a-9697-49b1b4a914b8},,,2026-08-08T21:21:07.978Z,OK,OK,Present,Historical OK classification indicates signed tree
+122,{16187c6c-4183-4e77-9695-ba6e39d8a5bb},,,2026-08-08T21:21:47.946Z,OK,OK,Present,Historical OK classification indicates signed tree
+123,{8d362e81-d6f0-4b04-b7c1-a0eb22c070ee},,,2026-08-08T21:23:00.774Z,OK,OK,Present,Historical OK classification indicates signed tree
+124,{5a7a9a05-0c63-4fa0-9128-454635ee7702},,,2026-08-08T21:27:15.086Z,Needs Attention,Needs Attention,Absent,Observer took sign away for reinstallation
+125,{9dbf31a2-3f9f-411a-8648-3f65fb8e9cb3},,,2026-08-08T21:31:36.962Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+126,{30a67eb0-da62-45b1-b290-207789aafa11},,,2026-08-08T21:32:46.454Z,OK,OK,Present,Historical OK classification indicates signed tree
+127,{663cf335-8ff5-4e63-94e7-17a2aa22756d},,,2026-08-08T21:34:39.654Z,OK,OK,Present,Historical OK classification indicates signed tree
+128,{4e70e12f-f07d-49b2-b61f-0e988e2863ee},,,2026-08-08T21:36:10.900Z,OK,OK,Present,Historical OK classification indicates signed tree
+129,{5351c966-77d3-47a4-b539-d6e9fbb0fe29},,,2026-08-08T21:37:00.528Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+130,{b5a11a17-bdca-4ab9-aedd-133933a21f18},,,2026-08-08T21:38:03.844Z,OK,OK,Present,Historical OK classification indicates signed tree
+131,{2e0ba497-f878-4fdf-9d3d-7d3b85b415eb},,,2026-08-08T21:45:18.817Z,OK,OK,Present,Historical OK classification indicates signed tree
+132,{48f6b5ca-c5ba-43bd-88a7-9cd12bb73ad3},,,2026-08-08T21:46:55.503Z,OK,OK,Present,Historical OK classification indicates signed tree
+133,{6dadb723-7f5a-48c7-9691-587cab2eb5fd},,,2026-08-08T21:48:27.300Z,OK,OK,Present,Historical OK classification indicates signed tree
+134,{34bb67b7-6940-4bb6-971f-72c360dafe7a},,,2026-08-08T21:50:59.888Z,OK,OK,Present,Historical OK classification indicates signed tree
+135,{324fa496-4054-4ffd-9cdd-ae322e4b4ece},,,2026-08-08T21:51:16.391Z,OK,OK,Present,Historical OK classification indicates signed tree
+136,{5c54e654-b978-44c3-a862-2734b0329b02},,,2026-08-08T21:53:54.776Z,OK,OK,Present,Historical OK classification indicates signed tree
+137,{88980962-7f4e-4e50-af6b-cef6b7c269da},,,2026-08-08T21:55:19.661Z,OK,OK,Present,Historical OK classification indicates signed tree
+138,{da8172c5-70a2-4faa-b472-ea2ce7f8db3b},,,2026-08-08T21:57:05.326Z,OK,OK,Present,Historical OK classification indicates signed tree
+139,{636b6272-1475-4931-b316-6dbbeafa795c},,,2026-08-08T21:58:46.144Z,OK,OK,Present,Historical OK classification indicates signed tree
+140,{0f45e187-847d-404b-8585-bf689299f878},,,2026-08-08T22:00:00.065Z,OK,OK,Present,Historical OK classification indicates signed tree
+141,{38296329-e0c4-498b-9704-7eaadb8a9200},,,2026-08-08T22:02:44.561Z,Needs Attention,Needs Attention,Absent,Observer took sign away after screws broke
+142,{ec6cf087-c2f4-4686-8fbd-3d2abbab322f},,,2026-08-08T22:03:09.264Z,OK,OK,Present,Historical OK classification indicates signed tree
+143,{8d5d8486-2579-4dab-8753-e8f4b4b4f750},,,2026-08-08T22:04:05.778Z,OK,OK,Present,Historical OK classification indicates signed tree
+144,{7e0cb061-b940-482d-8929-68bb8025d379},,,2026-08-08T22:04:46.365Z,OK,OK,Present,Historical OK classification indicates signed tree
+145,{3531f5a9-7d76-4218-916e-b073cd5019cf},,,2026-08-08T22:05:05.027Z,OK,OK,Present,Historical OK classification indicates signed tree
+146,{890b4369-7b8b-43ca-9b3d-54ff8f8d56d7},,,2026-08-08T22:06:09.011Z,Needs Attention,Needs Attention,Present,Sign missing bottom screw
+147,{797c75a6-c100-417b-a607-67e31ad2a0aa},,,2026-08-08T22:09:30.786Z,Needs Attention,Needs Attention,Present,Sign missing bottom screw
+148,{a30fed7a-ffdc-4acb-bb5b-784dc3e20181},,,2026-08-08T22:11:21.474Z,OK,OK,Present,Historical OK classification indicates signed tree
+149,{0418db8a-4b7d-48f7-8737-4bc8f231cce2},,,2026-08-08T22:12:30.174Z,OK,OK,Present,Historical OK classification indicates signed tree
+150,{186fa406-5dff-4e63-b42c-be3f2f6985ff},,,2026-08-08T22:15:28.673Z,OK,OK,Present,Historical OK classification indicates signed tree
+151,{b3acedcb-4aa8-47ca-b298-a3e951388314},,,2026-08-08T22:17:30.156Z,Needs Attention,Needs Attention,Present,"Sign has screw, vegetation, and text issues"
+152,{4a7be455-e92c-4a93-af8b-dbebc053baa7},,,2026-08-08T22:18:36.748Z,Needs Attention,Needs Attention,Present,Sign has wrong family name
+153,{372889aa-7b5e-41e9-91a3-709b60914760},,,2026-08-08T22:19:35.428Z,OK,OK,Present,Historical OK classification indicates signed tree
+154,{c3359863-8181-49a6-9500-32277511d011},,,2026-08-08T22:22:15.595Z,Needs Attention,Needs Attention,Present,Sign has wrong family name
+155,{2865b668-b1e4-4baa-b927-ae0fa71b490f},,,2026-08-08T22:27:24.367Z,OK,OK,Present,Historical OK classification indicates signed tree
+156,{b3b31693-2384-4e87-90d4-e06635528b65},,,2026-08-08T22:28:15.943Z,OK,OK,Present,Historical OK classification indicates signed tree
+157,{3bac35a8-86d1-4b54-a383-adc0b595ee19},,,2026-08-08T22:29:43.537Z,OK,OK,Present,Historical OK classification indicates signed tree
+158,{6c9ee562-80de-407e-98ae-2f7dd00360f0},,,2026-08-08T22:33:23.910Z,OK,OK,Present,Historical OK classification indicates signed tree
+159,{9f16f47b-d3e3-4b44-a813-deeeff331b4a},,,2026-08-08T22:33:45.611Z,Needs Attention,Needs Attention,Present,Sign missing bottom screw
+160,{1c414ce7-d634-49d6-a952-40e1c2bfb9d0},,,2026-08-08T22:36:22.773Z,OK,OK,Present,Historical OK classification indicates signed tree
+161,{9ea80a22-1034-45c4-952e-4c09a0257406},,,2026-08-08T22:37:27.975Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+164,{dc52f311-212c-42c7-b53a-9f06a50c3c03},,,2026-08-09T19:46:55.481Z,OK,OK,Present,Historical OK classification indicates signed tree
+165,{05f202c4-ef3b-475e-9eef-219d1a59d9e2},,,2026-08-09T19:47:59.258Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+166,{2e4130c5-2f98-4280-8e76-7172af5d4383},,,2026-08-09T19:50:50.571Z,OK,OK,Present,Historical OK classification indicates signed tree
+167,{920aa742-a09f-4ee3-9ded-ff69ba839128},,,2026-08-09T19:53:47.033Z,OK,OK,Present,Historical OK classification indicates signed tree
+168,{bda56a74-de59-4d2c-9899-bb6d802d1718},,,2026-08-09T19:55:10.484Z,OK,OK,Present,Historical OK classification indicates signed tree
+169,{6c9bfda6-875d-41f0-bf84-21acd5e8fbe5},,,2026-08-09T19:56:55.620Z,OK,OK,Present,Historical OK classification indicates signed tree
+170,{4efd937d-4de9-4bc4-9ee8-d73dd0af79e0},,,2026-08-09T19:57:21.054Z,OK,Needs Attention,Present,Historical OK classification indicates signed tree. Unresolved maintenance or identification note
+171,{88b1f418-5219-4e11-8d4f-7dc389b496c8},,,2026-08-09T20:13:00.862Z,OK,OK,Present,Historical OK classification indicates signed tree
+172,{8d9e66a5-4a87-4166-b03b-e524ca9f4725},,,2026-08-09T20:13:33.634Z,Needs Attention,Needs Attention,Present,Sign is present but overgrown
+173,{dc4a197b-2209-4f3d-ad62-cce2c27780ce},,,2026-08-09T20:16:16.062Z,OK,OK,Present,Historical OK classification indicates signed tree
+174,{5cb79cc2-6673-44ad-bcc6-7f59b8df1298},,,2026-08-09T20:17:27.691Z,Needs Attention,Needs Attention,Present,Sign is overgrown
+175,{daeefb53-b752-4fc3-889f-696e5c0fa071},,,2026-08-09T20:18:30.760Z,OK,Needs Attention,Present,Historical OK classification indicates signed tree. Unresolved maintenance or identification note
+176,{23e3f746-b122-45f6-b7b1-c835989e9c27},,,2026-08-09T20:21:04.952Z,OK,OK,Present,Historical OK classification indicates signed tree
+177,{db3267a3-15fd-4258-8956-503d4028a434},,,2026-08-09T20:22:54.033Z,OK,OK,Present,Historical OK classification indicates signed tree
+178,{5cc6021e-32b9-4cd5-99be-679cb07bdb8e},,,2026-08-09T20:24:20.155Z,OK,OK,Present,Historical OK classification indicates signed tree
+179,{59c08a22-1ac2-4ba2-ae74-e67770652a07},,,2026-08-09T20:29:08.468Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+180,{90e3df5a-3d42-4532-b692-c94cb36ada94},,,2026-08-09T20:32:29.457Z,OK,OK,Present,Historical OK classification indicates signed tree
+181,{674e00de-3579-46ba-9cf3-5d3b145788c8},,,2026-08-09T20:33:14.382Z,OK,OK,Present,Historical OK classification indicates signed tree
+182,{54f97eac-f2de-4947-b87f-f9212b65d9b8},,,2026-08-09T20:33:55.564Z,OK,OK,Present,Historical OK classification indicates signed tree
+183,{678f768e-ee5a-4da5-a55d-9803872d6668},,,2026-08-09T20:34:15.696Z,OK,Needs Attention,Present,Historical OK classification indicates signed tree. Unresolved maintenance or identification note
+184,{a737794f-1ee5-40c1-8d22-735e92bb3f5a},,,2026-08-09T20:37:03.108Z,OK,Needs Attention,Present,Historical OK classification indicates signed tree. Unresolved maintenance or identification note
+185,{0bf8d8b6-800f-4b79-9de5-dc1d1e739724},,,2026-08-09T20:38:10.001Z,OK,OK,Present,Historical OK classification indicates signed tree
+186,{8efe0a0f-3657-443c-9ede-24cdd1eca6c2},,,2026-08-09T20:39:49.707Z,OK,OK,Present,Historical OK classification indicates signed tree
+187,{27e37836-951c-486a-b758-7384d3140a58},,,2026-08-09T20:42:29.291Z,OK,OK,Present,Historical OK classification indicates signed tree
+188,{0e555513-86ba-4d82-a8b6-7d59d396946c},,,2026-08-09T20:44:12.253Z,OK,OK,Present,Historical OK classification indicates signed tree
+189,{9c5a0731-39cb-47e6-a9ed-35588a7a3cfa},,,2026-08-09T20:45:17.895Z,OK,OK,Present,Historical OK classification indicates signed tree
+190,{204c12bb-8d69-4740-b204-8ad5f4719ae6},,,2026-08-09T20:46:43.390Z,No Sign,Needs Attention,Absent,Historical No Sign classification
+191,{db461f80-23a7-42d5-9807-27a56ad66be3},,,2026-08-09T20:48:23.107Z,Removed,Removed,Unknown,No explicit evidence of sign presence
+192,{2ae63bd5-aa51-41f3-9b70-846898d722a9},,,2026-08-09T20:50:05.094Z,OK,OK,Present,Historical OK classification indicates signed tree
+193,{95869303-0b9a-4a82-8944-104f5cae75ae},,,2026-08-09T20:50:34.674Z,Needs Attention,Needs Attention,Present,Owner confirmed name-check note implies sign present
+194,{acb77fcc-1eb4-482a-b31d-3b2328c6b344},,,2026-08-09T20:54:04.923Z,No Sign,Needs Attention,Present,Owner confirmed identifying plaque counts as a sign

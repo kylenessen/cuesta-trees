@@ -2,3 +2,5 @@
 */.mergin/.cache/
 */.mergin/client-log.txt
 */.mergin/*-diff-*
+
+__pycache__/
